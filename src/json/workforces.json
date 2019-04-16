@@ -4,62 +4,44 @@
     {
       "id": 1010052,
       "name": "moderate workforce 1",
-      "icon": "resources/workforce_farmer_2.png",
+      "icon": "resources/workforce_farmer.png",
       "text": "Farmer Workforce"
     },
     {
       "id": 1010115,
       "name": "moderate workforce 2",
-      "icon": "resources/workforce_worker_2.png",
+      "icon": "resources/workforce_worker.png",
       "text": "Worker Workforce"
     },
     {
       "id": 1010116,
       "name": "moderate workforce 3",
-      "icon": "resources/workforce_merchants_2.png",
+      "icon": "resources/workforce_artisan.png",
       "text": "Artisan Workforce"
     },
     {
       "id": 1010117,
       "name": "moderate workforce 4",
-      "icon": "resources/workforce_craftspeople.png",
+      "icon": "resources/workforce_engineer.png",
       "text": "Engineer Workforce"
     },
     {
       "id": 1010128,
       "name": "moderate workforce 5",
-      "icon": "resources/workforce_industrialists.png",
+      "icon": "resources/workforce_investor.png",
       "text": "Investor Workforce"
     },
     {
       "id": 1010366,
       "name": "colony workforce 1",
-      "icon": "resources/workforce_ressource_farmer_south_america.png",
+      "icon": "resources/workforce_jornalero.png",
       "text": "Jornalero Workforce"
     },
     {
       "id": 1010367,
       "name": "colony workforce 2",
-      "icon": "resources/workforce_ressource_worker_south_america.png",
+      "icon": "resources/workforce_obrero.png",
       "text": "Obrero Workforce"
-    },
-    {
-      "id": 1010368,
-      "name": "colony workforce 3",
-      "icon": "resources/workforce_merchants_2.png",
-      "text": "Cratspeople Workforce"
-    },
-    {
-      "id": 1010369,
-      "name": "colony workforce 4",
-      "icon": "resources/workforce_craftspeople.png",
-      "text": "Graduate Workforce"
-    },
-    {
-      "id": 1010370,
-      "name": "colony workforce 5",
-      "icon": "resources/workforce_industrialists.png",
-      "text": "Great Landowner Workforce"
     }
   ]
 }

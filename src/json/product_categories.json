@@ -103,12 +103,6 @@
       ]
     },
     {
-      "id": 11706,
-      "name": "Product Category Money Good",
-      "text": "Luxury Need",
-      "products": []
-    },
-    {
       "id": 11707,
       "name": "Product Category Construction Material",
       "text": "Construction Material",
@@ -121,24 +115,6 @@
         1010221,
         1010223
       ]
-    },
-    {
-      "id": 11708,
-      "name": "Product Category Public Supply",
-      "text": "Basic Need",
-      "products": []
-    },
-    {
-      "id": 11709,
-      "name": "Product Category Public Happiness",
-      "text": "Luxury Need",
-      "products": []
-    },
-    {
-      "id": 11710,
-      "name": "Product Category Public Money",
-      "text": "Luxury Need",
-      "products": []
     },
     {
       "id": 11797,

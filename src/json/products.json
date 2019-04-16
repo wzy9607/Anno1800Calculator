@@ -4,14 +4,14 @@
     {
       "id": 1010192,
       "name": "grain",
-      "icon": "goods/cereals_2.png",
+      "icon": "goods/grain.png",
       "text": "Grain",
       "category": 11702
     },
     {
       "id": 1010193,
       "name": "beef",
-      "icon": "goods/meat_raw.png",
+      "icon": "goods/beef.png",
       "text": "Beef",
       "category": 11702
     },
@@ -25,14 +25,14 @@
     {
       "id": 1010195,
       "name": "potatoes",
-      "icon": "goods/potatoes.png",
+      "icon": "goods/potato.png",
       "text": "Potatoes",
       "category": 11702
     },
     {
       "id": 120008,
       "name": "wood",
-      "icon": "goods/wood_log.png",
+      "icon": "goods/wood.png",
       "text": "Wood",
       "category": 11702
     },
@@ -53,7 +53,7 @@
     {
       "id": 1010209,
       "name": "fur",
-      "icon": "goods/fur.png",
+      "icon": "goods/furs.png",
       "text": "Furs",
       "category": 11702
     },
@@ -81,7 +81,7 @@
     {
       "id": 1010232,
       "name": "salpeter",
-      "icon": "goods/niter.png",
+      "icon": "goods/saltpeter.png",
       "text": "Saltpeter",
       "category": 11702
     },
@@ -102,14 +102,14 @@
     {
       "id": 1010203,
       "name": "soap",
-      "icon": "goods/soap_2.png",
+      "icon": "goods/soap.png",
       "text": "Soap",
       "category": 11704
     },
     {
       "id": 1010196,
       "name": "timber",
-      "icon": "goods/wooden_planks.png",
+      "icon": "goods/timber.png",
       "text": "Timber",
       "category": 11707
     },
@@ -130,7 +130,7 @@
     {
       "id": 1010207,
       "name": "window",
-      "icon": "goods/glass_window_3.png",
+      "icon": "goods/windows.png",
       "text": "Windows",
       "category": 11707
     },
@@ -144,7 +144,7 @@
     {
       "id": 1010210,
       "name": "sailcloth",
-      "icon": "goods/sail.png",
+      "icon": "goods/sails.png",
       "text": "Sails",
       "category": 11703
     },
@@ -186,28 +186,28 @@
     {
       "id": 1010215,
       "name": "goulash",
-      "icon": "goods/goulash_01.png",
+      "icon": "goods/goulash.png",
       "text": "Goulash",
       "category": 11703
     },
     {
       "id": 1010217,
       "name": "canned food",
-      "icon": "goods/canned_goulash.png",
+      "icon": "goods/canned_food.png",
       "text": "Canned Food",
       "category": 11704
     },
     {
       "id": 1010216,
       "name": "schnapps",
-      "icon": "goods/schnapps_4.png",
+      "icon": "goods/schnapps.png",
       "text": "Schnapps",
       "category": 11705
     },
     {
       "id": 1010238,
       "name": "sausage",
-      "icon": "goods/meat_sausage.png",
+      "icon": "goods/sausages.png",
       "text": "Sausages",
       "category": 11704
     },
@@ -221,7 +221,7 @@
     {
       "id": 1010218,
       "name": "beams",
-      "icon": "goods/beams.png",
+      "icon": "goods/steel_beams.png",
       "text": "Steel Beams",
       "category": 11707
     },
@@ -249,14 +249,14 @@
     {
       "id": 1010223,
       "name": "advanced weapons",
-      "icon": "goods/advanced_weaponry.png",
+      "icon": "goods/advanced_weapons.png",
       "text": "Advanced Weapons",
       "category": 11707
     },
     {
       "id": 1010224,
       "name": "steam motors",
-      "icon": "goods/steam_machine.png",
+      "icon": "goods/steam_motor.png",
       "text": "Steam Motors",
       "category": 11703
     },
@@ -291,7 +291,7 @@
     {
       "id": 1010229,
       "name": "zinc",
-      "icon": "goods/tin_ore.png",
+      "icon": "goods/zinc.png",
       "text": "Zinc",
       "category": 11702
     },
@@ -340,7 +340,7 @@
     {
       "id": 1010237,
       "name": "basic clothes",
-      "icon": "goods/working_cloth.png",
+      "icon": "goods/work_clothes.png",
       "text": "Work Clothes",
       "category": 11704
     },
@@ -354,7 +354,7 @@
     {
       "id": 1010242,
       "name": "inlay",
-      "icon": "goods/inlay.png",
+      "icon": "goods/wood_veneers.png",
       "text": "Wood Veneers",
       "category": 11703
     },
@@ -389,7 +389,7 @@
     {
       "id": 1010248,
       "name": "phonographs",
-      "icon": "goods/phonographs.png",
+      "icon": "goods/gramophone.png",
       "text": "Gramophones",
       "category": 11705
     },
@@ -410,7 +410,7 @@
     {
       "id": 1010251,
       "name": "sugar cane",
-      "icon": "goods/cane_sugar_1.png",
+      "icon": "goods/sugar_cane.png",
       "text": "Sugar Cane",
       "category": 11702
     },
@@ -466,7 +466,7 @@
     {
       "id": 120041,
       "name": "bananas",
-      "icon": "goods/banana.png",
+      "icon": "goods/plantains.png",
       "text": "Plantains",
       "category": 11702
     },
@@ -480,7 +480,7 @@
     {
       "id": 120042,
       "name": "fish oil",
-      "icon": "goods/fishoil.png",
+      "icon": "goods/fish_oil.png",
       "text": "Fish Oil",
       "category": 11702
     },
@@ -508,7 +508,7 @@
     {
       "id": 1010257,
       "name": "rum",
-      "icon": "goods/rum_barrel.png",
+      "icon": "goods/rum.png",
       "text": "Rum",
       "category": 11705
     },
@@ -522,35 +522,35 @@
     {
       "id": 120032,
       "name": "coffee",
-      "icon": "goods/coffe_cup.png",
+      "icon": "goods/coffee.png",
       "text": "Coffee",
       "category": 11704
     },
     {
       "id": 120033,
       "name": "fried bananas",
-      "icon": "goods/fried_bananas.png",
+      "icon": "goods/fried_plantains.png",
       "text": "Fried Plantains",
       "category": 11704
     },
     {
       "id": 120035,
       "name": "burrito",
-      "icon": "goods/burrito.png",
+      "icon": "goods/tortilla.png",
       "text": "Tortillas",
       "category": 11704
     },
     {
       "id": 1010239,
       "name": "sugar",
-      "icon": "goods/salt.png",
+      "icon": "goods/sugar.png",
       "text": "Sugar",
       "category": 11703
     },
     {
       "id": 1010240,
       "name": "cotton cloth",
-      "icon": "goods/cotton_fur.png",
+      "icon": "goods/cotton_fabric.png",
       "text": "Cotton Fabric",
       "category": 11703
     },
