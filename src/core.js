@@ -8,19 +8,12 @@ let view = {
 };
 
 
-class NamedAsset {
+class Population {
   constructor(config) {
     this.id = config.id;
     this.name = config.name;
     this.text = config.text;
     this.icon = config.icon || "";
-  }
-}
-
-
-class Population extends NamedAsset {
-  constructor(config) {
-    super(config);
     this.amount = 0;
     this.needs = [];
     this.needsCache = config.needs;
@@ -50,9 +43,12 @@ class Population extends NamedAsset {
   }
 }
 
-class ProductionBuilding extends NamedAsset {
+class ProductionBuilding {
   constructor(config) {
-    super(config);
+    this.id = config.id;
+    this.name = config.name;
+    this.text = config.text;
+    this.icon = config.icon || "";
     this.amount = 0;
     // noinspection MagicNumberJS
     this.percentEfficiency = 100;
@@ -71,7 +67,7 @@ class ProductionBuilding extends NamedAsset {
       if (i.amount > 0) {
         let tmp = i;
         tmp.consumer = this;
-        this.needs.push(new ConsumerProductTuple(tmp));
+        this.inputs.push(new ConsumerProductTuple(tmp));
       }
     });
     delete this.inputsCache;
@@ -142,9 +138,12 @@ class ProductionBuilding extends NamedAsset {
   }
 }
 
-class Product extends NamedAsset {
+class Product {
   constructor(config) {
-    super(config);
+    this.id = config.id;
+    this.name = config.name;
+    this.text = config.text;
+    this.icon = config.icon || "";
     this.category = config.category;
     this.amountConsumed = 0;
     this.amountProduced = 0;
@@ -179,9 +178,12 @@ class Product extends NamedAsset {
   }
 }
 
-class Workforce extends NamedAsset {
+class Workforce {
   constructor(config) {
-    super(config);
+    this.id = config.id;
+    this.name = config.name;
+    this.text = config.text;
+    this.icon = config.icon || "";
     this.amountConsumed = 0;
     this.consumers = [];
   }
@@ -270,7 +272,7 @@ class ProducerProductTuple {
     if (this.product !== undefined && this.product instanceof Product) {
       this.product.addProducer(this);
     } else {
-      throw "Producer" + this.producer.id + "can't find product " + this.id;
+      throw "Producer " + this.producer.id + " can't find product " + this.id;
     }
   }
   
@@ -279,7 +281,7 @@ class ProducerProductTuple {
     if (this.product !== undefined && this.product instanceof Product) {
       this.product.addProducer(this);
     } else {
-      throw "Producer" + this.producer.id + "can't find product " + this.id;
+      throw "Producer " + this.producer.id + " can't find product " + this.id;
     }
   }
   
@@ -300,9 +302,12 @@ class ProducerProductTuple {
   }
 }
 
-class ProductCategory extends NamedAsset {
+class ProductCategory {
   constructor(config) {
-    super(config);
+    this.id = config.id;
+    this.order = config.order;
+    this.name = config.name;
+    this.text = config.text;
     this.products = config.products.map(p => gameAssetsMap.get(p));
   }
 }
@@ -351,9 +356,9 @@ function init(data) {
 
 export {
   products, gameAssetsMap, view,
-  Population, ProductionBuilding,
-  Product, Workforce,
-  ConsumerProductTuple, WorkforceDemand, ProducerProductTuple,
-  ProductCategory,
+  //Population, ProductionBuilding,
+  //Product, Workforce,
+  //ConsumerProductTuple, WorkforceDemand, ProducerProductTuple,
+  //ProductCategory,
   init
 };
