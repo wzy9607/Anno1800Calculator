@@ -3,6 +3,7 @@
   "ProductCategories": [
     {
       "id": 11702,
+      "order": 4,
       "name": "Product Category Resource",
       "text": "Resource",
       "products": [
@@ -40,6 +41,7 @@
     },
     {
       "id": 11703,
+      "order": 3,
       "name": "Product Category Intermediate Good",
       "text": "Processing Good",
       "products": [
@@ -64,6 +66,7 @@
     },
     {
       "id": 11704,
+      "order": 0,
       "name": "Product Category Supply Good",
       "text": "Basic Need",
       "products": [
@@ -90,6 +93,7 @@
     },
     {
       "id": 11705,
+      "order": 1,
       "name": "Product Category Happiness Good",
       "text": "Luxury Need",
       "products": [
@@ -104,6 +108,7 @@
     },
     {
       "id": 11707,
+      "order": 2,
       "name": "Product Category Construction Material",
       "text": "Construction Material",
       "products": [
@@ -118,6 +123,7 @@
     },
     {
       "id": 11797,
+      "order": 5,
       "name": "Product Category Strategic Resource",
       "text": "Strategic Resource",
       "products": [
