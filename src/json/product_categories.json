@@ -1,0 +1,153 @@
+{
+  "Version": "Open Beta",
+  "ProductCategories": [
+    {
+      "id": 11702,
+      "name": "Product Category Resource",
+      "text": "Resource",
+      "products": [
+        1010192,
+        1010193,
+        1010194,
+        1010195,
+        120008,
+        1010197,
+        1010199,
+        1010209,
+        120014,
+        1010198,
+        1010232,
+        1010228,
+        1010201,
+        1010226,
+        1010227,
+        1010229,
+        1010230,
+        1010231,
+        1010233,
+        1010251,
+        1010252,
+        1010253,
+        1010254,
+        1010255,
+        120031,
+        120034,
+        120036,
+        120041,
+        1010256,
+        120042
+      ]
+    },
+    {
+      "id": 11703,
+      "name": "Product Category Intermediate Good",
+      "text": "Processing Good",
+      "products": [
+        1010210,
+        1010211,
+        1010215,
+        1010219,
+        1010222,
+        1010224,
+        1010204,
+        1010234,
+        1010235,
+        1010236,
+        1010241,
+        1010242,
+        1010243,
+        1010249,
+        120044,
+        1010239,
+        1010240
+      ]
+    },
+    {
+      "id": 11704,
+      "name": "Product Category Supply Good",
+      "text": "Basic Need",
+      "products": [
+        1010200,
+        1010203,
+        1010247,
+        1010208,
+        1010206,
+        1010213,
+        1010217,
+        1010238,
+        120016,
+        1010225,
+        1010237,
+        120030,
+        120043,
+        120037,
+        1010258,
+        120032,
+        120033,
+        120035,
+        1010259
+      ]
+    },
+    {
+      "id": 11705,
+      "name": "Product Category Happiness Good",
+      "text": "Luxury Need",
+      "products": [
+        1010214,
+        1010216,
+        1010245,
+        1010246,
+        1010248,
+        1010250,
+        1010257
+      ]
+    },
+    {
+      "id": 11706,
+      "name": "Product Category Money Good",
+      "text": "Luxury Need",
+      "products": []
+    },
+    {
+      "id": 11707,
+      "name": "Product Category Construction Material",
+      "text": "Construction Material",
+      "products": [
+        1010202,
+        1010196,
+        1010205,
+        1010207,
+        1010218,
+        1010221,
+        1010223
+      ]
+    },
+    {
+      "id": 11708,
+      "name": "Product Category Public Supply",
+      "text": "Basic Need",
+      "products": []
+    },
+    {
+      "id": 11709,
+      "name": "Product Category Public Happiness",
+      "text": "Luxury Need",
+      "products": []
+    },
+    {
+      "id": 11710,
+      "name": "Product Category Public Money",
+      "text": "Luxury Need",
+      "products": []
+    },
+    {
+      "id": 11797,
+      "name": "Product Category Strategic Resource",
+      "text": "Strategic Resource",
+      "products": [
+        120021,
+        1010566
+      ]
+    }
+  ]
+}

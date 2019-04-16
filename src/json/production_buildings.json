@@ -1,0 +1,4366 @@
+{
+  "Version": "Open Beta",
+  "ProductionBuildings": [
+    {
+      "id": 1010262,
+      "name": "agriculture_01 (Grain Farm)",
+      "icon": "goods/cereals_2.png",
+      "text": "Grain Farm",
+      "costs": [
+        {
+          "id": 1010017,
+          "amount": 500.0
+        },
+        {
+          "id": 1010196,
+          "amount": 4.0
+        },
+        {
+          "id": 1010205
+        },
+        {
+          "id": 1010218
+        },
+        {
+          "id": 1010207
+        },
+        {
+          "id": 1010202
+        }
+      ],
+      "outputs": [
+        {
+          "id": 1010192,
+          "amount": 1.0,
+          "storage_amount": 2.0
+        }
+      ],
+      "maintenances": [
+        {
+          "id": 1010017,
+          "amount": 20.0,
+          "inactive_amount": 10.0
+        },
+        {
+          "id": 1010052,
+          "amount": 20.0
+        }
+      ]
+    },
+    {
+      "id": 1010263,
+      "name": "agriculture_02 (Cattle Farm)",
+      "icon": "goods/meat_raw.png",
+      "text": "Cattle Farm",
+      "costs": [
+        {
+          "id": 1010017,
+          "amount": 2000.0
+        },
+        {
+          "id": 1010196,
+          "amount": 6.0
+        },
+        {
+          "id": 1010205
+        },
+        {
+          "id": 1010218
+        },
+        {
+          "id": 1010207
+        },
+        {
+          "id": 1010202
+        }
+      ],
+      "outputs": [
+        {
+          "id": 1010193,
+          "amount": 1.0,
+          "storage_amount": 1.0
+        }
+      ],
+      "maintenances": [
+        {
+          "id": 1010017,
+          "amount": 50.0,
+          "inactive_amount": 25.0
+        },
+        {
+          "id": 1010052,
+          "amount": 20.0
+        }
+      ]
+    },
+    {
+      "id": 1010264,
+      "name": "agriculture_03 (Hop Farm)",
+      "icon": "goods/hops.png",
+      "text": "Hop Farm",
+      "costs": [
+        {
+          "id": 1010017,
+          "amount": 500.0
+        },
+        {
+          "id": 1010196,
+          "amount": 4.0
+        },
+        {
+          "id": 1010205
+        },
+        {
+          "id": 1010218
+        },
+        {
+          "id": 1010207
+        },
+        {
+          "id": 1010202
+        }
+      ],
+      "outputs": [
+        {
+          "id": 1010194,
+          "amount": 1.0,
+          "storage_amount": 1.0
+        }
+      ],
+      "maintenances": [
+        {
+          "id": 1010017,
+          "amount": 20.0,
+          "inactive_amount": 10.0
+        },
+        {
+          "id": 1010052,
+          "amount": 20.0
+        }
+      ]
+    },
+    {
+      "id": 1010265,
+      "name": "agriculture_04 (Potato Farm)",
+      "icon": "goods/potatoes.png",
+      "text": "Potato Farm",
+      "costs": [
+        {
+          "id": 1010017,
+          "amount": 100.0
+        },
+        {
+          "id": 1010196,
+          "amount": 2.0
+        },
+        {
+          "id": 1010205
+        },
+        {
+          "id": 1010218
+        },
+        {
+          "id": 1010207
+        },
+        {
+          "id": 1010202
+        }
+      ],
+      "outputs": [
+        {
+          "id": 1010195,
+          "amount": 1.0,
+          "storage_amount": 4.0
+        }
+      ],
+      "maintenances": [
+        {
+          "id": 1010017,
+          "amount": 20.0,
+          "inactive_amount": 10.0
+        },
+        {
+          "id": 1010052,
+          "amount": 20.0
+        }
+      ]
+    },
+    {
+      "id": 1010266,
+      "name": "agriculture_05 (Timber Yard)",
+      "icon": "goods/wood_log.png",
+      "text": "Lumberjack's Hut",
+      "costs": [
+        {
+          "id": 1010017,
+          "amount": 100.0
+        },
+        {
+          "id": 1010196
+        },
+        {
+          "id": 1010205
+        },
+        {
+          "id": 1010218
+        },
+        {
+          "id": 1010207
+        },
+        {
+          "id": 1010202
+        }
+      ],
+      "outputs": [
+        {
+          "id": 120008,
+          "amount": 1.0,
+          "storage_amount": 8.0
+        }
+      ],
+      "maintenances": [
+        {
+          "id": 1010017,
+          "amount": 10.0,
+          "inactive_amount": 5.0
+        },
+        {
+          "id": 1010052,
+          "amount": 5.0
+        }
+      ]
+    },
+    {
+      "id": 1010267,
+      "name": "agriculture_06 (Sheep Farm)",
+      "icon": "goods/wool.png",
+      "text": "Sheep Farm",
+      "costs": [
+        {
+          "id": 1010017,
+          "amount": 100.0
+        },
+        {
+          "id": 1010196,
+          "amount": 2.0
+        },
+        {
+          "id": 1010205
+        },
+        {
+          "id": 1010218
+        },
+        {
+          "id": 1010207
+        },
+        {
+          "id": 1010202
+        }
+      ],
+      "outputs": [
+        {
+          "id": 1010197,
+          "amount": 1.0,
+          "storage_amount": 4.0
+        }
+      ],
+      "maintenances": [
+        {
+          "id": 1010017,
+          "amount": 20.0,
+          "inactive_amount": 10.0
+        },
+        {
+          "id": 1010052,
+          "amount": 10.0
+        }
+      ]
+    },
+    {
+      "id": 1010269,
+      "name": "agriculture_08 (Pig Farm)",
+      "icon": "goods/pigs.png",
+      "text": "Pig Farm",
+      "costs": [
+        {
+          "id": 1010017,
+          "amount": 500.0
+        },
+        {
+          "id": 1010196,
+          "amount": 4.0
+        },
+        {
+          "id": 1010205
+        },
+        {
+          "id": 1010218
+        },
+        {
+          "id": 1010207
+        },
+        {
+          "id": 1010202
+        }
+      ],
+      "outputs": [
+        {
+          "id": 1010199,
+          "amount": 1.0,
+          "storage_amount": 4.0
+        }
+      ],
+      "maintenances": [
+        {
+          "id": 1010017,
+          "amount": 40.0,
+          "inactive_amount": 20.0
+        },
+        {
+          "id": 1010052,
+          "amount": 30.0
+        }
+      ]
+    },
+    {
+      "id": 1010558,
+      "name": "agriculture_09 (Hunter's Cabin)",
+      "icon": "goods/fur.png",
+      "text": "Hunting Cabin",
+      "costs": [
+        {
+          "id": 1010017,
+          "amount": 2000.0
+        },
+        {
+          "id": 1010196,
+          "amount": 6.0
+        },
+        {
+          "id": 1010205
+        },
+        {
+          "id": 1010218
+        },
+        {
+          "id": 1010207
+        },
+        {
+          "id": 1010202
+        }
+      ],
+      "outputs": [
+        {
+          "id": 1010209,
+          "amount": 1.0,
+          "storage_amount": 4.0
+        }
+      ],
+      "maintenances": [
+        {
+          "id": 1010017,
+          "amount": 50.0,
+          "inactive_amount": 25.0
+        },
+        {
+          "id": 1010052,
+          "amount": 10.0
+        }
+      ]
+    },
+    {
+      "id": 100654,
+      "name": "agriculture_11 (Bell Pepper Farm)",
+      "icon": "goods/pepper.png",
+      "text": "Red Pepper Farm",
+      "costs": [
+        {
+          "id": 1010017,
+          "amount": 2000.0
+        },
+        {
+          "id": 1010196,
+          "amount": 6.0
+        },
+        {
+          "id": 1010205
+        },
+        {
+          "id": 1010218
+        },
+        {
+          "id": 1010207
+        },
+        {
+          "id": 1010202
+        }
+      ],
+      "outputs": [
+        {
+          "id": 1010198,
+          "amount": 1.0,
+          "storage_amount": 1.0
+        }
+      ],
+      "maintenances": [
+        {
+          "id": 1010017,
+          "amount": 100.0,
+          "inactive_amount": 50.0
+        },
+        {
+          "id": 1010052,
+          "amount": 10.0
+        }
+      ]
+    },
+    {
+      "id": 100655,
+      "name": "agriculture_10 (Vineyard)",
+      "icon": "goods/grapes.png",
+      "text": "Vineyard",
+      "costs": [
+        {
+          "id": 1010017,
+          "amount": 8000.0
+        },
+        {
+          "id": 1010196,
+          "amount": 10.0
+        },
+        {
+          "id": 1010205
+        },
+        {
+          "id": 1010218
+        },
+        {
+          "id": 1010207
+        },
+        {
+          "id": 1010202
+        }
+      ],
+      "outputs": [
+        {
+          "id": 120014,
+          "amount": 1.0,
+          "storage_amount": 1.0
+        }
+      ],
+      "maintenances": [
+        {
+          "id": 1010017,
+          "amount": 200.0,
+          "inactive_amount": 100.0
+        },
+        {
+          "id": 1010052,
+          "amount": 10.0
+        }
+      ]
+    },
+    {
+      "id": 1010278,
+      "name": "coastal_01 (Fish Coast Building)",
+      "icon": "goods/fish.png",
+      "text": "Fishery",
+      "costs": [
+        {
+          "id": 1010017,
+          "amount": 100.0
+        },
+        {
+          "id": 1010196,
+          "amount": 2.0
+        },
+        {
+          "id": 1010205
+        },
+        {
+          "id": 1010218
+        },
+        {
+          "id": 1010207
+        },
+        {
+          "id": 1010202
+        }
+      ],
+      "outputs": [
+        {
+          "id": 1010200,
+          "amount": 1.0,
+          "storage_amount": 4.0
+        }
+      ],
+      "maintenances": [
+        {
+          "id": 1010017,
+          "amount": 40.0,
+          "inactive_amount": 20.0
+        },
+        {
+          "id": 1010052,
+          "amount": 25.0
+        }
+      ]
+    },
+    {
+      "id": 1010310,
+      "name": "coastal_02 (Niter Coast Building)",
+      "icon": "goods/niter.png",
+      "text": "Saltpeter Works",
+      "costs": [
+        {
+          "id": 1010017,
+          "amount": 12500.0
+        },
+        {
+          "id": 1010196,
+          "amount": 10.0
+        },
+        {
+          "id": 1010205,
+          "amount": 20.0
+        },
+        {
+          "id": 1010218,
+          "amount": 16.0
+        },
+        {
+          "id": 1010207
+        },
+        {
+          "id": 1010202
+        }
+      ],
+      "outputs": [
+        {
+          "id": 1010232,
+          "amount": 1.0,
+          "storage_amount": 1.0
+        }
+      ],
+      "maintenances": [
+        {
+          "id": 1010017,
+          "amount": 500.0,
+          "inactive_amount": 250.0
+        },
+        {
+          "id": 1010115,
+          "amount": 25.0
+        }
+      ]
+    },
+    {
+      "id": 1010560,
+      "name": "coastal_03 (Quartz Sand Coast Building)",
+      "icon": "goods/quartz_sand.png",
+      "text": "Sand Mine",
+      "costs": [
+        {
+          "id": 1010017,
+          "amount": 2000.0
+        },
+        {
+          "id": 1010196,
+          "amount": 6.0
+        },
+        {
+          "id": 1010205,
+          "amount": 5.0
+        },
+        {
+          "id": 1010218
+        },
+        {
+          "id": 1010207
+        },
+        {
+          "id": 1010202
+        }
+      ],
+      "outputs": [
+        {
+          "id": 1010228,
+          "amount": 1.0,
+          "storage_amount": 4.0
+        }
+      ],
+      "maintenances": [
+        {
+          "id": 1010017,
+          "amount": 120.0,
+          "inactive_amount": 60.0
+        },
+        {
+          "id": 1010115,
+          "amount": 25.0
+        }
+      ]
+    },
+    {
+      "id": 1010280,
+      "name": "factory_01 (Concrete Factory)",
+      "icon": "goods/reinforced_concrete.png",
+      "text": "Concrete Factory",
+      "costs": [
+        {
+          "id": 1010017,
+          "amount": 15000.0
+        },
+        {
+          "id": 1010196,
+          "amount": 20.0
+        },
+        {
+          "id": 1010205,
+          "amount": 30.0
+        },
+        {
+          "id": 1010218,
+          "amount": 24.0
+        },
+        {
+          "id": 1010207,
+          "amount": 25.0
+        },
+        {
+          "id": 1010202
+        }
+      ],
+      "inputs": [
+        {
+          "id": 1010231,
+          "amount": 1.0,
+          "storage_amount": 3.0
+        },
+        {
+          "id": 1010219,
+          "amount": 1.0,
+          "storage_amount": 4.0
+        }
+      ],
+      "outputs": [
+        {
+          "id": 1010202,
+          "amount": 1.0,
+          "storage_amount": 2.0
+        }
+      ],
+      "maintenances": [
+        {
+          "id": 1010017,
+          "amount": 400.0,
+          "inactive_amount": 200.0
+        },
+        {
+          "id": 1010117,
+          "amount": 75.0
+        }
+      ]
+    },
+    {
+      "id": 1010281,
+      "name": "factory_02 (Soap Factory)",
+      "icon": "goods/soap_2.png",
+      "text": "Soap Factory",
+      "costs": [
+        {
+          "id": 1010017,
+          "amount": 500.0
+        },
+        {
+          "id": 1010196,
+          "amount": 4.0
+        },
+        {
+          "id": 1010205,
+          "amount": 5.0
+        },
+        {
+          "id": 1010218,
+          "amount": 4.0
+        },
+        {
+          "id": 1010207
+        },
+        {
+          "id": 1010202
+        }
+      ],
+      "inputs": [
+        {
+          "id": 1010234,
+          "amount": 1.0,
+          "storage_amount": 4.0
+        }
+      ],
+      "outputs": [
+        {
+          "id": 1010203,
+          "amount": 1.0,
+          "storage_amount": 4.0
+        }
+      ],
+      "maintenances": [
+        {
+          "id": 1010017,
+          "amount": 50.0,
+          "inactive_amount": 25.0
+        },
+        {
+          "id": 1010115,
+          "amount": 50.0
+        }
+      ]
+    },
+    {
+      "id": 1010283,
+      "name": "factory_04 (Brick Factory)",
+      "icon": "goods/bricks.png",
+      "text": "Brick Factory",
+      "costs": [
+        {
+          "id": 1010017,
+          "amount": 500.0
+        },
+        {
+          "id": 1010196,
+          "amount": 8.0
+        },
+        {
+          "id": 1010205
+        },
+        {
+          "id": 1010218
+        },
+        {
+          "id": 1010207
+        },
+        {
+          "id": 1010202
+        }
+      ],
+      "inputs": [
+        {
+          "id": 1010201,
+          "amount": 1.0,
+          "storage_amount": 4.0
+        }
+      ],
+      "outputs": [
+        {
+          "id": 1010205,
+          "amount": 1.0,
+          "storage_amount": 2.0
+        }
+      ],
+      "maintenances": [
+        {
+          "id": 1010017,
+          "amount": 20.0,
+          "inactive_amount": 10.0
+        },
+        {
+          "id": 1010115,
+          "amount": 25.0
+        }
+      ]
+    },
+    {
+      "id": 100451,
+      "name": "factory_03 (Timber Factory)",
+      "icon": "goods/wooden_planks.png",
+      "text": "Sawmill",
+      "costs": [
+        {
+          "id": 1010017,
+          "amount": 100.0
+        },
+        {
+          "id": 1010196
+        },
+        {
+          "id": 1010205
+        },
+        {
+          "id": 1010218
+        },
+        {
+          "id": 1010207
+        },
+        {
+          "id": 1010202
+        }
+      ],
+      "inputs": [
+        {
+          "id": 120008,
+          "amount": 1.0,
+          "storage_amount": 8.0
+        }
+      ],
+      "outputs": [
+        {
+          "id": 1010196,
+          "amount": 1.0,
+          "storage_amount": 8.0
+        }
+      ],
+      "maintenances": [
+        {
+          "id": 1010017,
+          "amount": 10.0,
+          "inactive_amount": 5.0
+        },
+        {
+          "id": 1010052,
+          "amount": 10.0
+        }
+      ]
+    },
+    {
+      "id": 1010325,
+      "name": "factory_05 (Fur Coat Workshop)",
+      "icon": "goods/fur_coats.png",
+      "text": "Fur Dealer",
+      "costs": [
+        {
+          "id": 1010017,
+          "amount": 2000.0
+        },
+        {
+          "id": 1010196,
+          "amount": 6.0
+        },
+        {
+          "id": 1010205,
+          "amount": 10.0
+        },
+        {
+          "id": 1010218,
+          "amount": 8.0
+        },
+        {
+          "id": 1010207,
+          "amount": 5.0
+        },
+        {
+          "id": 1010202
+        }
+      ],
+      "inputs": [
+        {
+          "id": 1010209,
+          "amount": 1.0,
+          "storage_amount": 6.0
+        },
+        {
+          "id": 1010240,
+          "amount": 1.0,
+          "storage_amount": 6.0
+        }
+      ],
+      "outputs": [
+        {
+          "id": 1010247,
+          "amount": 1.0,
+          "storage_amount": 4.0
+        }
+      ],
+      "maintenances": [
+        {
+          "id": 1010017,
+          "amount": 500.0,
+          "inactive_amount": 225.0
+        },
+        {
+          "id": 1010116,
+          "amount": 200.0
+        }
+      ]
+    },
+    {
+      "id": 1010286,
+      "name": "factory_06 (Light Bulb Factory)",
+      "icon": "goods/light_bulb.png",
+      "text": "Light Bulb Factory",
+      "costs": [
+        {
+          "id": 1010017,
+          "amount": 45000.0
+        },
+        {
+          "id": 1010196,
+          "amount": 8.0
+        },
+        {
+          "id": 1010205,
+          "amount": 15.0
+        },
+        {
+          "id": 1010218,
+          "amount": 12.0
+        },
+        {
+          "id": 1010207,
+          "amount": 10.0
+        },
+        {
+          "id": 1010202,
+          "amount": 10.0
+        }
+      ],
+      "inputs": [
+        {
+          "id": 1010241,
+          "amount": 1.0,
+          "storage_amount": 4.0
+        },
+        {
+          "id": 1010243,
+          "amount": 1.0,
+          "storage_amount": 3.0
+        }
+      ],
+      "outputs": [
+        {
+          "id": 1010208,
+          "amount": 1.0,
+          "storage_amount": 2.0
+        }
+      ],
+      "maintenances": [
+        {
+          "id": 1010017,
+          "amount": 1000.0,
+          "inactive_amount": 500.0
+        },
+        {
+          "id": 1010117,
+          "amount": 150.0
+        }
+      ]
+    },
+    {
+      "id": 1010285,
+      "name": "factory_07 (Window Factory)",
+      "icon": "goods/glass_window_3.png",
+      "text": "Window-Makers",
+      "costs": [
+        {
+          "id": 1010017,
+          "amount": 6500.0
+        },
+        {
+          "id": 1010196,
+          "amount": 12.0
+        },
+        {
+          "id": 1010205,
+          "amount": 20.0
+        },
+        {
+          "id": 1010218,
+          "amount": 16.0
+        },
+        {
+          "id": 1010207
+        },
+        {
+          "id": 1010202
+        }
+      ],
+      "inputs": [
+        {
+          "id": 120008,
+          "amount": 1.0,
+          "storage_amount": 8.0
+        },
+        {
+          "id": 1010241,
+          "amount": 1.0,
+          "storage_amount": 4.0
+        }
+      ],
+      "outputs": [
+        {
+          "id": 1010207,
+          "amount": 1.0,
+          "storage_amount": 2.0
+        }
+      ],
+      "maintenances": [
+        {
+          "id": 1010017,
+          "amount": 200.0,
+          "inactive_amount": 100.0
+        },
+        {
+          "id": 1010116,
+          "amount": 100.0
+        }
+      ]
+    },
+    {
+      "id": 1010288,
+      "name": "factory_09 (Sailcloth Factory)",
+      "icon": "goods/sail.png",
+      "text": "Sailmakers",
+      "costs": [
+        {
+          "id": 1010017,
+          "amount": 500.0
+        },
+        {
+          "id": 1010196,
+          "amount": 8.0
+        },
+        {
+          "id": 1010205,
+          "amount": 10.0
+        },
+        {
+          "id": 1010218
+        },
+        {
+          "id": 1010207
+        },
+        {
+          "id": 1010202
+        }
+      ],
+      "inputs": [
+        {
+          "id": 1010197,
+          "amount": 1.0,
+          "storage_amount": 6.0
+        }
+      ],
+      "outputs": [
+        {
+          "id": 1010210,
+          "amount": 1.0,
+          "storage_amount": 4.0
+        }
+      ],
+      "maintenances": [
+        {
+          "id": 1010017,
+          "amount": 75.0,
+          "inactive_amount": 38.0
+        },
+        {
+          "id": 1010115,
+          "amount": 50.0
+        }
+      ]
+    },
+    {
+      "id": 100416,
+      "name": "factory_11 (Clay Pit)",
+      "icon": "goods/clay.png",
+      "text": "Clay Pit",
+      "costs": [
+        {
+          "id": 1010017,
+          "amount": 500.0
+        },
+        {
+          "id": 1010196,
+          "amount": 4.0
+        },
+        {
+          "id": 1010205
+        },
+        {
+          "id": 1010218
+        },
+        {
+          "id": 1010207
+        },
+        {
+          "id": 1010202
+        }
+      ],
+      "outputs": [
+        {
+          "id": 1010201,
+          "amount": 1.0,
+          "storage_amount": 4.0
+        }
+      ],
+      "maintenances": [
+        {
+          "id": 1010017,
+          "amount": 10.0,
+          "inactive_amount": 5.0
+        },
+        {
+          "id": 1010115,
+          "amount": 50.0
+        }
+      ]
+    },
+    {
+      "id": 1010289,
+      "name": "factory_10 (Chassis Factory)",
+      "icon": "goods/chassis.png",
+      "text": "Coachmakers",
+      "costs": [
+        {
+          "id": 1010017,
+          "amount": 55000.0
+        },
+        {
+          "id": 1010196,
+          "amount": 10.0
+        },
+        {
+          "id": 1010205,
+          "amount": 20.0
+        },
+        {
+          "id": 1010218,
+          "amount": 16.0
+        },
+        {
+          "id": 1010207,
+          "amount": 15.0
+        },
+        {
+          "id": 1010202,
+          "amount": 15.0
+        }
+      ],
+      "inputs": [
+        {
+          "id": 120008,
+          "amount": 1.0,
+          "storage_amount": 8.0
+        },
+        {
+          "id": 1010255,
+          "amount": 1.0,
+          "storage_amount": 2.0
+        }
+      ],
+      "outputs": [
+        {
+          "id": 1010211,
+          "amount": 1.0,
+          "storage_amount": 1.0
+        }
+      ],
+      "maintenances": [
+        {
+          "id": 1010017,
+          "amount": 1200.0,
+          "inactive_amount": 600.0
+        },
+        {
+          "id": 1010117,
+          "amount": 150.0
+        }
+      ]
+    },
+    {
+      "id": 1010291,
+      "name": "food_01 (Bread Maker)",
+      "icon": "goods/bread.png",
+      "text": "Bakery",
+      "costs": [
+        {
+          "id": 1010017,
+          "amount": 1000.0
+        },
+        {
+          "id": 1010196,
+          "amount": 4.0
+        },
+        {
+          "id": 1010205,
+          "amount": 5.0
+        },
+        {
+          "id": 1010218
+        },
+        {
+          "id": 1010207
+        },
+        {
+          "id": 1010202
+        }
+      ],
+      "inputs": [
+        {
+          "id": 1010235,
+          "amount": 1.0,
+          "storage_amount": 4.0
+        }
+      ],
+      "outputs": [
+        {
+          "id": 1010213,
+          "amount": 1.0,
+          "storage_amount": 2.0
+        }
+      ],
+      "maintenances": [
+        {
+          "id": 1010017,
+          "amount": 60.0,
+          "inactive_amount": 30.0
+        },
+        {
+          "id": 1010115,
+          "amount": 50.0
+        }
+      ]
+    },
+    {
+      "id": 1010292,
+      "name": "food_02 (Beer Maker)",
+      "icon": "goods/beer.png",
+      "text": "Brewery",
+      "costs": [
+        {
+          "id": 1010017,
+          "amount": 1600.0
+        },
+        {
+          "id": 1010196,
+          "amount": 4.0
+        },
+        {
+          "id": 1010205,
+          "amount": 5.0
+        },
+        {
+          "id": 1010218,
+          "amount": 4.0
+        },
+        {
+          "id": 1010207
+        },
+        {
+          "id": 1010202
+        }
+      ],
+      "inputs": [
+        {
+          "id": 1010194,
+          "amount": 1.0,
+          "storage_amount": 3.0
+        },
+        {
+          "id": 1010236,
+          "amount": 1.0,
+          "storage_amount": 4.0
+        }
+      ],
+      "outputs": [
+        {
+          "id": 1010214,
+          "amount": 1.0,
+          "storage_amount": 2.0
+        }
+      ],
+      "maintenances": [
+        {
+          "id": 1010017,
+          "amount": 200.0,
+          "inactive_amount": 100.0
+        },
+        {
+          "id": 1010115,
+          "amount": 75.0
+        }
+      ]
+    },
+    {
+      "id": 1010293,
+      "name": "food_03 (Goulash Factory)",
+      "icon": "goods/goulash_01.png",
+      "text": "Artisanal Kitchen",
+      "costs": [
+        {
+          "id": 1010017,
+          "amount": 7000.0
+        },
+        {
+          "id": 1010196,
+          "amount": 6.0
+        },
+        {
+          "id": 1010205,
+          "amount": 10.0
+        },
+        {
+          "id": 1010218,
+          "amount": 8.0
+        },
+        {
+          "id": 1010207,
+          "amount": 8.0
+        },
+        {
+          "id": 1010202
+        }
+      ],
+      "inputs": [
+        {
+          "id": 1010193,
+          "amount": 1.0,
+          "storage_amount": 3.0
+        },
+        {
+          "id": 1010198,
+          "amount": 1.0,
+          "storage_amount": 3.0
+        }
+      ],
+      "outputs": [
+        {
+          "id": 1010215,
+          "amount": 1.0,
+          "storage_amount": 1.0
+        }
+      ],
+      "maintenances": [
+        {
+          "id": 1010017,
+          "amount": 100.0,
+          "inactive_amount": 50.0
+        },
+        {
+          "id": 1010116,
+          "amount": 75.0
+        }
+      ]
+    },
+    {
+      "id": 1010295,
+      "name": "food_05 (Canned Food Factory)",
+      "icon": "goods/canned_goulash.png",
+      "text": "Cannery",
+      "costs": [
+        {
+          "id": 1010017,
+          "amount": 15000.0
+        },
+        {
+          "id": 1010196,
+          "amount": 6.0
+        },
+        {
+          "id": 1010205,
+          "amount": 10.0
+        },
+        {
+          "id": 1010218,
+          "amount": 8.0
+        },
+        {
+          "id": 1010207,
+          "amount": 8.0
+        },
+        {
+          "id": 1010202
+        }
+      ],
+      "inputs": [
+        {
+          "id": 1010227,
+          "amount": 1.0,
+          "storage_amount": 8.0
+        },
+        {
+          "id": 1010215,
+          "amount": 1.0,
+          "storage_amount": 2.0
+        }
+      ],
+      "outputs": [
+        {
+          "id": 1010217,
+          "amount": 1.0,
+          "storage_amount": 1.0
+        }
+      ],
+      "maintenances": [
+        {
+          "id": 1010017,
+          "amount": 100.0,
+          "inactive_amount": 50.0
+        },
+        {
+          "id": 1010116,
+          "amount": 75.0
+        }
+      ]
+    },
+    {
+      "id": 1010294,
+      "name": "food_06 (Schnapps Maker)",
+      "icon": "goods/schnapps_4.png",
+      "text": "Schnapps Distillery",
+      "costs": [
+        {
+          "id": 1010017,
+          "amount": 100.0
+        },
+        {
+          "id": 1010196,
+          "amount": 2.0
+        },
+        {
+          "id": 1010205
+        },
+        {
+          "id": 1010218
+        },
+        {
+          "id": 1010207
+        },
+        {
+          "id": 1010202
+        }
+      ],
+      "inputs": [
+        {
+          "id": 1010195,
+          "amount": 1.0,
+          "storage_amount": 6.0
+        }
+      ],
+      "outputs": [
+        {
+          "id": 1010216,
+          "amount": 1.0,
+          "storage_amount": 4.0
+        }
+      ],
+      "maintenances": [
+        {
+          "id": 1010017,
+          "amount": 40.0,
+          "inactive_amount": 20.0
+        },
+        {
+          "id": 1010052,
+          "amount": 50.0
+        }
+      ]
+    },
+    {
+      "id": 1010316,
+      "name": "food_07 (Sausage Maker)",
+      "icon": "goods/meat_sausage.png",
+      "text": "Butcher's",
+      "costs": [
+        {
+          "id": 1010017,
+          "amount": 500.0
+        },
+        {
+          "id": 1010196,
+          "amount": 4.0
+        },
+        {
+          "id": 1010205,
+          "amount": 5.0
+        },
+        {
+          "id": 1010218
+        },
+        {
+          "id": 1010207
+        },
+        {
+          "id": 1010202
+        }
+      ],
+      "inputs": [
+        {
+          "id": 1010199,
+          "amount": 1.0,
+          "storage_amount": 6.0
+        }
+      ],
+      "outputs": [
+        {
+          "id": 1010238,
+          "amount": 1.0,
+          "storage_amount": 4.0
+        }
+      ],
+      "maintenances": [
+        {
+          "id": 1010017,
+          "amount": 80.0,
+          "inactive_amount": 40.0
+        },
+        {
+          "id": 1010115,
+          "amount": 50.0
+        }
+      ]
+    },
+    {
+      "id": 100659,
+      "name": "food_08 (Champagne Maker)",
+      "icon": "goods/champagne.png",
+      "text": "Champagne Cellar",
+      "costs": [
+        {
+          "id": 1010017,
+          "amount": 35000.0
+        },
+        {
+          "id": 1010196,
+          "amount": 10.0
+        },
+        {
+          "id": 1010205,
+          "amount": 20.0
+        },
+        {
+          "id": 1010218,
+          "amount": 16.0
+        },
+        {
+          "id": 1010207,
+          "amount": 15.0
+        },
+        {
+          "id": 1010202,
+          "amount": 15.0
+        }
+      ],
+      "inputs": [
+        {
+          "id": 120014,
+          "amount": 1.0,
+          "storage_amount": 6.0
+        },
+        {
+          "id": 1010241,
+          "amount": 1.0,
+          "storage_amount": 6.0
+        }
+      ],
+      "outputs": [
+        {
+          "id": 120016,
+          "amount": 1.0,
+          "storage_amount": 4.0
+        }
+      ],
+      "maintenances": [
+        {
+          "id": 1010017,
+          "amount": 1000.0,
+          "inactive_amount": 500.0
+        },
+        {
+          "id": 1010116,
+          "amount": 150.0
+        }
+      ]
+    },
+    {
+      "id": 1010296,
+      "name": "heavy_01 (Beams Heavy Industry)",
+      "icon": "goods/beams.png",
+      "text": "Steelworks",
+      "costs": [
+        {
+          "id": 1010017,
+          "amount": 1000.0
+        },
+        {
+          "id": 1010196,
+          "amount": 8.0
+        },
+        {
+          "id": 1010205,
+          "amount": 10.0
+        },
+        {
+          "id": 1010218
+        },
+        {
+          "id": 1010207
+        },
+        {
+          "id": 1010202
+        }
+      ],
+      "inputs": [
+        {
+          "id": 1010219,
+          "amount": 1.0,
+          "storage_amount": 4.0
+        }
+      ],
+      "outputs": [
+        {
+          "id": 1010218,
+          "amount": 1.0,
+          "storage_amount": 2.0
+        }
+      ],
+      "maintenances": [
+        {
+          "id": 1010017,
+          "amount": 200.0,
+          "inactive_amount": 100.0
+        },
+        {
+          "id": 1010115,
+          "amount": 200.0
+        }
+      ]
+    },
+    {
+      "id": 1010297,
+      "name": "heavy_02 (Steel Heavy Industry)",
+      "icon": "goods/steel.png",
+      "text": "Furnace",
+      "costs": [
+        {
+          "id": 1010017,
+          "amount": 500.0
+        },
+        {
+          "id": 1010196,
+          "amount": 4.0
+        },
+        {
+          "id": 1010205,
+          "amount": 5.0
+        },
+        {
+          "id": 1010218
+        },
+        {
+          "id": 1010207
+        },
+        {
+          "id": 1010202
+        }
+      ],
+      "inputs": [
+        {
+          "id": 1010227,
+          "amount": 1.0,
+          "storage_amount": 8.0
+        },
+        {
+          "id": 1010226,
+          "amount": 1.0,
+          "storage_amount": 6.0
+        }
+      ],
+      "outputs": [
+        {
+          "id": 1010219,
+          "amount": 1.0,
+          "storage_amount": 4.0
+        }
+      ],
+      "maintenances": [
+        {
+          "id": 1010017,
+          "amount": 100.0,
+          "inactive_amount": 50.0
+        },
+        {
+          "id": 1010115,
+          "amount": 100.0
+        }
+      ]
+    },
+    {
+      "id": 1010298,
+      "name": "heavy_03 (Coal Heavy Industry)",
+      "icon": "goods/coal_burn.png",
+      "text": "Charcoal Kiln",
+      "costs": [
+        {
+          "id": 1010017,
+          "amount": 500.0
+        },
+        {
+          "id": 1010196,
+          "amount": 4.0
+        },
+        {
+          "id": 1010205,
+          "amount": 5.0
+        },
+        {
+          "id": 1010218
+        },
+        {
+          "id": 1010207
+        },
+        {
+          "id": 1010202
+        }
+      ],
+      "outputs": [
+        {
+          "id": 1010226,
+          "amount": 1.0,
+          "storage_amount": 4.0
+        }
+      ],
+      "maintenances": [
+        {
+          "id": 1010017,
+          "amount": 20.0,
+          "inactive_amount": 10.0
+        },
+        {
+          "id": 1010115,
+          "amount": 10.0
+        }
+      ]
+    },
+    {
+      "id": 1010299,
+      "name": "heavy_04 (Weapons Heavy Industry)",
+      "icon": "goods/weapons.png",
+      "text": "Weapon Factory",
+      "costs": [
+        {
+          "id": 1010017,
+          "amount": 700.0
+        },
+        {
+          "id": 1010196,
+          "amount": 8.0
+        },
+        {
+          "id": 1010205,
+          "amount": 10.0
+        },
+        {
+          "id": 1010218,
+          "amount": 8.0
+        },
+        {
+          "id": 1010207
+        },
+        {
+          "id": 1010202
+        }
+      ],
+      "inputs": [
+        {
+          "id": 1010219,
+          "amount": 1.0,
+          "storage_amount": 4.0
+        }
+      ],
+      "outputs": [
+        {
+          "id": 1010221,
+          "amount": 1.0,
+          "storage_amount": 1.0
+        }
+      ],
+      "maintenances": [
+        {
+          "id": 1010017,
+          "amount": 150.0,
+          "inactive_amount": 75.0
+        },
+        {
+          "id": 1010115,
+          "amount": 50.0
+        }
+      ]
+    },
+    {
+      "id": 1010301,
+      "name": "heavy_06 (Advanced Weapons Heavy Industry)",
+      "icon": "goods/advanced_weaponry.png",
+      "text": "Heavy Weapons Factory",
+      "costs": [
+        {
+          "id": 1010017,
+          "amount": 85000.0
+        },
+        {
+          "id": 1010196,
+          "amount": 20.0
+        },
+        {
+          "id": 1010205,
+          "amount": 40.0
+        },
+        {
+          "id": 1010218,
+          "amount": 32.0
+        },
+        {
+          "id": 1010207,
+          "amount": 30.0
+        },
+        {
+          "id": 1010202,
+          "amount": 30.0
+        }
+      ],
+      "inputs": [
+        {
+          "id": 1010219,
+          "amount": 1.0,
+          "storage_amount": 4.0
+        },
+        {
+          "id": 1010222,
+          "amount": 1.0,
+          "storage_amount": 2.0
+        }
+      ],
+      "outputs": [
+        {
+          "id": 1010223,
+          "amount": 1.0,
+          "storage_amount": 1.0
+        }
+      ],
+      "maintenances": [
+        {
+          "id": 1010017,
+          "amount": 2200.0,
+          "inactive_amount": 1100.0
+        },
+        {
+          "id": 1010117,
+          "amount": 250.0
+        }
+      ]
+    },
+    {
+      "id": 1010302,
+      "name": "heavy_07 (Steam Motors Heavy Industry)",
+      "icon": "goods/steam_machine.png",
+      "text": "Motor Assembly Line",
+      "costs": [
+        {
+          "id": 1010017,
+          "amount": 75000.0
+        },
+        {
+          "id": 1010196,
+          "amount": 16.0
+        },
+        {
+          "id": 1010205,
+          "amount": 30.0
+        },
+        {
+          "id": 1010218,
+          "amount": 24.0
+        },
+        {
+          "id": 1010207,
+          "amount": 20.0
+        },
+        {
+          "id": 1010202,
+          "amount": 20.0
+        }
+      ],
+      "inputs": [
+        {
+          "id": 1010219,
+          "amount": 1.0,
+          "storage_amount": 4.0
+        },
+        {
+          "id": 1010204,
+          "amount": 1.0,
+          "storage_amount": 2.0
+        }
+      ],
+      "outputs": [
+        {
+          "id": 1010224,
+          "amount": 1.0,
+          "storage_amount": 1.0
+        }
+      ],
+      "maintenances": [
+        {
+          "id": 1010017,
+          "amount": 1800.0,
+          "inactive_amount": 900.0
+        },
+        {
+          "id": 1010117,
+          "amount": 250.0
+        }
+      ]
+    },
+    {
+      "id": 1010303,
+      "name": "heavy_08 (Steam Carriages Heavy Industry)",
+      "icon": "goods/steam_carriage.png",
+      "text": "Cab Assembly Line",
+      "costs": [
+        {
+          "id": 1010017,
+          "amount": 115000.0
+        },
+        {
+          "id": 1010196,
+          "amount": 20.0
+        },
+        {
+          "id": 1010205,
+          "amount": 40.0
+        },
+        {
+          "id": 1010218,
+          "amount": 32.0
+        },
+        {
+          "id": 1010207,
+          "amount": 30.0
+        },
+        {
+          "id": 1010202,
+          "amount": 30.0
+        }
+      ],
+      "inputs": [
+        {
+          "id": 1010211,
+          "amount": 1.0,
+          "storage_amount": 3.0
+        },
+        {
+          "id": 1010224,
+          "amount": 1.0,
+          "storage_amount": 3.0
+        }
+      ],
+      "outputs": [
+        {
+          "id": 1010225,
+          "amount": 1.0,
+          "storage_amount": 2.0
+        }
+      ],
+      "maintenances": [
+        {
+          "id": 1010017,
+          "amount": 3000.0,
+          "inactive_amount": 1500.0
+        },
+        {
+          "id": 1010117,
+          "amount": 500.0
+        }
+      ]
+    },
+    {
+      "id": 1010282,
+      "name": "heavy_09 (Brass Heavy Industry)",
+      "icon": "goods/brass.png",
+      "text": "Brass Smeltery",
+      "costs": [
+        {
+          "id": 1010017,
+          "amount": 17000.0
+        },
+        {
+          "id": 1010196,
+          "amount": 8.0
+        },
+        {
+          "id": 1010205,
+          "amount": 15.0
+        },
+        {
+          "id": 1010218,
+          "amount": 12.0
+        },
+        {
+          "id": 1010207,
+          "amount": 10.0
+        },
+        {
+          "id": 1010202,
+          "amount": 10.0
+        }
+      ],
+      "inputs": [
+        {
+          "id": 1010229,
+          "amount": 1.0,
+          "storage_amount": 4.0
+        },
+        {
+          "id": 1010230,
+          "amount": 1.0,
+          "storage_amount": 4.0
+        }
+      ],
+      "outputs": [
+        {
+          "id": 1010204,
+          "amount": 1.0,
+          "storage_amount": 2.0
+        }
+      ],
+      "maintenances": [
+        {
+          "id": 1010017,
+          "amount": 250.0,
+          "inactive_amount": 125.0
+        },
+        {
+          "id": 1010115,
+          "amount": 25.0
+        }
+      ]
+    },
+    {
+      "id": 101331,
+      "name": "heavy_10 (Oil Heavy Industry)",
+      "icon": "goods/oil.png",
+      "text": "Oil Refinery",
+      "costs": [
+        {
+          "id": 1010017,
+          "amount": 25000.0
+        },
+        {
+          "id": 1010196,
+          "amount": 8.0
+        },
+        {
+          "id": 1010205,
+          "amount": 15.0
+        },
+        {
+          "id": 1010218,
+          "amount": 12.0
+        },
+        {
+          "id": 1010207,
+          "amount": 10.0
+        },
+        {
+          "id": 1010202,
+          "amount": 10.0
+        }
+      ],
+      "outputs": [
+        {
+          "id": 1010566,
+          "amount": 1.0,
+          "storage_amount": 200.0
+        }
+      ],
+      "maintenances": [
+        {
+          "id": 1010017,
+          "amount": 250.0,
+          "inactive_amount": 125.0
+        },
+        {
+          "id": 1010115,
+          "amount": 100.0
+        }
+      ]
+    },
+    {
+      "id": 1010304,
+      "name": "mining_01 (Coal Mine)",
+      "icon": "goods/coal_2.png",
+      "text": "Coal Mine",
+      "costs": [
+        {
+          "id": 1010017,
+          "amount": 600.0
+        },
+        {
+          "id": 1010196,
+          "amount": 4.0
+        },
+        {
+          "id": 1010205,
+          "amount": 5.0
+        },
+        {
+          "id": 1010218
+        },
+        {
+          "id": 1010207
+        },
+        {
+          "id": 1010202
+        }
+      ],
+      "outputs": [
+        {
+          "id": 1010226,
+          "amount": 1.0,
+          "storage_amount": 8.0
+        }
+      ],
+      "maintenances": [
+        {
+          "id": 1010017,
+          "amount": 50.0,
+          "inactive_amount": 25.0
+        },
+        {
+          "id": 1010115,
+          "amount": 50.0
+        }
+      ]
+    },
+    {
+      "id": 1010305,
+      "name": "mining_02 (Iron Mine)",
+      "icon": "goods/iron.png",
+      "text": "Iron Mine",
+      "costs": [
+        {
+          "id": 1010017,
+          "amount": 800.0
+        },
+        {
+          "id": 1010196,
+          "amount": 4.0
+        },
+        {
+          "id": 1010205,
+          "amount": 5.0
+        },
+        {
+          "id": 1010218
+        },
+        {
+          "id": 1010207
+        },
+        {
+          "id": 1010202
+        }
+      ],
+      "outputs": [
+        {
+          "id": 1010227,
+          "amount": 1.0,
+          "storage_amount": 8.0
+        }
+      ],
+      "maintenances": [
+        {
+          "id": 1010017,
+          "amount": 50.0,
+          "inactive_amount": 25.0
+        },
+        {
+          "id": 1010115,
+          "amount": 50.0
+        }
+      ]
+    },
+    {
+      "id": 1010307,
+      "name": "mining_04 (Zinc Mine)",
+      "icon": "goods/tin_ore.png",
+      "text": "Zinc Mine",
+      "costs": [
+        {
+          "id": 1010017,
+          "amount": 5000.0
+        },
+        {
+          "id": 1010196,
+          "amount": 8.0
+        },
+        {
+          "id": 1010205,
+          "amount": 15.0
+        },
+        {
+          "id": 1010218,
+          "amount": 12.0
+        },
+        {
+          "id": 1010207,
+          "amount": 10.0
+        },
+        {
+          "id": 1010202,
+          "amount": 10.0
+        }
+      ],
+      "outputs": [
+        {
+          "id": 1010229,
+          "amount": 1.0,
+          "storage_amount": 4.0
+        }
+      ],
+      "maintenances": [
+        {
+          "id": 1010017,
+          "amount": 250.0,
+          "inactive_amount": 125.0
+        },
+        {
+          "id": 1010115,
+          "amount": 25.0
+        }
+      ]
+    },
+    {
+      "id": 1010308,
+      "name": "mining_05 (Copper Mine)",
+      "icon": "goods/copper.png",
+      "text": "Copper Mine",
+      "costs": [
+        {
+          "id": 1010017,
+          "amount": 5000.0
+        },
+        {
+          "id": 1010196,
+          "amount": 8.0
+        },
+        {
+          "id": 1010205,
+          "amount": 15.0
+        },
+        {
+          "id": 1010218,
+          "amount": 12.0
+        },
+        {
+          "id": 1010207,
+          "amount": 10.0
+        },
+        {
+          "id": 1010202,
+          "amount": 10.0
+        }
+      ],
+      "outputs": [
+        {
+          "id": 1010230,
+          "amount": 1.0,
+          "storage_amount": 4.0
+        }
+      ],
+      "maintenances": [
+        {
+          "id": 1010017,
+          "amount": 250.0,
+          "inactive_amount": 125.0
+        },
+        {
+          "id": 1010115,
+          "amount": 25.0
+        }
+      ]
+    },
+    {
+      "id": 1010309,
+      "name": "mining_06 (Cement Mine)",
+      "icon": "goods/cement.png",
+      "text": "Limestone Quarry",
+      "costs": [
+        {
+          "id": 1010017,
+          "amount": 6000.0
+        },
+        {
+          "id": 1010196,
+          "amount": 8.0
+        },
+        {
+          "id": 1010205,
+          "amount": 15.0
+        },
+        {
+          "id": 1010218,
+          "amount": 12.0
+        },
+        {
+          "id": 1010207,
+          "amount": 10.0
+        },
+        {
+          "id": 1010202
+        }
+      ],
+      "outputs": [
+        {
+          "id": 1010231,
+          "amount": 1.0,
+          "storage_amount": 4.0
+        }
+      ],
+      "maintenances": [
+        {
+          "id": 1010017,
+          "amount": 250.0,
+          "inactive_amount": 125.0
+        },
+        {
+          "id": 1010115,
+          "amount": 25.0
+        }
+      ]
+    },
+    {
+      "id": 1010311,
+      "name": "mining_08 (Gold Ore Mine)",
+      "icon": "goods/gold_ore.png",
+      "text": "Gold Mine",
+      "costs": [
+        {
+          "id": 1010017,
+          "amount": 12000.0
+        },
+        {
+          "id": 1010196,
+          "amount": 8.0
+        },
+        {
+          "id": 1010205,
+          "amount": 15.0
+        },
+        {
+          "id": 1010218,
+          "amount": 12.0
+        },
+        {
+          "id": 1010207,
+          "amount": 10.0
+        },
+        {
+          "id": 1010202,
+          "amount": 10.0
+        }
+      ],
+      "outputs": [
+        {
+          "id": 1010233,
+          "amount": 1.0,
+          "storage_amount": 1.0
+        }
+      ],
+      "maintenances": [
+        {
+          "id": 1010017,
+          "amount": 250.0,
+          "inactive_amount": 125.0
+        },
+        {
+          "id": 1010115,
+          "amount": 25.0
+        }
+      ]
+    },
+    {
+      "id": 1010312,
+      "name": "processing_01 (Tallow Processing)",
+      "icon": "goods/tallow.png",
+      "text": "Rendering Works",
+      "costs": [
+        {
+          "id": 1010017,
+          "amount": 500.0
+        },
+        {
+          "id": 1010196,
+          "amount": 4.0
+        },
+        {
+          "id": 1010205,
+          "amount": 5.0
+        },
+        {
+          "id": 1010218,
+          "amount": 4.0
+        },
+        {
+          "id": 1010207
+        },
+        {
+          "id": 1010202
+        }
+      ],
+      "inputs": [
+        {
+          "id": 1010199,
+          "amount": 1.0,
+          "storage_amount": 6.0
+        }
+      ],
+      "outputs": [
+        {
+          "id": 1010234,
+          "amount": 1.0,
+          "storage_amount": 4.0
+        }
+      ],
+      "maintenances": [
+        {
+          "id": 1010017,
+          "amount": 40.0,
+          "inactive_amount": 20.0
+        },
+        {
+          "id": 1010115,
+          "amount": 40.0
+        }
+      ]
+    },
+    {
+      "id": 1010313,
+      "name": "processing_02 (Flour Processing)",
+      "icon": "goods/flour.png",
+      "text": "Flour Mill",
+      "costs": [
+        {
+          "id": 1010017,
+          "amount": 500.0
+        },
+        {
+          "id": 1010196,
+          "amount": 4.0
+        },
+        {
+          "id": 1010205,
+          "amount": 5.0
+        },
+        {
+          "id": 1010218
+        },
+        {
+          "id": 1010207
+        },
+        {
+          "id": 1010202
+        }
+      ],
+      "inputs": [
+        {
+          "id": 1010192,
+          "amount": 1.0,
+          "storage_amount": 6.0
+        }
+      ],
+      "outputs": [
+        {
+          "id": 1010235,
+          "amount": 1.0,
+          "storage_amount": 4.0
+        }
+      ],
+      "maintenances": [
+        {
+          "id": 1010017,
+          "amount": 50.0,
+          "inactive_amount": 25.0
+        },
+        {
+          "id": 1010052,
+          "amount": 10.0
+        }
+      ]
+    },
+    {
+      "id": 1010314,
+      "name": "processing_03 (Malt Processing)",
+      "icon": "goods/malt.png",
+      "text": "Malthouse",
+      "costs": [
+        {
+          "id": 1010017,
+          "amount": 500.0
+        },
+        {
+          "id": 1010196,
+          "amount": 4.0
+        },
+        {
+          "id": 1010205,
+          "amount": 5.0
+        },
+        {
+          "id": 1010218,
+          "amount": 4.0
+        },
+        {
+          "id": 1010207
+        },
+        {
+          "id": 1010202
+        }
+      ],
+      "inputs": [
+        {
+          "id": 1010192,
+          "amount": 1.0,
+          "storage_amount": 6.0
+        }
+      ],
+      "outputs": [
+        {
+          "id": 1010236,
+          "amount": 1.0,
+          "storage_amount": 4.0
+        }
+      ],
+      "maintenances": [
+        {
+          "id": 1010017,
+          "amount": 150.0,
+          "inactive_amount": 75.0
+        },
+        {
+          "id": 1010115,
+          "amount": 25.0
+        }
+      ]
+    },
+    {
+      "id": 1010315,
+      "name": "processing_04 (Weavery)",
+      "icon": "goods/working_cloth.png",
+      "text": "Framework Knitters",
+      "costs": [
+        {
+          "id": 1010017,
+          "amount": 400.0
+        },
+        {
+          "id": 1010196,
+          "amount": 2.0
+        },
+        {
+          "id": 1010205
+        },
+        {
+          "id": 1010218
+        },
+        {
+          "id": 1010207
+        },
+        {
+          "id": 1010202
+        }
+      ],
+      "inputs": [
+        {
+          "id": 1010197,
+          "amount": 1.0,
+          "storage_amount": 6.0
+        }
+      ],
+      "outputs": [
+        {
+          "id": 1010237,
+          "amount": 1.0,
+          "storage_amount": 4.0
+        }
+      ],
+      "maintenances": [
+        {
+          "id": 1010017,
+          "amount": 50.0,
+          "inactive_amount": 25.0
+        },
+        {
+          "id": 1010052,
+          "amount": 50.0
+        }
+      ]
+    },
+    {
+      "id": 1010300,
+      "name": "processing_05 (Dynamite Processing)",
+      "icon": "goods/dynamite.png",
+      "text": "Dynamite Factory",
+      "costs": [
+        {
+          "id": 1010017,
+          "amount": 54000.0
+        },
+        {
+          "id": 1010196,
+          "amount": 10.0
+        },
+        {
+          "id": 1010205,
+          "amount": 20.0
+        },
+        {
+          "id": 1010218,
+          "amount": 16.0
+        },
+        {
+          "id": 1010207,
+          "amount": 15.0
+        },
+        {
+          "id": 1010202,
+          "amount": 15.0
+        }
+      ],
+      "inputs": [
+        {
+          "id": 1010234,
+          "amount": 1.0,
+          "storage_amount": 4.0
+        },
+        {
+          "id": 1010232,
+          "amount": 1.0,
+          "storage_amount": 3.0
+        }
+      ],
+      "outputs": [
+        {
+          "id": 1010222,
+          "amount": 1.0,
+          "storage_amount": 2.0
+        }
+      ],
+      "maintenances": [
+        {
+          "id": 1010017,
+          "amount": 1000.0,
+          "inactive_amount": 500.0
+        },
+        {
+          "id": 1010117,
+          "amount": 250.0
+        }
+      ]
+    },
+    {
+      "id": 1010319,
+      "name": "processing_06 (Glass Processing)",
+      "icon": "goods/glass.png",
+      "text": "Glassmakers",
+      "costs": [
+        {
+          "id": 1010017,
+          "amount": 5400.0
+        },
+        {
+          "id": 1010196,
+          "amount": 6.0
+        },
+        {
+          "id": 1010205,
+          "amount": 10.0
+        },
+        {
+          "id": 1010218,
+          "amount": 8.0
+        },
+        {
+          "id": 1010207
+        },
+        {
+          "id": 1010202
+        }
+      ],
+      "inputs": [
+        {
+          "id": 1010228,
+          "amount": 1.0,
+          "storage_amount": 6.0
+        }
+      ],
+      "outputs": [
+        {
+          "id": 1010241,
+          "amount": 1.0,
+          "storage_amount": 4.0
+        }
+      ],
+      "maintenances": [
+        {
+          "id": 1010017,
+          "amount": 100.0,
+          "inactive_amount": 50.0
+        },
+        {
+          "id": 1010116,
+          "amount": 100.0
+        }
+      ]
+    },
+    {
+      "id": 1010320,
+      "name": "processing_07 (Inlay Processing)",
+      "icon": "goods/inlay.png",
+      "text": "Marquetry Workshop",
+      "costs": [
+        {
+          "id": 1010017,
+          "amount": 22000.0
+        },
+        {
+          "id": 1010196,
+          "amount": 10.0
+        },
+        {
+          "id": 1010205,
+          "amount": 20.0
+        },
+        {
+          "id": 1010218,
+          "amount": 16.0
+        },
+        {
+          "id": 1010207,
+          "amount": 15.0
+        },
+        {
+          "id": 1010202,
+          "amount": 15.0
+        }
+      ],
+      "inputs": [
+        {
+          "id": 120008,
+          "amount": 1.0,
+          "storage_amount": 8.0
+        }
+      ],
+      "outputs": [
+        {
+          "id": 1010242,
+          "amount": 1.0,
+          "storage_amount": 2.0
+        }
+      ],
+      "maintenances": [
+        {
+          "id": 1010017,
+          "amount": 750.0,
+          "inactive_amount": 375.0
+        },
+        {
+          "id": 1010117,
+          "amount": 150.0
+        }
+      ]
+    },
+    {
+      "id": 1010321,
+      "name": "processing_08 (Carbon Filament Processing)",
+      "icon": "goods/carbon_filament.png",
+      "text": "Filament Factory",
+      "costs": [
+        {
+          "id": 1010017,
+          "amount": 30000.0
+        },
+        {
+          "id": 1010196,
+          "amount": 8.0
+        },
+        {
+          "id": 1010205,
+          "amount": 15.0
+        },
+        {
+          "id": 1010218,
+          "amount": 12.0
+        },
+        {
+          "id": 1010207,
+          "amount": 10.0
+        },
+        {
+          "id": 1010202,
+          "amount": 10.0
+        }
+      ],
+      "inputs": [
+        {
+          "id": 1010226,
+          "amount": 1.0,
+          "storage_amount": 4.0
+        }
+      ],
+      "outputs": [
+        {
+          "id": 1010243,
+          "amount": 1.0,
+          "storage_amount": 2.0
+        }
+      ],
+      "maintenances": [
+        {
+          "id": 1010017,
+          "amount": 725.0,
+          "inactive_amount": 367.0
+        },
+        {
+          "id": 1010117,
+          "amount": 150.0
+        }
+      ]
+    },
+    {
+      "id": 1010323,
+      "name": "workshop_01 (High-Wheeler Workshop)",
+      "icon": "goods/high_wheeler.png",
+      "text": "Bicycle Factory",
+      "costs": [
+        {
+          "id": 1010017,
+          "amount": 42000.0
+        },
+        {
+          "id": 1010196,
+          "amount": 8.0
+        },
+        {
+          "id": 1010205,
+          "amount": 15.0
+        },
+        {
+          "id": 1010218,
+          "amount": 12.0
+        },
+        {
+          "id": 1010207,
+          "amount": 10.0
+        },
+        {
+          "id": 1010202,
+          "amount": 10.0
+        }
+      ],
+      "inputs": [
+        {
+          "id": 1010255,
+          "amount": 1.0,
+          "storage_amount": 6.0
+        },
+        {
+          "id": 1010219,
+          "amount": 1.0,
+          "storage_amount": 6.0
+        }
+      ],
+      "outputs": [
+        {
+          "id": 1010245,
+          "amount": 1.0,
+          "storage_amount": 4.0
+        }
+      ],
+      "maintenances": [
+        {
+          "id": 1010017,
+          "amount": 1200.0,
+          "inactive_amount": 600.0
+        },
+        {
+          "id": 1010117,
+          "amount": 150.0
+        }
+      ]
+    },
+    {
+      "id": 1010324,
+      "name": "workshop_02 (Pocket Watch Workshop)",
+      "icon": "goods/pocket_watch.png",
+      "text": "Clockmakers",
+      "costs": [
+        {
+          "id": 1010017,
+          "amount": 48000.0
+        },
+        {
+          "id": 1010196,
+          "amount": 8.0
+        },
+        {
+          "id": 1010205,
+          "amount": 15.0
+        },
+        {
+          "id": 1010218,
+          "amount": 12.0
+        },
+        {
+          "id": 1010207,
+          "amount": 10.0
+        },
+        {
+          "id": 1010202,
+          "amount": 10.0
+        }
+      ],
+      "inputs": [
+        {
+          "id": 1010241,
+          "amount": 1.0,
+          "storage_amount": 4.0
+        },
+        {
+          "id": 1010249,
+          "amount": 1.0,
+          "storage_amount": 2.0
+        }
+      ],
+      "outputs": [
+        {
+          "id": 1010246,
+          "amount": 1.0,
+          "storage_amount": 1.0
+        }
+      ],
+      "maintenances": [
+        {
+          "id": 1010017,
+          "amount": 1400.0,
+          "inactive_amount": 700.0
+        },
+        {
+          "id": 1010117,
+          "amount": 150.0
+        }
+      ]
+    },
+    {
+      "id": 1010284,
+      "name": "workshop_03 (Sewing Machines Factory)",
+      "icon": "goods/sewing_machine.png",
+      "text": "Sewing Machine Factory",
+      "costs": [
+        {
+          "id": 1010017,
+          "amount": 12000.0
+        },
+        {
+          "id": 1010196,
+          "amount": 6.0
+        },
+        {
+          "id": 1010205,
+          "amount": 10.0
+        },
+        {
+          "id": 1010218,
+          "amount": 8.0
+        },
+        {
+          "id": 1010207,
+          "amount": 8.0
+        },
+        {
+          "id": 1010202
+        }
+      ],
+      "inputs": [
+        {
+          "id": 120008,
+          "amount": 1.0,
+          "storage_amount": 8.0
+        },
+        {
+          "id": 1010219,
+          "amount": 1.0,
+          "storage_amount": 6.0
+        }
+      ],
+      "outputs": [
+        {
+          "id": 1010206,
+          "amount": 1.0,
+          "storage_amount": 4.0
+        }
+      ],
+      "maintenances": [
+        {
+          "id": 1010017,
+          "amount": 500.0,
+          "inactive_amount": 250.0
+        },
+        {
+          "id": 1010116,
+          "amount": 150.0
+        }
+      ]
+    },
+    {
+      "id": 1010326,
+      "name": "workshop_04 (Phonographs Workshop)",
+      "icon": "goods/phonographs.png",
+      "text": "Gramophone Factory",
+      "costs": [
+        {
+          "id": 1010017,
+          "amount": 60000.0
+        },
+        {
+          "id": 1010196,
+          "amount": 10.0
+        },
+        {
+          "id": 1010205,
+          "amount": 20.0
+        },
+        {
+          "id": 1010218,
+          "amount": 16.0
+        },
+        {
+          "id": 1010207,
+          "amount": 15.0
+        },
+        {
+          "id": 1010202,
+          "amount": 15.0
+        }
+      ],
+      "inputs": [
+        {
+          "id": 1010242,
+          "amount": 1.0,
+          "storage_amount": 3.0
+        },
+        {
+          "id": 1010204,
+          "amount": 1.0,
+          "storage_amount": 3.0
+        }
+      ],
+      "outputs": [
+        {
+          "id": 1010248,
+          "amount": 1.0,
+          "storage_amount": 1.0
+        }
+      ],
+      "maintenances": [
+        {
+          "id": 1010017,
+          "amount": 1600.0,
+          "inactive_amount": 800.0
+        },
+        {
+          "id": 1010117,
+          "amount": 150.0
+        }
+      ]
+    },
+    {
+      "id": 1010327,
+      "name": "workshop_05 (Gold Workshop)",
+      "icon": "goods/gold.png",
+      "text": "Goldsmiths",
+      "costs": [
+        {
+          "id": 1010017,
+          "amount": 27000.0
+        },
+        {
+          "id": 1010196,
+          "amount": 8.0
+        },
+        {
+          "id": 1010205,
+          "amount": 15.0
+        },
+        {
+          "id": 1010218,
+          "amount": 12.0
+        },
+        {
+          "id": 1010207,
+          "amount": 10.0
+        },
+        {
+          "id": 1010202,
+          "amount": 10.0
+        }
+      ],
+      "inputs": [
+        {
+          "id": 1010226,
+          "amount": 1.0,
+          "storage_amount": 4.0
+        },
+        {
+          "id": 1010233,
+          "amount": 1.0,
+          "storage_amount": 3.0
+        }
+      ],
+      "outputs": [
+        {
+          "id": 1010249,
+          "amount": 1.0,
+          "storage_amount": 2.0
+        }
+      ],
+      "maintenances": [
+        {
+          "id": 1010017,
+          "amount": 750.0,
+          "inactive_amount": 375.0
+        },
+        {
+          "id": 1010117,
+          "amount": 125.0
+        }
+      ]
+    },
+    {
+      "id": 1010328,
+      "name": "workshop_06 (Jewelry Workshop)",
+      "icon": "goods/jewelry.png",
+      "text": "Jewellers",
+      "costs": [
+        {
+          "id": 1010017,
+          "amount": 33000.0
+        },
+        {
+          "id": 1010196,
+          "amount": 10.0
+        },
+        {
+          "id": 1010205,
+          "amount": 20.0
+        },
+        {
+          "id": 1010218,
+          "amount": 16.0
+        },
+        {
+          "id": 1010207,
+          "amount": 15.0
+        },
+        {
+          "id": 1010202,
+          "amount": 15.0
+        }
+      ],
+      "inputs": [
+        {
+          "id": 1010256,
+          "amount": 1.0,
+          "storage_amount": 6.0
+        },
+        {
+          "id": 1010249,
+          "amount": 1.0,
+          "storage_amount": 6.0
+        }
+      ],
+      "outputs": [
+        {
+          "id": 1010250,
+          "amount": 1.0,
+          "storage_amount": 4.0
+        }
+      ],
+      "maintenances": [
+        {
+          "id": 1010017,
+          "amount": 2500.0,
+          "inactive_amount": 1250.0
+        },
+        {
+          "id": 1010116,
+          "amount": 150.0
+        }
+      ]
+    },
+    {
+      "id": 101250,
+      "name": "workshop_07 (Glasses Workshop)",
+      "icon": "goods/glasses.png",
+      "text": "Spectacle Factory",
+      "costs": [
+        {
+          "id": 1010017,
+          "amount": 17000.0
+        },
+        {
+          "id": 1010196,
+          "amount": 8.0
+        },
+        {
+          "id": 1010205,
+          "amount": 15.0
+        },
+        {
+          "id": 1010218,
+          "amount": 12.0
+        },
+        {
+          "id": 1010207,
+          "amount": 10.0
+        },
+        {
+          "id": 1010202,
+          "amount": 10.0
+        }
+      ],
+      "inputs": [
+        {
+          "id": 1010241,
+          "amount": 1.0,
+          "storage_amount": 4.0
+        },
+        {
+          "id": 1010204,
+          "amount": 1.0,
+          "storage_amount": 2.0
+        }
+      ],
+      "outputs": [
+        {
+          "id": 120030,
+          "amount": 1.0,
+          "storage_amount": 1.0
+        }
+      ],
+      "maintenances": [
+        {
+          "id": 1010017,
+          "amount": 1000.0,
+          "inactive_amount": 500.0
+        },
+        {
+          "id": 1010117,
+          "amount": 100.0
+        }
+      ]
+    },
+    {
+      "id": 1010329,
+      "name": "agriculture_colony01_01 (Sugar Cane Farm)",
+      "icon": "goods/cane_sugar_1.png",
+      "text": "Sugar Cane Plantation",
+      "costs": [
+        {
+          "id": 1010017,
+          "amount": 500.0
+        },
+        {
+          "id": 1010196,
+          "amount": 6.0
+        },
+        {
+          "id": 1010205
+        },
+        {
+          "id": 1010218
+        },
+        {
+          "id": 1010207
+        },
+        {
+          "id": 1010202
+        }
+      ],
+      "outputs": [
+        {
+          "id": 1010251,
+          "amount": 1.0,
+          "storage_amount": 4.0
+        }
+      ],
+      "maintenances": [
+        {
+          "id": 1010017,
+          "amount": 5.0,
+          "inactive_amount": 3.0
+        },
+        {
+          "id": 1010366,
+          "amount": 10.0
+        }
+      ]
+    },
+    {
+      "id": 1010330,
+      "name": "agriculture_colony01_02 (Tobacco Farm)",
+      "icon": "goods/tobacco.png",
+      "text": "Tobacco Plantation",
+      "costs": [
+        {
+          "id": 1010017,
+          "amount": 7000.0
+        },
+        {
+          "id": 1010196,
+          "amount": 10.0
+        },
+        {
+          "id": 1010205
+        },
+        {
+          "id": 1010218
+        },
+        {
+          "id": 1010207
+        },
+        {
+          "id": 1010202
+        }
+      ],
+      "outputs": [
+        {
+          "id": 1010252,
+          "amount": 1.0,
+          "storage_amount": 1.0
+        }
+      ],
+      "maintenances": [
+        {
+          "id": 1010017,
+          "amount": 25.0,
+          "inactive_amount": 13.0
+        },
+        {
+          "id": 1010366,
+          "amount": 10.0
+        }
+      ]
+    },
+    {
+      "id": 1010331,
+      "name": "agriculture_colony01_03 (Cotton Farm)",
+      "icon": "goods/cotton.png",
+      "text": "Cotton Plantation",
+      "costs": [
+        {
+          "id": 1010017,
+          "amount": 500.0
+        },
+        {
+          "id": 1010196,
+          "amount": 6.0
+        },
+        {
+          "id": 1010205
+        },
+        {
+          "id": 1010218
+        },
+        {
+          "id": 1010207
+        },
+        {
+          "id": 1010202
+        }
+      ],
+      "outputs": [
+        {
+          "id": 1010253,
+          "amount": 1.0,
+          "storage_amount": 2.0
+        }
+      ],
+      "maintenances": [
+        {
+          "id": 1010017,
+          "amount": 5.0,
+          "inactive_amount": 3.0
+        },
+        {
+          "id": 1010366,
+          "amount": 10.0
+        }
+      ]
+    },
+    {
+      "id": 1010332,
+      "name": "agriculture_colony01_04 (Cocoa Farm)",
+      "icon": "goods/cocoa.png",
+      "text": "Cocoa Plantation",
+      "costs": [
+        {
+          "id": 1010017,
+          "amount": 7600.0
+        },
+        {
+          "id": 1010196,
+          "amount": 6.0
+        },
+        {
+          "id": 1010205
+        },
+        {
+          "id": 1010218
+        },
+        {
+          "id": 1010207
+        },
+        {
+          "id": 1010202
+        }
+      ],
+      "outputs": [
+        {
+          "id": 1010254,
+          "amount": 1.0,
+          "storage_amount": 2.0
+        }
+      ],
+      "maintenances": [
+        {
+          "id": 1010017,
+          "amount": 5.0,
+          "inactive_amount": 3.0
+        },
+        {
+          "id": 1010366,
+          "amount": 10.0
+        }
+      ]
+    },
+    {
+      "id": 1010333,
+      "name": "agriculture_colony01_05 (Caoutchouc Farm)",
+      "icon": "goods/caoutchouc.png",
+      "text": "Caoutchouc Plantation",
+      "costs": [
+        {
+          "id": 1010017,
+          "amount": 2500.0
+        },
+        {
+          "id": 1010196,
+          "amount": 8.0
+        },
+        {
+          "id": 1010205
+        },
+        {
+          "id": 1010218
+        },
+        {
+          "id": 1010207
+        },
+        {
+          "id": 1010202
+        }
+      ],
+      "outputs": [
+        {
+          "id": 1010255,
+          "amount": 1.0,
+          "storage_amount": 2.0
+        }
+      ],
+      "maintenances": [
+        {
+          "id": 1010017,
+          "amount": 25.0,
+          "inactive_amount": 13.0
+        },
+        {
+          "id": 1010366,
+          "amount": 10.0
+        }
+      ]
+    },
+    {
+      "id": 101251,
+      "name": "agriculture_colony01_07 (Coffee Beans Farm)",
+      "icon": "goods/coffee_beans.png",
+      "text": "Coffee Plantation",
+      "costs": [
+        {
+          "id": 1010017,
+          "amount": 2500.0
+        },
+        {
+          "id": 1010196,
+          "amount": 5.0
+        },
+        {
+          "id": 1010205
+        },
+        {
+          "id": 1010218
+        },
+        {
+          "id": 1010207
+        },
+        {
+          "id": 1010202
+        }
+      ],
+      "outputs": [
+        {
+          "id": 120031,
+          "amount": 1.0,
+          "storage_amount": 2.0
+        }
+      ],
+      "maintenances": [
+        {
+          "id": 1010017,
+          "amount": 25.0,
+          "inactive_amount": 13.0
+        },
+        {
+          "id": 1010366,
+          "amount": 10.0
+        }
+      ]
+    },
+    {
+      "id": 101263,
+      "name": "agriculture_colony01_08 (Banana Farm)",
+      "icon": "goods/banana.png",
+      "text": "Plantain Plantation",
+      "costs": [
+        {
+          "id": 1010017,
+          "amount": 500.0
+        },
+        {
+          "id": 1010196,
+          "amount": 6.0
+        },
+        {
+          "id": 1010205
+        },
+        {
+          "id": 1010218
+        },
+        {
+          "id": 1010207
+        },
+        {
+          "id": 1010202
+        }
+      ],
+      "outputs": [
+        {
+          "id": 120041,
+          "amount": 1.0,
+          "storage_amount": 4.0
+        }
+      ],
+      "maintenances": [
+        {
+          "id": 1010017,
+          "amount": 5.0,
+          "inactive_amount": 3.0
+        },
+        {
+          "id": 1010366,
+          "amount": 10.0
+        }
+      ]
+    },
+    {
+      "id": 101270,
+      "name": "agriculture_colony01_10 (Corn Farm)",
+      "icon": "goods/corn.png",
+      "text": "Corn Farm",
+      "costs": [],
+      "outputs": [
+        {
+          "id": 120034,
+          "amount": 1.0,
+          "storage_amount": 2.0
+        }
+      ],
+      "maintenances": [
+        {
+          "id": 1010017,
+          "amount": 25.0,
+          "inactive_amount": 13.0
+        },
+        {
+          "id": 1010366,
+          "amount": 10.0
+        }
+      ]
+    },
+    {
+      "id": 101272,
+      "name": "agriculture_colony01_11 (Alpaca Farm)",
+      "icon": "goods/alpaca_wool.png",
+      "text": "Alpaca Farm",
+      "costs": [
+        {
+          "id": 1010017,
+          "amount": 500.0
+        },
+        {
+          "id": 1010196,
+          "amount": 6.0
+        },
+        {
+          "id": 1010205
+        },
+        {
+          "id": 1010218
+        },
+        {
+          "id": 1010207
+        },
+        {
+          "id": 1010202
+        }
+      ],
+      "outputs": [
+        {
+          "id": 120036,
+          "amount": 1.0,
+          "storage_amount": 4.0
+        }
+      ],
+      "maintenances": [
+        {
+          "id": 1010017,
+          "amount": 5.0,
+          "inactive_amount": 3.0
+        },
+        {
+          "id": 1010366,
+          "amount": 10.0
+        }
+      ]
+    },
+    {
+      "id": 1010339,
+      "name": "coastal_colony01_01 (Pearls Coast Building)",
+      "icon": "goods/pearls.png",
+      "text": "Pearl Farm",
+      "costs": [
+        {
+          "id": 1010017,
+          "amount": 8500.0
+        },
+        {
+          "id": 1010196,
+          "amount": 10.0
+        },
+        {
+          "id": 1010205
+        },
+        {
+          "id": 1010218
+        },
+        {
+          "id": 1010207
+        },
+        {
+          "id": 1010202
+        }
+      ],
+      "outputs": [
+        {
+          "id": 1010256,
+          "amount": 1.0,
+          "storage_amount": 1.0
+        }
+      ],
+      "maintenances": [
+        {
+          "id": 1010017,
+          "amount": 25.0,
+          "inactive_amount": 13.0
+        },
+        {
+          "id": 1010366,
+          "amount": 50.0
+        }
+      ]
+    },
+    {
+      "id": 101262,
+      "name": "coastal_colony01_02 (Fish Coast Building)",
+      "icon": "goods/fishoil.png",
+      "text": "Fish Oil Factory",
+      "costs": [
+        {
+          "id": 1010017,
+          "amount": 500.0
+        },
+        {
+          "id": 1010196,
+          "amount": 6.0
+        },
+        {
+          "id": 1010205
+        },
+        {
+          "id": 1010218
+        },
+        {
+          "id": 1010207
+        },
+        {
+          "id": 1010202
+        }
+      ],
+      "outputs": [
+        {
+          "id": 120042,
+          "amount": 1.0,
+          "storage_amount": 4.0
+        }
+      ],
+      "maintenances": [
+        {
+          "id": 1010017,
+          "amount": 5.0,
+          "inactive_amount": 3.0
+        },
+        {
+          "id": 1010366,
+          "amount": 15.0
+        }
+      ]
+    },
+    {
+      "id": 1010318,
+      "name": "factory_colony01_03 (Cotton Cloth Processing)",
+      "icon": "goods/cotton_fur.png",
+      "text": "Cotton Mill",
+      "costs": [
+        {
+          "id": 1010017,
+          "amount": 500.0
+        },
+        {
+          "id": 1010196,
+          "amount": 6.0
+        },
+        {
+          "id": 1010205
+        },
+        {
+          "id": 1010218
+        },
+        {
+          "id": 1010207
+        },
+        {
+          "id": 1010202
+        }
+      ],
+      "inputs": [
+        {
+          "id": 1010253,
+          "amount": 1.0,
+          "storage_amount": 6.0
+        }
+      ],
+      "outputs": [
+        {
+          "id": 1010240,
+          "amount": 1.0,
+          "storage_amount": 4.0
+        }
+      ],
+      "maintenances": [
+        {
+          "id": 1010017,
+          "amount": 10.0,
+          "inactive_amount": 5.0
+        },
+        {
+          "id": 1010366,
+          "amount": 10.0
+        }
+      ]
+    },
+    {
+      "id": 101415,
+      "name": "factory_colony01_06 (Felt Maker)",
+      "icon": "goods/felt.png",
+      "text": "Felt Producer",
+      "costs": [
+        {
+          "id": 1010017,
+          "amount": 2500.0
+        },
+        {
+          "id": 1010196,
+          "amount": 3.0
+        },
+        {
+          "id": 1010205,
+          "amount": 2.0
+        },
+        {
+          "id": 1010218
+        },
+        {
+          "id": 1010207
+        },
+        {
+          "id": 1010202
+        }
+      ],
+      "inputs": [
+        {
+          "id": 120036,
+          "amount": 1.0,
+          "storage_amount": 6.0
+        }
+      ],
+      "outputs": [
+        {
+          "id": 120044,
+          "amount": 1.0,
+          "storage_amount": 4.0
+        }
+      ],
+      "maintenances": [
+        {
+          "id": 1010017,
+          "amount": 10.0,
+          "inactive_amount": 5.0
+        },
+        {
+          "id": 1010366,
+          "amount": 10.0
+        }
+      ]
+    },
+    {
+      "id": 101273,
+      "name": "factory_colony01_07 (Bombin Maker)",
+      "icon": "goods/bowler_hat.png",
+      "text": "Bombín Weaver",
+      "costs": [
+        {
+          "id": 1010017,
+          "amount": 9000.0
+        },
+        {
+          "id": 1010196,
+          "amount": 3.0
+        },
+        {
+          "id": 1010205,
+          "amount": 2.0
+        },
+        {
+          "id": 1010218
+        },
+        {
+          "id": 1010207
+        },
+        {
+          "id": 1010202
+        }
+      ],
+      "inputs": [
+        {
+          "id": 1010240,
+          "amount": 1.0,
+          "storage_amount": 6.0
+        },
+        {
+          "id": 120044,
+          "amount": 1.0,
+          "storage_amount": 6.0
+        }
+      ],
+      "outputs": [
+        {
+          "id": 120037,
+          "amount": 1.0,
+          "storage_amount": 4.0
+        }
+      ],
+      "maintenances": [
+        {
+          "id": 1010017,
+          "amount": 50.0,
+          "inactive_amount": 25.0
+        },
+        {
+          "id": 1010367,
+          "amount": 20.0
+        }
+      ]
+    },
+    {
+      "id": 1010340,
+      "name": "food_colony01_01 (Rum Maker)",
+      "icon": "goods/rum_barrel.png",
+      "text": "Rum Distillery",
+      "costs": [
+        {
+          "id": 1010017,
+          "amount": 2500.0
+        },
+        {
+          "id": 1010196,
+          "amount": 6.0
+        },
+        {
+          "id": 1010205
+        },
+        {
+          "id": 1010218
+        },
+        {
+          "id": 1010207
+        },
+        {
+          "id": 1010202
+        }
+      ],
+      "inputs": [
+        {
+          "id": 120008,
+          "amount": 1.0,
+          "storage_amount": 8.0
+        },
+        {
+          "id": 1010251,
+          "amount": 1.0,
+          "storage_amount": 6.0
+        }
+      ],
+      "outputs": [
+        {
+          "id": 1010257,
+          "amount": 1.0,
+          "storage_amount": 4.0
+        }
+      ],
+      "maintenances": [
+        {
+          "id": 1010017,
+          "amount": 50.0,
+          "inactive_amount": 25.0
+        },
+        {
+          "id": 1010366,
+          "amount": 30.0
+        }
+      ]
+    },
+    {
+      "id": 1010341,
+      "name": "food_colony01_02 (Chocolate Maker)",
+      "icon": "goods/chocolate.png",
+      "text": "Chocolate Factory",
+      "costs": [
+        {
+          "id": 1010017,
+          "amount": 24000.0
+        },
+        {
+          "id": 1010196,
+          "amount": 6.0
+        },
+        {
+          "id": 1010205
+        },
+        {
+          "id": 1010218
+        },
+        {
+          "id": 1010207
+        },
+        {
+          "id": 1010202
+        }
+      ],
+      "inputs": [
+        {
+          "id": 1010254,
+          "amount": 1.0,
+          "storage_amount": 6.0
+        },
+        {
+          "id": 1010239,
+          "amount": 1.0,
+          "storage_amount": 6.0
+        }
+      ],
+      "outputs": [
+        {
+          "id": 1010258,
+          "amount": 1.0,
+          "storage_amount": 4.0
+        }
+      ],
+      "maintenances": [
+        {
+          "id": 1010017,
+          "amount": 50.0,
+          "inactive_amount": 25.0
+        },
+        {
+          "id": 1010367,
+          "amount": 100.0
+        }
+      ]
+    },
+    {
+      "id": 101252,
+      "name": "food_colony01_03 (Coffee Maker)",
+      "icon": "goods/coffe_cup.png",
+      "text": "Coffee Roaster",
+      "costs": [
+        {
+          "id": 1010017,
+          "amount": 9000.0
+        },
+        {
+          "id": 1010196,
+          "amount": 5.0
+        },
+        {
+          "id": 1010205,
+          "amount": 3.0
+        },
+        {
+          "id": 1010218
+        },
+        {
+          "id": 1010207
+        },
+        {
+          "id": 1010202
+        }
+      ],
+      "inputs": [
+        {
+          "id": 120031,
+          "amount": 1.0,
+          "storage_amount": 6.0
+        }
+      ],
+      "outputs": [
+        {
+          "id": 120032,
+          "amount": 1.0,
+          "storage_amount": 4.0
+        }
+      ],
+      "maintenances": [
+        {
+          "id": 1010017,
+          "amount": 150.0,
+          "inactive_amount": 75.0
+        },
+        {
+          "id": 1010367,
+          "amount": 150.0
+        }
+      ]
+    },
+    {
+      "id": 101264,
+      "name": "food_colony01_04 (Fried Banana Maker)",
+      "icon": "goods/fried_bananas.png",
+      "text": "Fried Plantain Kitchen",
+      "costs": [
+        {
+          "id": 1010017,
+          "amount": 500.0
+        },
+        {
+          "id": 1010196,
+          "amount": 2.0
+        },
+        {
+          "id": 1010205
+        },
+        {
+          "id": 1010218
+        },
+        {
+          "id": 1010207
+        },
+        {
+          "id": 1010202
+        }
+      ],
+      "inputs": [
+        {
+          "id": 120042,
+          "amount": 1.0,
+          "storage_amount": 6.0
+        },
+        {
+          "id": 120041,
+          "amount": 1.0,
+          "storage_amount": 6.0
+        }
+      ],
+      "outputs": [
+        {
+          "id": 120033,
+          "amount": 1.0,
+          "storage_amount": 4.0
+        }
+      ],
+      "maintenances": [
+        {
+          "id": 1010017,
+          "amount": 15.0,
+          "inactive_amount": 8.0
+        },
+        {
+          "id": 1010366,
+          "amount": 25.0
+        }
+      ]
+    },
+    {
+      "id": 101271,
+      "name": "food_colony01_05 (Burrito Maker)",
+      "icon": "goods/burrito.png",
+      "text": "Tortilla Maker",
+      "costs": [
+        {
+          "id": 1010017,
+          "amount": 4500.0
+        },
+        {
+          "id": 1010196,
+          "amount": 3.0
+        },
+        {
+          "id": 1010205,
+          "amount": 2.0
+        },
+        {
+          "id": 1010218
+        },
+        {
+          "id": 1010207
+        },
+        {
+          "id": 1010202
+        }
+      ],
+      "inputs": [
+        {
+          "id": 1010193,
+          "amount": 1.0,
+          "storage_amount": 6.0
+        },
+        {
+          "id": 120034,
+          "amount": 1.0,
+          "storage_amount": 6.0
+        }
+      ],
+      "outputs": [
+        {
+          "id": 120035,
+          "amount": 1.0,
+          "storage_amount": 4.0
+        }
+      ],
+      "maintenances": [
+        {
+          "id": 1010017,
+          "amount": 100.0,
+          "inactive_amount": 50.0
+        },
+        {
+          "id": 1010367,
+          "amount": 100.0
+        }
+      ]
+    },
+    {
+      "id": 1010317,
+      "name": "processing_colony01_01 (Sugar Processing)",
+      "icon": "goods/salt.png",
+      "text": "Sugar Refinery",
+      "costs": [
+        {
+          "id": 1010017,
+          "amount": 500.0
+        },
+        {
+          "id": 1010196,
+          "amount": 6.0
+        },
+        {
+          "id": 1010205
+        },
+        {
+          "id": 1010218
+        },
+        {
+          "id": 1010207
+        },
+        {
+          "id": 1010202
+        }
+      ],
+      "inputs": [
+        {
+          "id": 1010251,
+          "amount": 1.0,
+          "storage_amount": 6.0
+        }
+      ],
+      "outputs": [
+        {
+          "id": 1010239,
+          "amount": 1.0,
+          "storage_amount": 4.0
+        }
+      ],
+      "maintenances": [
+        {
+          "id": 1010017,
+          "amount": 10.0,
+          "inactive_amount": 5.0
+        },
+        {
+          "id": 1010367,
+          "amount": 50.0
+        }
+      ]
+    },
+    {
+      "id": 101266,
+      "name": "processing_colony01_02 (Poncho Maker)",
+      "icon": "goods/poncho.png",
+      "text": "Poncho Darner",
+      "costs": [
+        {
+          "id": 1010017,
+          "amount": 500.0
+        },
+        {
+          "id": 1010196,
+          "amount": 6.0
+        },
+        {
+          "id": 1010205
+        },
+        {
+          "id": 1010218
+        },
+        {
+          "id": 1010207
+        },
+        {
+          "id": 1010202
+        }
+      ],
+      "inputs": [
+        {
+          "id": 120036,
+          "amount": 1.0,
+          "storage_amount": 6.0
+        }
+      ],
+      "outputs": [
+        {
+          "id": 120043,
+          "amount": 1.0,
+          "storage_amount": 4.0
+        }
+      ],
+      "maintenances": [
+        {
+          "id": 1010017,
+          "amount": 15.0,
+          "inactive_amount": 8.0
+        },
+        {
+          "id": 1010366,
+          "amount": 30.0
+        }
+      ]
+    },
+    {
+      "id": 1010342,
+      "name": "workshop_colony01_01 (Cigars Workshop)",
+      "icon": "goods/cigars.png",
+      "text": "Cigar Factory",
+      "costs": [
+        {
+          "id": 1010017,
+          "amount": 2500.0
+        },
+        {
+          "id": 1010196,
+          "amount": 10.0
+        },
+        {
+          "id": 1010205,
+          "amount": 20.0
+        },
+        {
+          "id": 1010218
+        },
+        {
+          "id": 1010207
+        },
+        {
+          "id": 1010202
+        }
+      ],
+      "inputs": [
+        {
+          "id": 1010252,
+          "amount": 1.0,
+          "storage_amount": 3.0
+        },
+        {
+          "id": 1010242,
+          "amount": 1.0,
+          "storage_amount": 3.0
+        }
+      ],
+      "outputs": [
+        {
+          "id": 1010259,
+          "amount": 1.0,
+          "storage_amount": 2.0
+        }
+      ],
+      "maintenances": [
+        {
+          "id": 1010017,
+          "amount": 250.0,
+          "inactive_amount": 125.0
+        },
+        {
+          "id": 1010367,
+          "amount": 175.0
+        }
+      ]
+    }
+  ]
+}

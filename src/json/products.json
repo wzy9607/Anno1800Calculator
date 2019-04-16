@@ -1,0 +1,579 @@
+{
+  "version": "Open Beta",
+  "Products": [
+    {
+      "id": 1010192,
+      "name": "grain",
+      "icon": "goods/cereals_2.png",
+      "text": "Grain",
+      "category": 11702
+    },
+    {
+      "id": 1010193,
+      "name": "beef",
+      "icon": "goods/meat_raw.png",
+      "text": "Beef",
+      "category": 11702
+    },
+    {
+      "id": 1010194,
+      "name": "hops",
+      "icon": "goods/hops.png",
+      "text": "Hops",
+      "category": 11702
+    },
+    {
+      "id": 1010195,
+      "name": "potatoes",
+      "icon": "goods/potatoes.png",
+      "text": "Potatoes",
+      "category": 11702
+    },
+    {
+      "id": 120008,
+      "name": "wood",
+      "icon": "goods/wood_log.png",
+      "text": "Wood",
+      "category": 11702
+    },
+    {
+      "id": 1010197,
+      "name": "wool",
+      "icon": "goods/wool.png",
+      "text": "Wool",
+      "category": 11702
+    },
+    {
+      "id": 1010199,
+      "name": "pigs",
+      "icon": "goods/pigs.png",
+      "text": "Pigs",
+      "category": 11702
+    },
+    {
+      "id": 1010209,
+      "name": "fur",
+      "icon": "goods/fur.png",
+      "text": "Furs",
+      "category": 11702
+    },
+    {
+      "id": 120014,
+      "name": "grapes",
+      "icon": "goods/grapes.png",
+      "text": "Grapes",
+      "category": 11702
+    },
+    {
+      "id": 1010198,
+      "name": "paprika",
+      "icon": "goods/pepper.png",
+      "text": "Red Peppers",
+      "category": 11702
+    },
+    {
+      "id": 1010200,
+      "name": "fish",
+      "icon": "goods/fish.png",
+      "text": "Fish",
+      "category": 11704
+    },
+    {
+      "id": 1010232,
+      "name": "salpeter",
+      "icon": "goods/niter.png",
+      "text": "Saltpeter",
+      "category": 11702
+    },
+    {
+      "id": 1010228,
+      "name": "quartz sand",
+      "icon": "goods/quartz_sand.png",
+      "text": "Quartz Sand",
+      "category": 11702
+    },
+    {
+      "id": 1010202,
+      "name": "concrete",
+      "icon": "goods/reinforced_concrete.png",
+      "text": "Reinforced Concrete",
+      "category": 11707
+    },
+    {
+      "id": 1010203,
+      "name": "soap",
+      "icon": "goods/soap_2.png",
+      "text": "Soap",
+      "category": 11704
+    },
+    {
+      "id": 1010196,
+      "name": "timber",
+      "icon": "goods/wooden_planks.png",
+      "text": "Timber",
+      "category": 11707
+    },
+    {
+      "id": 1010205,
+      "name": "bricks",
+      "icon": "goods/bricks.png",
+      "text": "Bricks",
+      "category": 11707
+    },
+    {
+      "id": 1010247,
+      "name": "fur coats",
+      "icon": "goods/fur_coats.png",
+      "text": "Fur Coats",
+      "category": 11704
+    },
+    {
+      "id": 1010207,
+      "name": "window",
+      "icon": "goods/glass_window_3.png",
+      "text": "Windows",
+      "category": 11707
+    },
+    {
+      "id": 1010208,
+      "name": "light bulbs",
+      "icon": "goods/light_bulb.png",
+      "text": "Light Bulbs",
+      "category": 11704
+    },
+    {
+      "id": 1010210,
+      "name": "sailcloth",
+      "icon": "goods/sail.png",
+      "text": "Sails",
+      "category": 11703
+    },
+    {
+      "id": 1010211,
+      "name": "chassis",
+      "icon": "goods/chassis.png",
+      "text": "Chassis",
+      "category": 11703
+    },
+    {
+      "id": 1010201,
+      "name": "clay",
+      "icon": "goods/clay.png",
+      "text": "Clay",
+      "category": 11702
+    },
+    {
+      "id": 1010206,
+      "name": "sewing machines",
+      "icon": "goods/sewing_machine.png",
+      "text": "Sewing Machines",
+      "category": 11704
+    },
+    {
+      "id": 1010213,
+      "name": "bread",
+      "icon": "goods/bread.png",
+      "text": "Bread",
+      "category": 11704
+    },
+    {
+      "id": 1010214,
+      "name": "beer",
+      "icon": "goods/beer.png",
+      "text": "Beer",
+      "category": 11705
+    },
+    {
+      "id": 1010215,
+      "name": "goulash",
+      "icon": "goods/goulash_01.png",
+      "text": "Goulash",
+      "category": 11703
+    },
+    {
+      "id": 1010217,
+      "name": "canned food",
+      "icon": "goods/canned_goulash.png",
+      "text": "Canned Food",
+      "category": 11704
+    },
+    {
+      "id": 1010216,
+      "name": "schnapps",
+      "icon": "goods/schnapps_4.png",
+      "text": "Schnapps",
+      "category": 11705
+    },
+    {
+      "id": 1010238,
+      "name": "sausage",
+      "icon": "goods/meat_sausage.png",
+      "text": "Sausages",
+      "category": 11704
+    },
+    {
+      "id": 120016,
+      "name": "champagne",
+      "icon": "goods/champagne.png",
+      "text": "Champagne",
+      "category": 11704
+    },
+    {
+      "id": 1010218,
+      "name": "beams",
+      "icon": "goods/beams.png",
+      "text": "Steel Beams",
+      "category": 11707
+    },
+    {
+      "id": 1010219,
+      "name": "steel",
+      "icon": "goods/steel.png",
+      "text": "Steel",
+      "category": 11703
+    },
+    {
+      "id": 1010221,
+      "name": "weapons",
+      "icon": "goods/weapons.png",
+      "text": "Weapons",
+      "category": 11707
+    },
+    {
+      "id": 1010222,
+      "name": "dynamite",
+      "icon": "goods/dynamite.png",
+      "text": "Dynamite",
+      "category": 11703
+    },
+    {
+      "id": 1010223,
+      "name": "advanced weapons",
+      "icon": "goods/advanced_weaponry.png",
+      "text": "Advanced Weapons",
+      "category": 11707
+    },
+    {
+      "id": 1010224,
+      "name": "steam motors",
+      "icon": "goods/steam_machine.png",
+      "text": "Steam Motors",
+      "category": 11703
+    },
+    {
+      "id": 1010225,
+      "name": "steam carriages",
+      "icon": "goods/steam_carriage.png",
+      "text": "Steam Carriages",
+      "category": 11704
+    },
+    {
+      "id": 1010204,
+      "name": "brass",
+      "icon": "goods/brass.png",
+      "text": "Brass",
+      "category": 11703
+    },
+    {
+      "id": 1010226,
+      "name": "coal",
+      "icon": "goods/coal.png",
+      "text": "Coal",
+      "category": 11702
+    },
+    {
+      "id": 1010227,
+      "name": "iron",
+      "icon": "goods/iron.png",
+      "text": "Iron",
+      "category": 11702
+    },
+    {
+      "id": 1010229,
+      "name": "zinc",
+      "icon": "goods/tin_ore.png",
+      "text": "Zinc",
+      "category": 11702
+    },
+    {
+      "id": 1010230,
+      "name": "copper",
+      "icon": "goods/copper.png",
+      "text": "Copper",
+      "category": 11702
+    },
+    {
+      "id": 1010231,
+      "name": "cement",
+      "icon": "goods/cement.png",
+      "text": "Cement",
+      "category": 11702
+    },
+    {
+      "id": 1010233,
+      "name": "gold ore",
+      "icon": "goods/gold_ore.png",
+      "text": "Gold Ore",
+      "category": 11702
+    },
+    {
+      "id": 1010234,
+      "name": "tallow",
+      "icon": "goods/tallow.png",
+      "text": "Tallow",
+      "category": 11703
+    },
+    {
+      "id": 1010235,
+      "name": "flour",
+      "icon": "goods/flour.png",
+      "text": "Flour",
+      "category": 11703
+    },
+    {
+      "id": 1010236,
+      "name": "malt",
+      "icon": "goods/malt.png",
+      "text": "Malt",
+      "category": 11703
+    },
+    {
+      "id": 1010237,
+      "name": "basic clothes",
+      "icon": "goods/working_cloth.png",
+      "text": "Work Clothes",
+      "category": 11704
+    },
+    {
+      "id": 1010241,
+      "name": "glass",
+      "icon": "goods/glass.png",
+      "text": "Glass",
+      "category": 11703
+    },
+    {
+      "id": 1010242,
+      "name": "inlay",
+      "icon": "goods/inlay.png",
+      "text": "Wood Veneers",
+      "category": 11703
+    },
+    {
+      "id": 1010243,
+      "name": "carbon filament",
+      "icon": "goods/carbon_filament.png",
+      "text": "Filaments",
+      "category": 11703
+    },
+    {
+      "id": 1010245,
+      "name": "high-wheeler",
+      "icon": "goods/high_wheeler.png",
+      "text": "Penny Farthings",
+      "category": 11705
+    },
+    {
+      "id": 1010246,
+      "name": "pocket watch",
+      "icon": "goods/pocket_watch.png",
+      "text": "Pocket Watches",
+      "category": 11705
+    },
+    {
+      "id": 120030,
+      "name": "glasses",
+      "icon": "goods/glasses.png",
+      "text": "Glasses",
+      "category": 11704
+    },
+    {
+      "id": 1010248,
+      "name": "phonographs",
+      "icon": "goods/phonographs.png",
+      "text": "Gramophones",
+      "category": 11705
+    },
+    {
+      "id": 1010249,
+      "name": "gold",
+      "icon": "goods/gold.png",
+      "text": "Gold",
+      "category": 11703
+    },
+    {
+      "id": 1010250,
+      "name": "jewelry",
+      "icon": "goods/jewelry.png",
+      "text": "Jewelry",
+      "category": 11705
+    },
+    {
+      "id": 1010251,
+      "name": "sugar cane",
+      "icon": "goods/cane_sugar_1.png",
+      "text": "Sugar Cane",
+      "category": 11702
+    },
+    {
+      "id": 1010252,
+      "name": "tobacco",
+      "icon": "goods/tobacco.png",
+      "text": "Tobacco",
+      "category": 11702
+    },
+    {
+      "id": 1010253,
+      "name": "cotton",
+      "icon": "goods/cotton.png",
+      "text": "Cotton",
+      "category": 11702
+    },
+    {
+      "id": 1010254,
+      "name": "cocoa",
+      "icon": "goods/cocoa.png",
+      "text": "Cocoa",
+      "category": 11702
+    },
+    {
+      "id": 1010255,
+      "name": "caoutchouc",
+      "icon": "goods/caoutchouc.png",
+      "text": "Caoutchouc",
+      "category": 11702
+    },
+    {
+      "id": 120031,
+      "name": "coffee beans",
+      "icon": "goods/coffee_beans.png",
+      "text": "Coffee Beans",
+      "category": 11702
+    },
+    {
+      "id": 120034,
+      "name": "corn",
+      "icon": "goods/corn.png",
+      "text": "Corn",
+      "category": 11702
+    },
+    {
+      "id": 120036,
+      "name": "alpaca wool",
+      "icon": "goods/alpaca_wool.png",
+      "text": "Alpaca Wool",
+      "category": 11702
+    },
+    {
+      "id": 120041,
+      "name": "bananas",
+      "icon": "goods/banana.png",
+      "text": "Plantains",
+      "category": 11702
+    },
+    {
+      "id": 1010256,
+      "name": "pearls",
+      "icon": "goods/pearls.png",
+      "text": "Pearls",
+      "category": 11702
+    },
+    {
+      "id": 120042,
+      "name": "fish oil",
+      "icon": "goods/fishoil.png",
+      "text": "Fish Oil",
+      "category": 11702
+    },
+    {
+      "id": 120043,
+      "name": "ponchos",
+      "icon": "goods/poncho.png",
+      "text": "Ponchos",
+      "category": 11704
+    },
+    {
+      "id": 120044,
+      "name": "felt",
+      "icon": "goods/felt.png",
+      "text": "Felt",
+      "category": 11703
+    },
+    {
+      "id": 120037,
+      "name": "bombin",
+      "icon": "goods/bowler_hat.png",
+      "text": "Bombins",
+      "category": 11704
+    },
+    {
+      "id": 1010257,
+      "name": "rum",
+      "icon": "goods/rum_barrel.png",
+      "text": "Rum",
+      "category": 11705
+    },
+    {
+      "id": 1010258,
+      "name": "chocolate",
+      "icon": "goods/chocolate.png",
+      "text": "Chocolate",
+      "category": 11704
+    },
+    {
+      "id": 120032,
+      "name": "coffee",
+      "icon": "goods/coffe_cup.png",
+      "text": "Coffee",
+      "category": 11704
+    },
+    {
+      "id": 120033,
+      "name": "fried bananas",
+      "icon": "goods/fried_bananas.png",
+      "text": "Fried Plantains",
+      "category": 11704
+    },
+    {
+      "id": 120035,
+      "name": "burrito",
+      "icon": "goods/burrito.png",
+      "text": "Tortillas",
+      "category": 11704
+    },
+    {
+      "id": 1010239,
+      "name": "sugar",
+      "icon": "goods/salt.png",
+      "text": "Sugar",
+      "category": 11703
+    },
+    {
+      "id": 1010240,
+      "name": "cotton cloth",
+      "icon": "goods/cotton_fur.png",
+      "text": "Cotton Fabric",
+      "category": 11703
+    },
+    {
+      "id": 1010259,
+      "name": "cigars",
+      "icon": "goods/cigars.png",
+      "text": "Cigars",
+      "category": 11704
+    },
+    {
+      "id": 120021,
+      "name": "stone coal",
+      "icon": "goods/coal.png",
+      "text": "Coal",
+      "category": 11797
+    },
+    {
+      "id": 1010566,
+      "name": "oil",
+      "icon": "goods/oil.png",
+      "text": "Oil",
+      "category": 11797
+    }
+  ]
+}

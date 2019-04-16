@@ -1,0 +1,26 @@
+{
+  "Version": "Open Beta",
+  "PopulationGroups": [
+    {
+      "id": 15000082,
+      "name": "Moderate Population",
+      "text": "Population: Old World",
+      "population_levels": [
+        15000000,
+        15000001,
+        15000002,
+        15000003,
+        15000004
+      ]
+    },
+    {
+      "id": 15000083,
+      "name": "Colony01 Population",
+      "text": "Population: New World",
+      "population_levels": [
+        15000005,
+        15000006
+      ]
+    }
+  ]
+}
