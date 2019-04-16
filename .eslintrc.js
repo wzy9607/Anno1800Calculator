@@ -3,15 +3,17 @@ module.exports = {
   env: {
     node: true
   },
-  'extends': [
+  "extends": [
     'plugin:vue/recommended',
     'eslint:recommended'
   ],
   rules: {
     'no-console': 'off',
-    'no-debugger': 'off'
+    'no-debugger': 'off',
+    'vue/html-self-closing': 'off',
+    'vue/html-indent': 'off'
   },
   parserOptions: {
     parser: 'babel-eslint'
   }
-}
+};
