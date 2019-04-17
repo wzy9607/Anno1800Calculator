@@ -16,36 +16,35 @@
         class="mt-2"
         visible
     >
-      <div class="card">
-        <div class="card-body">
-          <div class="card-deck">
+      <div class="border rounded p-3">
+        <div class="card-deck">
+          <div
+              class="my-1"
+              v-for="product in products"
+              :key="product.id"
+          >
             <div
-                v-for="product in products"
-                :key="product.id"
+                class="card text-center"
+                style="width: 10rem;"
             >
-              <div
-                  class="card text-center"
-                  style="width: 10rem;"
-              >
-                <!--TODO Remove?-->
-                <div class="card-body">
-                  <div class="">
-                    <img
-                        :src="getImage(product.icon)"
-                        :alt="product.text"
-                        width="64"
-                        height="64"
-                    >
-                  </div>
-                  <h5 class="card-title">
-                    {{ product.text }}
-                  </h5>
-                  <div class="card-text">
-                    <span>Produce {{ product.amountProduced }} ton/min</span>
-                  </div>
-                  <div class="card-text">
-                    <span>Consume {{ product.amountConsumed }} ton/min</span>
-                  </div>
+              <!--TODO Remove?-->
+              <div class="card-body">
+                <div class="">
+                  <img
+                      :src="getImage(product.icon)"
+                      :alt="product.text"
+                      width="64"
+                      height="64"
+                  >
+                </div>
+                <h5 class="card-title">
+                  {{ product.text }}
+                </h5>
+                <div class="card-text">
+                  <span>Produce {{ product.amountProduced }} ton/min</span>
+                </div>
+                <div class="card-text">
+                  <span>Consume {{ product.amountConsumed }} ton/min</span>
                 </div>
               </div>
             </div>

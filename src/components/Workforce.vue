@@ -4,7 +4,7 @@
       class="h-100"
       style="width: 10rem;"
   >
-    <b-card-body class="text-center pl-3 pr-3">
+    <b-card-body class="text-center px-3 py-2">
       <div class="card-image">
         <img
             :src="getImage(icon)"

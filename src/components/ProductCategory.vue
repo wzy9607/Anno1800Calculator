@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="mx-4 my-4">
     <!--FIXME collapser not working-->
     <h3>
       <b-button
@@ -16,22 +16,21 @@
         class="mt-2"
         visible
     >
-      <div class="card">
-        <div class="card-body">
-          <div class="card-deck">
-            <div
-                v-for="product in products"
-                :key="product.id"
-            >
-              <!--TODO handle multiple producer-->
-              <Product
-                  :amount-produced="product.amountProduced"
-                  :amount-consumed="product.amountConsumed"
-                  :producer="product.producers[0].producer"
-              ></Product>
-            </div>
+      <div class="border rounded p-3">
+        <b-card-group deck>
+          <div
+              class="my-1"
+              v-for="product in products"
+              :key="product.id"
+          >
+            <!--TODO handle multiple producer-->
+            <Product
+                :amount-produced="product.amountProduced"
+                :amount-consumed="product.amountConsumed"
+                :producer="product.producers[0].producer"
+            ></Product>
           </div>
-        </div>
+        </b-card-group>
       </div>
     </b-collapse>
   </div>

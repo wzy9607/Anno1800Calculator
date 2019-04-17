@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="mx-4 my-4">
     <h3>
       <b-button
           v-b-toggle="'collapse-workforces'"
@@ -15,22 +15,21 @@
         class="mt-2"
         visible
     >
-      <div class="card">
-        <div class="card-body">
-          <b-card-group deck>
-            <div
-                v-for="workforce in workforces"
-                :key="workforce.id"
+      <div class="border rounded p-3">
+        <b-card-group deck>
+          <div
+              class="my-1"
+              v-for="workforce in workforces"
+              :key="workforce.id"
+          >
+            <Workforce
+                :icon="workforce.icon"
+                :text="workforce.text"
+                :amount="workforce.amountConsumed"
             >
-              <Workforce
-                  :icon="workforce.icon"
-                  :text="workforce.text"
-                  :amount="workforce.amountConsumed"
-              >
-              </Workforce>
-            </div>
-          </b-card-group>
-        </div>
+            </Workforce>
+          </div>
+        </b-card-group>
       </div>
     </b-collapse>
   </div>

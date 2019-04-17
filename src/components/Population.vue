@@ -4,7 +4,7 @@
       class="h-100"
       style="width: 10rem;"
   >
-    <b-card-body class="text-center pl-3 pr-3">
+    <b-card-body class="text-center px-3 py-2">
       <!--TODO b-card-img set width to 100%, customize it-->
       <div class="card-image">
         <img
@@ -16,7 +16,7 @@
         {{ text }}
       </b-card-title>
       <b-card-text class="card-input-amount mx-auto">
-        <div class="input-group mb-3">
+        <div class="input-group">
           <input
               v-model.number="displayedAmount"
               type="text"
