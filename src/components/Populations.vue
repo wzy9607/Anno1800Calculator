@@ -1,7 +1,7 @@
 <template>
   <div>
     <h3>
-      Residents
+      {{ text }}
     </h3>
     <div class="card">
       <div class="card-body">
@@ -32,6 +32,10 @@
       Population
     },
     props: {
+      text: {
+        type: String,
+        required: true
+      },
       populations: {
         type: Array,
         required: true

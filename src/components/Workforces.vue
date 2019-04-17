@@ -8,7 +8,7 @@
         <span class="when-closed"><i class="fas fa-chevron-right"></i></span>
         <span class="when-opened"><i class="fas fa-chevron-down"></i></span>
       </b-button>
-      Workforces
+      {{ text }}
     </h3>
     <b-collapse
         id="collapse-workforces"
@@ -45,6 +45,10 @@
       Workforce
     },
     props: {
+      text: {
+        type: String,
+        required: true
+      },
       workforces: {
         type: Array,
         required: true

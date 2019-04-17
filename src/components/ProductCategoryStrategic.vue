@@ -38,8 +38,8 @@
                     >
                   </div>
                   <h5 class="card-title">
-{{ product.text }}
-</h5>
+                    {{ product.text }}
+                  </h5>
                   <div class="card-text">
                     <span>Produce {{ product.amountProduced }} ton/min</span>
                   </div>
