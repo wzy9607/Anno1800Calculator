@@ -1,9 +1,6 @@
 <template>
-  <div
-      id="view-workforces"
-      class=""
-  >
-    <h2>
+  <div>
+    <h3>
       <b-button
           v-b-toggle="'collapse-workforces'"
           variant="primary"
@@ -12,7 +9,7 @@
         <span class="when-opened"><i class="fas fa-chevron-down"></i></span>
       </b-button>
       Workforces
-    </h2>
+    </h3>
     <b-collapse
         id="collapse-workforces"
         class="mt-2"
@@ -20,30 +17,19 @@
     >
       <div class="card">
         <div class="card-body">
-          <div class="card-deck">
+          <b-card-group deck>
             <div
                 v-for="workforce in workforces"
                 :key="workforce.id"
             >
-              <div
-                  class="card text-center"
-                  style="width: 10rem;"
+              <Workforce
+                  :icon="workforce.icon"
+                  :text="workforce.text"
+                  :amount="workforce.amountConsumed"
               >
-                <div class="card-body">
-                  <div class="card-image">
-                    <img
-                        :src="getImage(workforce.icon)"
-                        :alt="workforce.text"
-                    >
-                  </div>
-                  <h5 class="card-title">{{ workforce.text }}</h5>
-                  <div class="card-text">
-                    <span>{{ workforce.amountConsumed }}</span>
-                  </div>
-                </div>
-              </div>
+              </Workforce>
             </div>
-          </div>
+          </b-card-group>
         </div>
       </div>
     </b-collapse>
@@ -51,19 +37,22 @@
 </template>
 
 <script>
+  import Workforce from "./Workforce.vue";
+  
   export default {
     name: "Workforces",
+    components: {
+      Workforce
+    },
     props: {
       workforces: {
         type: Array,
         required: true
       }
     },
-    methods: {
-      getImage(path) {
-        return require("../assets/img/" + path);
-      },
+    created: function () {
     },
+    methods: {},
   };
 </script>
 

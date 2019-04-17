@@ -1,0 +1,100 @@
+<template>
+  <b-card
+      no-body
+      class="h-100"
+      style="width: 10rem;"
+  >
+    <b-card-body class="text-center pl-3 pr-3">
+      <!--TODO b-card-img set width to 100%, customize it-->
+      <div class="card-image">
+        <img
+            :src="getImage(icon)"
+            :alt="text"
+        >
+      </div>
+      <b-card-title title-tag="h5">
+        {{ text }}
+      </b-card-title>
+      <b-card-text class="card-input-amount mx-auto">
+        <div class="input-group mb-3">
+          <input
+              v-model.number="displayedAmount"
+              type="text"
+              class="form-control text-right"
+              @input="updatePopulationAmount(displayedAmount, population)"
+          />
+          <!--
+          <div class="input-group-append">
+            <div class="btn-group-vertical">
+              <button
+                  class="btn btn-secondary"
+                  type="button"
+                  @click="increasePopulationAmount(population)"
+              >
+                <i class="fas fa-caret-up"></i>
+              </button>
+              <button
+                  class="btn btn-secondary"
+                  type="button"
+                  @click="decreasePopulationAmount(population)"
+              >
+                <i class="fas fa-caret-down"></i>
+              </button>
+            </div>
+          </div>
+          -->
+        </div>
+      </b-card-text>
+    </b-card-body>
+  </b-card>
+</template>
+
+<script>
+  export default {
+    name: "Population",
+    props: {
+      icon: {
+        type: String,
+        required: true
+      },
+      text: {
+        type: String,
+        required: true
+      },
+      population: {
+        type: Object,
+        required: true
+      }
+    },
+    data() {
+      return {
+        displayedAmount: 0
+      };
+    },
+    created: function () {
+    },
+    methods: {
+      getImage(path) {
+        return require("../assets/img/" + path);
+      },
+      updatePopulationAmount: function (displayedAmount, population) {
+        if (displayedAmount >= 0) {
+          population.updateAmount(displayedAmount);
+        } else {
+          //TODO reject negative value
+        }
+      },
+      increasePopulationAmount: function (population) {
+        population.displayAmount = population.amount + 1;
+        population.updateAmount(population.amount + 1);
+      },
+      decreasePopulationAmount: function (population) {
+        population.displayAmount = population.amount - 1;
+        population.updateAmount(population.amount - 1);
+      },
+    }
+  };
+</script>
+
+<style lang="scss" scoped>
+</style>

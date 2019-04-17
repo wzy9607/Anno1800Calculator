@@ -1,22 +1,25 @@
 <template>
-  <div
-      class="card text-center"
+  <b-card
+      no-body
+      class="h-100"
       style="width: 10rem;"
   >
-    <!--TODO handle multiple producer-->
-    <div class="card-body">
+    <b-card-body class="text-center pl-3 pr-3">
+      <!--TODO handle multiple producer-->
       <div class="card-image">
         <img
             :src="getImage(producer.icon)"
             :alt="producer.text"
         >
       </div>
-      <h5 class="card-title">{{ producer.text }}</h5>
-      <div class="card-input-efficiency">
+      <b-card-title title-tag="h5">
+        {{ producer.text }}
+      </b-card-title>
+      <b-card-text class="card-input-efficiency mx-auto">
         <div class="input-group mb-3">
           <input
               v-model.number="displayedEfficiency"
-              type="number"
+              type="text"
               class="form-control text-right"
               @input="updateEfficiency(displayedEfficiency, producer)"
           />
@@ -24,18 +27,18 @@
             <span class="input-group-text">%</span>
           </div>
         </div>
-      </div>
-      <div class="card-text">
-        <span>{{ producer.amount }}</span>
-      </div>
-      <div class="card-text">
-        <span>Produce {{ amountProduced }} t/min</span>
-      </div>
-      <div class="card-text">
-        <span>Consume {{ amountConsumed }} t/min</span>
-      </div>
-    </div>
-  </div>
+      </b-card-text>
+      <b-card-text class="font-weight-bold">
+        {{ producer.amount }}
+      </b-card-text>
+      <b-card-text class="text-left">
+        <small>
+          Produce {{ amountProduced }} t/min<br>
+          Consume {{ amountConsumed }} t/min
+        </small>
+      </b-card-text>
+    </b-card-body>
+  </b-card>
 </template>
 
 <script>
@@ -58,7 +61,7 @@
     data() {
       return {
         displayedEfficiency: 100
-      }
+      };
     },
     created: function () {
     },

@@ -1,9 +1,7 @@
 <template>
-  <div
-      class=""
-  >
+  <div>
     <!--FIXME collapser not working-->
-    <h2>
+    <h3>
       <b-button
           :v-b-toggle="'collapse-' + id"
           variant="primary"
@@ -12,7 +10,7 @@
         <span class="when-opened"><i class="fas fa-chevron-down"></i></span>
       </b-button>
       {{ text }}
-    </h2>
+    </h3>
     <b-collapse
         :id="'collapse-' + id"
         class="mt-2"
@@ -39,7 +37,9 @@
                         height="64"
                     >
                   </div>
-                  <h5 class="card-title">{{ product.text }}</h5>
+                  <h5 class="card-title">
+{{ product.text }}
+</h5>
                   <div class="card-text">
                     <span>Produce {{ product.amountProduced }} ton/min</span>
                   </div>

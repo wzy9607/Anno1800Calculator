@@ -4,17 +4,42 @@
         alt="Anno 1800 banner"
         :src="getImage('resources/balance.png')"
     >
-    <Populations :populations="gameDataView.populations"></Populations>
-    <Workforces :workforces="gameDataView.workforces"></Workforces>
-    <ProductCategories :product-categories="gameDataView.categories"></ProductCategories>
+    <h1>
+      Anno 1800 Calculator
+    </h1>
+    <div>
+      <Populations :populations="gameDataView.populations"></Populations>
+      <Workforces :workforces="gameDataView.workforces"></Workforces>
+      <div
+          v-for="category in productCategoriesOrdered"
+          :key="category.id"
+      >
+        <!--TODO Construction Material-->
+        <!--Strategic products-->
+        <ProductCategoryStrategic
+            v-if="category.id===11797"
+            :id="category.id"
+            :text="category.text"
+            :products="category.products"
+        ></ProductCategoryStrategic>
+        <ProductCategory
+            v-else
+            :id="category.id"
+            :text="category.text"
+            :products="category.products"
+        ></ProductCategory>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
+  import Lodash from "lodash";
   //components
   import Populations from "./components/Populations.vue";
   import Workforces from "./components/Workforces.vue";
-  import ProductCategories from "./components/ProductCategories.vue";
+  import ProductCategory from "./components/ProductCategory.vue";
+  import ProductCategoryStrategic from "./components/ProductCategoryStrategic.vue";
   // data
   import PopulationLevelsData from "./json/population_levels.json";
   import ProductionBuildingsData from "./json/production_buildings.json";
@@ -29,13 +54,19 @@
     components: {
       Populations,
       Workforces,
-      ProductCategories
+      ProductCategory,
+      ProductCategoryStrategic
     },
     data: function () {
       return {
         gameDataView: Core.view,
         gameAssetsMap: Core.gameAssetsMap
       };
+    },
+    computed: {
+      productCategoriesOrdered: function () {
+        return Lodash.orderBy(this.gameDataView.categories, ["order"]);
+      }
     },
     created() {
       this.init();

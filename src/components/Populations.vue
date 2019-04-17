@@ -1,69 +1,36 @@
 <template>
-  <div
-      class=""
-  >
-    <h2>Inhabitants</h2>
+  <div>
+    <h3>
+      Residents
+    </h3>
     <div class="card">
       <div class="card-body">
-        <div class="card-deck">
+        <b-card-group deck>
           <div
               v-for="population in populations"
               :key="population.id"
           >
-            <div
-                class="card text-center"
-                style="width: 10rem;"
+            <Population
+                :icon="population.icon"
+                :text="population.text"
+                :population="population"
             >
-              <div class="card-body">
-                <div class="card-image">
-                  <img
-                      :src="getImage(population.icon)"
-                      :alt="population.text"
-                  >
-                </div>
-                <h5 class="card-title">{{ population.text }}</h5>
-              </div>
-              <div class="card-input-amount">
-                <div class="input-group mb-3">
-                  <input
-                      v-model.number="population.displayAmount"
-                      type="number"
-                      class="form-control text-right"
-                      @input="updatePopulationAmount(population.displayAmount, population)"
-                  />
-                  <!--
-                  <div class="input-group-append">
-                    <div class="btn-group-vertical">
-                      <button
-                          class="btn btn-secondary"
-                          type="button"
-                          @click="increasePopulationAmount(population)"
-                      >
-                        <i class="fas fa-caret-up"></i>
-                      </button>
-                      <button
-                          class="btn btn-secondary"
-                          type="button"
-                          @click="decreasePopulationAmount(population)"
-                      >
-                        <i class="fas fa-caret-down"></i>
-                      </button>
-                    </div>
-                  </div>
-                  -->
-                </div>
-              </div>
-            </div>
+            </Population>
           </div>
-        </div>
+        </b-card-group>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+  import Population from "./Population.vue";
+  
   export default {
     name: "Populations",
+    components: {
+      Population
+    },
     props: {
       populations: {
         type: Array,
