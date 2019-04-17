@@ -21,8 +21,9 @@
               v-model.number="displayedAmount"
               type="text"
               class="form-control text-right"
-              @input="updatePopulationAmount(displayedAmount, population)"
+              @input="updateAmount(displayedAmount, population)"
           />
+          <!--TODO Add +-1 button-->
           <!--
           <div class="input-group-append">
             <div class="btn-group-vertical">
@@ -77,7 +78,7 @@
       getImage(path) {
         return require("../assets/img/" + path);
       },
-      updatePopulationAmount: function (displayedAmount, population) {
+      updateAmount: function (displayedAmount, population) {
         if (displayedAmount >= 0) {
           population.updateAmount(displayedAmount);
         } else {
