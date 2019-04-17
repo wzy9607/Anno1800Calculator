@@ -35,20 +35,19 @@
       ProductCategory,
       ProductCategoryStrategic
     },
-    computed: {
-      productCategoriesOrdered: function () {
-        return Lodash.orderBy(this.productCategories, ["order"]);
-      }
-    },
     props: {
       productCategories: {
         type: Array,
         required: true
+      }
+    },
+    computed: {
+      productCategoriesOrdered: function () {
+        return Lodash.orderBy(this.productCategories, ["order"]);
       }
     }
   };
 </script>
 
 <style lang="scss" scoped>
-
 </style>

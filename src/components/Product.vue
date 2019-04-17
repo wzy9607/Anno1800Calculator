@@ -1,20 +1,18 @@
 <template>
   <div
       class="card text-center"
-      style="width: 12rem;"
+      style="width: 10rem;"
   >
     <!--TODO handle multiple producer-->
     <div class="card-body">
-      <div class="">
+      <div class="card-image">
         <img
             :src="getImage(producer.icon)"
             :alt="producer.text"
-            width="64"
-            height="64"
         >
       </div>
       <h5 class="card-title">{{ producer.text }}</h5>
-      <div class="card-text">
+      <div class="card-input-efficiency">
         <div class="input-group mb-3">
           <input
               v-model.number="displayedEfficiency"
@@ -31,10 +29,10 @@
         <span>{{ producer.amount }}</span>
       </div>
       <div class="card-text">
-        <span>Produce {{ amountProduced }} ton/min</span>
+        <span>Produce {{ amountProduced }} t/min</span>
       </div>
       <div class="card-text">
-        <span>Consume {{ amountConsumed }} ton/min</span>
+        <span>Consume {{ amountConsumed }} t/min</span>
       </div>
     </div>
   </div>
@@ -76,5 +74,4 @@
 </script>
 
 <style lang="scss" scoped>
-
 </style>

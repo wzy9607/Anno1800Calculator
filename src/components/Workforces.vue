@@ -30,12 +30,10 @@
                   style="width: 10rem;"
               >
                 <div class="card-body">
-                  <div class="">
+                  <div class="card-image">
                     <img
                         :src="getImage(workforce.icon)"
                         :alt="workforce.text"
-                        width="64"
-                        height="64"
                     >
                   </div>
                   <h5 class="card-title">{{ workforce.text }}</h5>
@@ -70,9 +68,4 @@
 </script>
 
 <style lang="scss" scoped>
-  // Hiding and showing content in the toggle button based on collapse state
-  .collapsed > .when-opened,
-  :not(.collapsed) > .when-closed{
-    display: none;
-  }
 </style>

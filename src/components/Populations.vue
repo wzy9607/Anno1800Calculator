@@ -1,6 +1,5 @@
 <template>
   <div
-      id="view-inhabitants"
       class=""
   >
     <h2>Inhabitants</h2>
@@ -16,17 +15,15 @@
                 style="width: 10rem;"
             >
               <div class="card-body">
-                <div class="">
+                <div class="card-image">
                   <img
                       :src="getImage(population.icon)"
                       :alt="population.text"
-                      width="64"
-                      height="64"
                   >
                 </div>
                 <h5 class="card-title">{{ population.text }}</h5>
               </div>
-              <div class="card-text">
+              <div class="card-input-amount">
                 <div class="input-group mb-3">
                   <input
                       v-model.number="population.displayAmount"
@@ -106,5 +103,4 @@
 </script>
 
 <style lang="scss" scoped>
-
 </style>

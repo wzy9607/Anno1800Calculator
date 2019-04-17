@@ -1,5 +1,6 @@
 <template>
   <div class="">
+    <!--FIXME collapser not working-->
     <h2>
       <b-button
           :v-b-toggle="'collapse-' + id"
@@ -24,8 +25,8 @@
             >
               <!--TODO handle multiple producer-->
               <Product
-                  :amountProduced="product.amountProduced"
-                  :amountConsumed="product.amountConsumed"
+                  :amount-produced="product.amountProduced"
+                  :amount-consumed="product.amountConsumed"
                   :producer="product.producers[0].producer"
               ></Product>
             </div>
@@ -69,10 +70,4 @@
 </script>
 
 <style lang="scss" scoped>
-  // Hiding and showing content in the toggle button based on collapse state
-  .collapsed > .when-opened,
-  :not(.collapsed) > .when-closed{
-    display: none;
-  }
-
 </style>

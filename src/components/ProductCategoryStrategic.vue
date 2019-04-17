@@ -1,8 +1,8 @@
 <template>
   <div
-      id="view-category"
       class=""
   >
+    <!--FIXME collapser not working-->
     <h2>
       <b-button
           :v-b-toggle="'collapse-' + id"
@@ -82,10 +82,4 @@
 </script>
 
 <style lang="scss" scoped>
-  // Hiding and showing content in the toggle button based on collapse state
-  .collapsed > .when-opened,
-  :not(.collapsed) > .when-closed{
-    display: none;
-  }
-
 </style>

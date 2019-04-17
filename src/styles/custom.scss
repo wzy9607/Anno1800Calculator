@@ -1,0 +1,26 @@
+.card-image{
+  margin: auto;
+  width: 64px;
+  height: 64px;
+}
+
+.card-image img{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.card-input-amount{
+  margin: auto auto 0;
+  width: 80%;
+}
+
+.card-input-efficiency{
+  margin: auto auto 0;
+  width: 100%;
+}
+
+// Hiding and showing content in the toggle button based on collapse state
+.collapsed > .when-opened,
+:not(.collapsed) > .when-closed{
+  display: none;
+}
