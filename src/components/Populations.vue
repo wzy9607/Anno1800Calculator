@@ -6,9 +6,9 @@
     <div class="border rounded p-3">
       <b-card-group deck>
         <div
-            class="my-1"
             v-for="population in populations"
             :key="population.id"
+            class="my-1"
         >
           <Population
               :icon="population.icon"

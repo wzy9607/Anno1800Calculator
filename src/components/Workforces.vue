@@ -18,9 +18,9 @@
       <div class="border rounded p-3">
         <b-card-group deck>
           <div
-              class="my-1"
               v-for="workforce in workforces"
               :key="workforce.id"
+              class="my-1"
           >
             <Workforce
                 :icon="workforce.icon"

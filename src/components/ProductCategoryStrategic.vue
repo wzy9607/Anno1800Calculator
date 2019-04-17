@@ -19,9 +19,9 @@
       <div class="border rounded p-3">
         <div class="card-deck">
           <div
-              class="my-1"
               v-for="product in products"
               :key="product.id"
+              class="my-1"
           >
             <div
                 class="card text-center"

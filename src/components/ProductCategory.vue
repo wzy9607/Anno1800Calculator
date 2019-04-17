@@ -19,9 +19,9 @@
       <div class="border rounded p-3">
         <b-card-group deck>
           <div
-              class="my-1"
               v-for="product in products"
               :key="product.id"
+              class="my-1"
           >
             <!--TODO handle multiple producer-->
             <Product
