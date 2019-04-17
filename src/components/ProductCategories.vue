@@ -1,12 +1,10 @@
 <template>
   <div
-      id="view-product-categories"
       class=""
   >
-    <!--FIXME for keys aren't working-->
     <div
-        v-for="category in productCategories"
-        :key="category.order"
+        v-for="category in productCategoriesOrdered"
+        :key="category.id"
     >
       <!--TODO Construction Material-->
       <ProductCategoryStrategic
@@ -26,6 +24,8 @@
 </template>
 
 <script>
+  import Lodash from "lodash";
+  
   import ProductCategory from "./ProductCategory.vue";
   import ProductCategoryStrategic from "./ProductCategoryStrategic.vue";
   
@@ -34,6 +34,11 @@
     components: {
       ProductCategory,
       ProductCategoryStrategic
+    },
+    computed: {
+      productCategoriesOrdered: function () {
+        return Lodash.orderBy(this.productCategories, ["order"]);
+      }
     },
     props: {
       productCategories: {
