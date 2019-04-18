@@ -21,16 +21,8 @@
           v-for="category in productCategoriesOrdered"
           :key="category.id"
       >
-        <!--TODO Construction Material-->
-        <!--Construction material products-->
-        <ProductCategoryConstruction
-            v-if="category.id===11707"
-            :id="category.id"
-            :text="category.text"
-            :products="category.products"
-        ></ProductCategoryConstruction>
         <!--Strategic products-->
-        <div v-else-if="category.id===11797"></div>
+        <div v-if="category.id===11797"></div>
         <!--TODO
         <ProductCategoryStrategic
             v-else-if="category.id===11797"
@@ -55,7 +47,6 @@
   import Populations from "./components/Populations.vue";
   import Workforces from "./components/Workforces.vue";
   import ProductCategory from "./components/ProductCategory.vue";
-  import ProductCategoryConstruction from "./components/ProductCategoryConstruction.vue";
   // import ProductCategoryStrategic from "./components/ProductCategoryStrategic.vue";
   // data
   import PopulationLevelsData from "./json/population_levels.json";
@@ -73,8 +64,7 @@
     components: {
       Populations,
       Workforces,
-      ProductCategory,
-      ProductCategoryConstruction,
+      ProductCategory
       // ProductCategoryStrategic
     },
     data: function () {

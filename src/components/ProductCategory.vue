@@ -24,7 +24,14 @@
               class="my-1"
           >
             <!--TODO handle multiple producer-->
+            <ProductConstruction
+                v-if="id===11707"
+                :amount-produced="product.amountProduced"
+                :amount-consumed="product.amountConsumed"
+                :producer="product.producers[0].producer"
+            ></ProductConstruction>
             <Product
+                v-else
                 :amount-produced="product.amountProduced"
                 :amount-consumed="product.amountConsumed"
                 :producer="product.producers[0].producer"
@@ -38,11 +45,13 @@
 
 <script>
   import Product from "./Product.vue";
+  import ProductConstruction from "./ProductConstruction.vue";
   
   export default {
     name: "ProductCategory",
     components: {
-      Product
+      Product,
+      ProductConstruction
     },
     props: {
       id: {
