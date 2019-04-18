@@ -205,7 +205,11 @@ class ConsumerProductTuple {
   constructor(config) {
     this.id = config.id;
     this.amount = 0;
-    this.amountPerConsumer = config.amount;
+    if (config.amount_per_minute) {
+      this.amountPerConsumer = config.amount_per_minute;
+    } else {
+      this.amountPerConsumer = config.amount;
+    }
     this.consumer = config.consumer;
     // link to product
     this.product = gameAssetsMap.get(this.id);
@@ -265,7 +269,11 @@ class ProducerProductTuple {
     this.id = config.id;
     this.amount = 0;
     this.amountDemanded = 0;
-    this.amountPerProducer = config.amount;
+    if (config.amount_per_minute) {
+      this.amountPerProducer = config.amount_per_minute;
+    } else {
+      this.amountPerProducer = config.amount;
+    }
     this.producer = config.producer;
     // link to product
     this.product = gameAssetsMap.get(this.id);
