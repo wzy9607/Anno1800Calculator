@@ -12,7 +12,6 @@
     </h3>
     <b-collapse
         id="collapse-workforces"
-        class="mt-2"
         visible
     >
       <div class="border rounded p-3">
@@ -20,7 +19,7 @@
           <div
               v-for="workforce in workforces"
               :key="workforce.id"
-              class="my-1"
+              class="card-margin-fix"
           >
             <Workforce
                 :icon="workforce.icon"

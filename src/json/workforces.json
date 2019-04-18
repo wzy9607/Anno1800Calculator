@@ -5,43 +5,43 @@
       "id": 1010052,
       "name": "moderate workforce 1",
       "icon": "resources/workforce_farmer.png",
-      "text": "Farmer Workforce"
+      "text": "Farmers"
     },
     {
       "id": 1010115,
       "name": "moderate workforce 2",
       "icon": "resources/workforce_worker.png",
-      "text": "Worker Workforce"
+      "text": "Workers"
     },
     {
       "id": 1010116,
       "name": "moderate workforce 3",
       "icon": "resources/workforce_artisan.png",
-      "text": "Artisan Workforce"
+      "text": "Artisans"
     },
     {
       "id": 1010117,
       "name": "moderate workforce 4",
       "icon": "resources/workforce_engineer.png",
-      "text": "Engineer Workforce"
+      "text": "Engineers"
     },
     {
       "id": 1010128,
       "name": "moderate workforce 5",
       "icon": "resources/workforce_investor.png",
-      "text": "Investor Workforce"
+      "text": "Investors"
     },
     {
       "id": 1010366,
       "name": "colony workforce 1",
       "icon": "resources/workforce_jornalero.png",
-      "text": "Jornalero Workforce"
+      "text": "Jornaleros"
     },
     {
       "id": 1010367,
       "name": "colony workforce 2",
       "icon": "resources/workforce_obrero.png",
-      "text": "Obrero Workforce"
+      "text": "Obreros"
     }
   ]
 }

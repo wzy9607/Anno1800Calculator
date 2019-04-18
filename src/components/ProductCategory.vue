@@ -13,7 +13,6 @@
     </h3>
     <b-collapse
         :id="'collapse-' + id"
-        class="mt-2"
         visible
     >
       <div class="border rounded p-3">
@@ -21,7 +20,7 @@
           <div
               v-for="product in products"
               :key="product.id"
-              class="my-1"
+              class="card-margin-fix"
           >
             <!--TODO handle multiple producer-->
             <ProductConstruction

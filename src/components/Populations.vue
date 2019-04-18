@@ -8,7 +8,7 @@
         <div
             v-for="population in populations"
             :key="population.id"
-            class="my-1"
+            class="card-margin-fix"
         >
           <Population
               :icon="population.icon"

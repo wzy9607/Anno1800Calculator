@@ -1,6 +1,18 @@
-@import "../../node_modules/bootstrap/dist/css/bootstrap.css";
-@import "../../node_modules/bootstrap-vue/dist/bootstrap-vue.css";
+// for Source Sans Pro
+$font-weight-lighter: 200;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-bolder: 900;
 
+$headings-font-weight: $font-weight-semibold;
+
+$card-deck-margin: 0.5rem;
+$card-spacer-x: 0.5rem;
+
+@import '~bootstrap/scss/bootstrap.scss';
+@import '~bootstrap-vue/src/index.scss';
 
 #app {
   font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
@@ -12,7 +24,56 @@
 }
 
 .font-weight-semibold {
-  font-weight: 600; // for Source Sans Pro
+  font-weight: $font-weight-semibold !important; // for Source Sans Pro
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.in-text-image {
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: auto 0 auto 0.2rem;
+}
+
+.card-margin-fix {
+  margin-bottom: $card-deck-margin;
+}
+
+$cards-per-line: (
+  xs: 1,
+  sm: 2,
+  md: 3,
+  lg: 4,
+  xl: 5
+);
+
+.card-deck {
+  display: flex;
+  flex-flow: row wrap;
+  margin-right: -$card-deck-margin;
+  margin-left: -$card-deck-margin;
+  
+  .card {;
+    display: flex;
+    // Flexbugs #4: https://github.com/philipwalton/flexbugs#flexbug-4
+    flex: 1 0 0%;
+    flex-direction: column;
+    margin-right: $card-deck-margin;
+    margin-bottom: $card-deck-margin;
+    margin-left: $card-deck-margin;
+  }
+}
+
+@each $name, $breakpoint in $grid-breakpoints {
+  @media (min-width: $breakpoint) {
+    .card-deck .card {
+      flex: 0 0 calc(#{100/map-get($cards-per-line, $name)}% - #{$grid-gutter-width});
+    }
+  }
 }
 
 .card-image {
@@ -38,16 +99,4 @@
 .collapsed > .when-opened,
 :not(.collapsed) > .when-closed {
   display: none;
-}
-
-img.in-text-image {
-  display: block;
-  width: 1.5rem;
-  height: 1.5rem;
-  margin: auto 0 auto 0.2rem;
-}
-
-p {
-  margin-top: 0;
-  margin-bottom: 0.5rem;
 }

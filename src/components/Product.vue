@@ -5,7 +5,7 @@
       class="h-100"
       style="width: 10rem;"
   >
-    <b-card-body class="text-center px-2 py-2">
+    <b-card-body class="text-center">
       <!--TODO handle multiple producer-->
       <div class="card-image">
         <img
@@ -15,7 +15,6 @@
       </div>
       <b-card-title
           title-tag="h6"
-          class="font-weight-bold"
       >
         {{ producer.text }}
       </b-card-title>

@@ -2,9 +2,9 @@
   <b-card
       no-body
       class="h-100"
-      style="width: 10rem;"
+      style="width: 8rem;"
   >
-    <b-card-body class="text-center px-2 py-2">
+    <b-card-body class="text-center">
       <div class="card-image">
         <img
             :src="getImage(icon)"
@@ -13,7 +13,6 @@
       </div>
       <b-card-title
           title-tag="h6"
-          class="font-weight-bold"
       >
         {{ text }}
       </b-card-title>

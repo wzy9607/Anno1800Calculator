@@ -2,9 +2,9 @@
   <b-card
       no-body
       class="h-100"
-      style="width: 10rem;"
+      style="width: 8rem;"
   >
-    <b-card-body class="text-center px-2 py-2">
+    <b-card-body class="text-center">
       <!--TODO b-card-img set width to 100%, customize it-->
       <div class="card-image">
         <img
@@ -14,7 +14,6 @@
       </div>
       <b-card-title
           title-tag="h6"
-          class="font-weight-bold"
       >
         {{ text }}
       </b-card-title>
