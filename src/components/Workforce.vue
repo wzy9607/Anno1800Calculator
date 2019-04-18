@@ -11,7 +11,10 @@
             :alt="text"
         >
       </div>
-      <b-card-title title-tag="h5">
+      <b-card-title
+          title-tag="h6"
+          class="font-weight-bold"
+      >
         {{ text }}
       </b-card-title>
       <b-card-text class="font-weight-bold">
