@@ -1,5 +1,5 @@
 # Anno1800Calculator
-[![Build Status](https://travis-ci.org/wzy9607/Anno1800Calculator.svg?branch=master)](https://travis-ci.org/wzy9607/Anno1800Calculator)
+[![Build Status](https://travis-ci.com/wzy9607/Anno1800Calculator.svg?branch=master)](https://travis-ci.com/wzy9607/Anno1800Calculator)
 
 A calculator for Anno 1800.
 
