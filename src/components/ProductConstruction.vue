@@ -44,8 +44,7 @@
       </b-card-text>
       <b-card-text class="text-left">
         <small>
-          Produce {{ amountProduced }} t/min<br>
-          Consume {{ amountConsumed }} t/min
+          Produce {{ amountProduced | numeral('0,0[.]00') }} t/min
         </small>
       </b-card-text>
     </b-card-body>

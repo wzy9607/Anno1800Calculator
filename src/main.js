@@ -6,6 +6,8 @@ import vueNumeralFilterInstaller from 'vue-numeral-filter';
 import App from "./App.vue";
 
 Vue.use(BootstrapVue);
+Vue.use(vueNumeralFilterInstaller, {locale: 'en-gb'});
+
 Vue.config.productionTip = false;
 
 new Vue({

@@ -16,7 +16,8 @@
     "core-js": "^2.6.5",
     "lodash": "^4.17.11",
     "source-sans-pro": "^2.45.0",
-    "vue": "^2.6.10"
+    "vue": "^2.6.10",
+    "vue-numeral-filter": "^1.1.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.6.0",
