@@ -4,10 +4,10 @@
     <h3>
       <b-button
           :v-b-toggle="'collapse-' + id"
-          variant="primary"
+          variant="light"
       >
-        <span class="when-closed"><i class="fas fa-chevron-right"></i></span>
-        <span class="when-opened"><i class="fas fa-chevron-down"></i></span>
+        <span class="when-opened"><i class="fas fa-chevron-right"></i></span>
+        <span class="when-closed"><i class="fas fa-chevron-down"></i></span>
       </b-button>
       {{ text }}
     </h3>
