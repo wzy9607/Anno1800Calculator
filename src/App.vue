@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <!--TODO use a real banner image-->
     <img
         alt="Anno 1800 banner"
         :src="getImage('resources/balance.png')"
@@ -50,8 +51,6 @@
 
 <script>
   import Lodash from "lodash";
-  // Load typeface
-  require("source-sans-pro/source-sans-pro.css");
   //components
   import Populations from "./components/Populations.vue";
   import Workforces from "./components/Workforces.vue";
@@ -66,6 +65,8 @@
   import ProductCategoriesData from "./json/product_categories.json";
   // calculator core
   import * as Core from "./core.js";
+  // Load typeface
+  require("source-sans-pro/source-sans-pro.css");
   
   export default {
     name: "App",
