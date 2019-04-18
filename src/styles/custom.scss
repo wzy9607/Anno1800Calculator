@@ -54,6 +54,9 @@ $cards-per-line: (
 .card-deck {
   display: flex;
   flex-flow: row wrap;
+  justify-content: center;
+  // FIXME left align continued rows
+  
   margin-right: -$card-deck-margin;
   margin-left: -$card-deck-margin;
   
