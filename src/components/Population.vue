@@ -4,7 +4,7 @@
       class="h-100"
       style="width: 10rem;"
   >
-    <b-card-body class="text-center px-3 py-2">
+    <b-card-body class="text-center px-2 py-2">
       <!--TODO b-card-img set width to 100%, customize it-->
       <div class="card-image">
         <img
@@ -23,7 +23,7 @@
           <input
               v-model.number="displayedAmount"
               type="text"
-              class="form-control text-right font-weight-bold"
+              class="form-control text-right font-weight-semibold"
               @input="updateAmount(displayedAmount, population)"
           />
           <div class="input-group-append">

@@ -4,7 +4,7 @@
       class="h-100"
       style="width: 10rem;"
   >
-    <b-card-body class="text-center px-3 py-2">
+    <b-card-body class="text-center px-2 py-2">
       <div class="card-image">
         <img
             :src="getImage(icon)"
@@ -17,7 +17,7 @@
       >
         {{ text }}
       </b-card-title>
-      <b-card-text class="font-weight-bold">
+      <b-card-text class="font-weight-semibold">
         {{ amount }}
       </b-card-text>
     </b-card-body>

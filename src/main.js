@@ -1,8 +1,7 @@
 import Vue from "vue";
 import BootstrapVue from "bootstrap-vue";
 import "./styles/custom.scss";
-import "bootstrap/dist/css/bootstrap.css";
-import "bootstrap-vue/dist/bootstrap-vue.css";
+import vueNumeralFilterInstaller from 'vue-numeral-filter';
 
 import App from "./App.vue";
 

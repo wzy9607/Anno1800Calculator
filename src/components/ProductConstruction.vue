@@ -4,7 +4,7 @@
       class="h-100"
       style="width: 10rem;"
   >
-    <b-card-body class="text-center px-3 py-2">
+    <b-card-body class="text-center px-2 py-2">
       <!--TODO handle multiple producer-->
       <div class="card-image">
         <img
@@ -18,7 +18,7 @@
       >
         {{ producer.text }}
       </b-card-title>
-      <b-card-text class="card-input-efficiency mx-auto">
+      <b-card-text class="card-input-efficiency mx-auto mb-2">
         <div class="input-group">
           <input
               v-model.number="displayedEfficiency"
@@ -31,12 +31,12 @@
           </div>
         </div>
       </b-card-text>
-      <b-card-text class="card-input-amount mx-auto">
+      <b-card-text class="card-input-amount mx-auto mb-2">
         <div class="input-group">
           <input
               v-model.number="displayedAmount"
               type="text"
-              class="form-control text-right font-weight-bold"
+              class="form-control text-right font-weight-semibold"
               @input="updateAmount(displayedAmount, producer)"
           />
           <!--TODO Add +-1 button-->
