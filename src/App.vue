@@ -29,12 +29,14 @@
             :products="category.products"
         ></ProductCategoryConstruction>
         <!--Strategic products-->
+        <div v-else-if="category.id===11797"></div>
+        <!--TODO
         <ProductCategoryStrategic
             v-else-if="category.id===11797"
             :id="category.id"
             :text="category.text"
             :products="category.products"
-        ></ProductCategoryStrategic>
+        ></ProductCategoryStrategic>-->
         <ProductCategory
             v-else
             :id="category.id"
@@ -53,7 +55,7 @@
   import Workforces from "./components/Workforces.vue";
   import ProductCategory from "./components/ProductCategory.vue";
   import ProductCategoryConstruction from "./components/ProductCategoryConstruction.vue";
-  import ProductCategoryStrategic from "./components/ProductCategoryStrategic.vue";
+  // import ProductCategoryStrategic from "./components/ProductCategoryStrategic.vue";
   // data
   import PopulationLevelsData from "./json/population_levels.json";
   import ProductionBuildingsData from "./json/production_buildings.json";
@@ -70,7 +72,7 @@
       Workforces,
       ProductCategory,
       ProductCategoryConstruction,
-      ProductCategoryStrategic
+      // ProductCategoryStrategic
     },
     data: function () {
       return {
