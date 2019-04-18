@@ -26,9 +26,9 @@
               class="form-control text-right font-weight-bold"
               @input="updateAmount(displayedAmount, population)"
           />
-          <!--TODO Add +-1 button-->
-          <!--
           <div class="input-group-append">
+            <!--TODO Add +-1 button-->
+            <!--
             <div class="btn-group-vertical">
               <button
                   class="btn btn-secondary"
@@ -45,8 +45,13 @@
                 <i class="fas fa-caret-down"></i>
               </button>
             </div>
+            -->
+            <img
+                class="in-text-image"
+                :src="getImage('resources/population.png')"
+                alt="Population"
+            >
           </div>
-          -->
         </div>
       </b-card-text>
     </b-card-body>

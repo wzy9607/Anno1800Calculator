@@ -22,3 +22,10 @@
 :not(.collapsed) > .when-closed {
   display: none;
 }
+
+img.in-text-image {
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: auto 0 auto 0.2rem;
+}
