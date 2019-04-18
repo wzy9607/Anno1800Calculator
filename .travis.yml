@@ -1,0 +1,8 @@
+# Travis CI configuration
+language: node_js
+node_js:
+  - "node" # latest stable Node.js release
+install:
+  - npm install
+script:
+  - vue-cli-service build
