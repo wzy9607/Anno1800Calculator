@@ -50,6 +50,8 @@
 
 <script>
   import Lodash from "lodash";
+  // Load typeface
+  require("source-sans-pro/source-sans-pro.css");
   //components
   import Populations from "./components/Populations.vue";
   import Workforces from "./components/Workforces.vue";
@@ -189,7 +191,7 @@
 
 <style lang="scss">
   #app {
-    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;

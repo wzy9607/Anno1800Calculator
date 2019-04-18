@@ -15,6 +15,7 @@
     "bootstrap-vue": "^2.0.0-rc.18",
     "core-js": "^2.6.5",
     "lodash": "^4.17.11",
+    "source-sans-pro": "^2.45.0",
     "vue": "^2.6.10"
   },
   "devDependencies": {
