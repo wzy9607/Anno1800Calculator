@@ -1,5 +1,6 @@
 <template>
   <b-card
+      v-if="amountConsumed>0"
       no-body
       class="h-100"
       style="width: 10rem;"
