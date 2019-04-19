@@ -1,30 +1,30 @@
-// for Source Sans Pro
+// font for Source Sans Pro
 $font-weight-lighter: 200;
 $font-weight-light: 300;
 $font-weight-normal: 400;
 $font-weight-semibold: 600;
 $font-weight-bold: 700;
 $font-weight-bolder: 900;
-
+// headers
 $headings-font-weight: $font-weight-semibold;
-
+// card
 $card-deck-margin: 0.5rem;
 $card-spacer-x: 0.5rem;
 
-@import '~bootstrap/scss/bootstrap.scss';
-@import '~bootstrap-vue/src/index.scss';
+@import '~bootstrap/scss/bootstrap';
+@import '~bootstrap-vue/src/index';
 
 #app {
   font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  margin-top: 60px;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .font-weight-semibold {
-  font-weight: $font-weight-semibold !important; // for Source Sans Pro
+  font-weight: $font-weight-semibold !important;
 }
 
 p {
@@ -34,8 +34,8 @@ p {
 
 .in-text-image {
   display: block;
-  width: 1.5rem;
   height: 1.5rem;
+  width: 1.5rem;
   margin: auto 0 auto 0.2rem;
 }
 
@@ -56,13 +56,13 @@ $cards-per-line: (
   flex-flow: row wrap;
   justify-content: center;
   // FIXME left align continued rows
-  
-  margin-right: -$card-deck-margin;
   margin-left: -$card-deck-margin;
+  margin-right: -$card-deck-margin;
   
-  .card {;
+  .card {
     display: flex;
-    // Flexbugs #4: https://github.com/philipwalton/flexbugs#flexbug-4
+    // Flex bug #4: https://github.com/philipwalton/flexbugs#flexbug-4
+    // noinspection CssRedundantUnit
     flex: 1 0 0%;
     flex-direction: column;
     margin-right: $card-deck-margin;
@@ -74,20 +74,20 @@ $cards-per-line: (
 @each $name, $breakpoint in $grid-breakpoints {
   @media (min-width: $breakpoint) {
     .card-deck .card {
-      flex: 0 0 calc(#{100/map-get($cards-per-line, $name)}% - #{$grid-gutter-width});
+      flex: 0 0 calc(#{100 / map-get($cards-per-line, $name)}% - #{$grid-gutter-width});
     }
   }
 }
 
 .card-image {
-  width: 4rem;
   height: 4rem;
+  width: 4rem;
   margin: auto;
 }
 
 .card-image > img {
-  max-width: 100%;
   max-height: 100%;
+  max-width: 100%;
 }
 
 .card-input-amount {

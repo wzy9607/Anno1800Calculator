@@ -131,6 +131,7 @@ class ProductionBuilding {
   
   updateAmountAtLeast(amount) {
     // TODO handle multiple outputs
+    // noinspection MagicNumberJS
     this.amount = Math.ceil(amount / (this.percentEfficiency / 100));
     this.updateOutputs();
     this.updateInputs();
@@ -220,15 +221,6 @@ class ConsumerProductTuple {
     }
   }
   
-  linkProduct() {
-    this.product = gameAssetsMap.get(this.id);
-    if (this.product !== undefined && this.product instanceof Product) {
-      this.product.addConsumer(this);
-    } else {
-      throw "Consumer" + this.consumer.id + "can't find product " + this.id;
-    }
-  }
-  
   updateAmount(consumerAmount) {
     this.amount = this.amountPerConsumer * consumerAmount;
     this.product.updateAmountConsumed();
@@ -241,15 +233,6 @@ class WorkforceDemand {
     this.amount = 0;
     this.amountPerConsumer = config.amount;
     // link to workforce
-    this.workforce = gameAssetsMap.get(this.id);
-    if (this.workforce !== undefined && this.workforce instanceof Workforce) {
-      this.workforce.addConsumer(this);
-    } else {
-      throw "Can't find workforce " + this.id;
-    }
-  }
-  
-  linkWorkforce() {
     this.workforce = gameAssetsMap.get(this.id);
     if (this.workforce !== undefined && this.workforce instanceof Workforce) {
       this.workforce.addConsumer(this);
@@ -276,15 +259,6 @@ class ProducerProductTuple {
     }
     this.producer = config.producer;
     // link to product
-    this.product = gameAssetsMap.get(this.id);
-    if (this.product !== undefined && this.product instanceof Product) {
-      this.product.addProducer(this);
-    } else {
-      throw "Producer " + this.producer.id + " can't find product " + this.id;
-    }
-  }
-  
-  linkProduct() {
     this.product = gameAssetsMap.get(this.id);
     if (this.product !== undefined && this.product instanceof Product) {
       this.product.addProducer(this);
