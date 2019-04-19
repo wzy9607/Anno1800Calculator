@@ -1,0 +1,113 @@
+{
+  "plugins": [
+    "stylelint-order",
+    "stylelint-scss"
+  ],
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-sass-guidelines"
+  ],
+  "defaultSeverity": "warning",
+  "rules": {
+    "selector-max-id": 1,
+    "no-eol-whitespace": [
+      true,
+      {
+        "ignore": [
+          "empty-lines"
+        ]
+      }
+    ],
+    "order/properties-order": [
+      {
+        "groupName": "font",
+        "noEmptyLineBetween": "true",
+        "properties": [
+          "font-size",
+          "font-weight"
+        ]
+      },
+      {
+        "groupName": "dimensions",
+        "noEmptyLineBetween": "true",
+        "properties": [
+          "height",
+          "width"
+        ]
+      },
+      {
+        "groupName": "margin",
+        "noEmptyLineBetween": "true",
+        "properties": [
+          "margin",
+          "margin-top",
+          "margin-right",
+          "margin-bottom",
+          "margin-left"
+        ]
+      },
+      {
+        "groupName": "border",
+        "noEmptyLineBetween": "true",
+        "properties": [
+          "border",
+          "border-width",
+          "border-style",
+          "border-color",
+          "border-top",
+          "border-top-width",
+          "border-top-style",
+          "border-top-color",
+          "border-right",
+          "border-right-width",
+          "border-right-style",
+          "border-right-color",
+          "border-bottom",
+          "border-bottom-width",
+          "border-bottom-style",
+          "border-bottom-color",
+          "border-left",
+          "border-left-width",
+          "border-left-style",
+          "border-left-color",
+          "border-radius"
+        ]
+      },
+      {
+        "groupName": "padding",
+        "noEmptyLineBetween": "true",
+        "properties": [
+          "padding",
+          "padding-top",
+          "padding-right",
+          "padding-bottom",
+          "padding-left"
+        ]
+      }
+    ],
+    "order/properties-alphabetical-order": null,
+    "scss/at-function-parentheses-space-before": "always",
+    "scss/at-mixin-parentheses-space-before": "always",
+    "scss/dollar-variable-colon-newline-after": "always-multi-line",
+    "scss/dollar-variable-empty-line-before": [
+      "always",
+      {
+        "except": [
+          "first-nested",
+          "after-comment",
+          "after-dollar-variable"
+        ]
+      },
+      {
+        "ignore": [
+          "inside-single-line-block"
+        ]
+      }
+    ],
+    "scss/dollar-variable-pattern": "^[a-z]+([a-z0-9-]+[a-z0-9]+)?$",
+    "scss/double-slash-comment-whitespace-inside": "always",
+    "scss/operator-no-newline-after": true,
+    "scss/operator-no-unspaced": true,
+    "scss/percent-placeholder-pattern": "^[a-z]+([a-z0-9-]+[a-z0-9]+)?$"
+  }
+}

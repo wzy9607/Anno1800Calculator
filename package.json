@@ -28,6 +28,9 @@
     "eslint-plugin-vue": "^5.0.0",
     "sass": "^1.18.0",
     "sass-loader": "^7.1.0",
+    "stylelint": "^10.0.1",
+    "stylelint-config-sass-guidelines": "^5.4.0",
+    "stylelint-config-standard": "^18.3.0",
     "vue-template-compiler": "^2.6.10"
   },
   "bugs": {
