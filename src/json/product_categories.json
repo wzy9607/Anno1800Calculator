@@ -45,7 +45,6 @@
       "name": "Product Category Intermediate Good",
       "text": "Processing Good",
       "products": [
-        1010210,
         1010211,
         1010215,
         1010219,
@@ -112,11 +111,12 @@
       "name": "Product Category Construction Material",
       "text": "Construction Material",
       "products": [
-        1010202,
         1010196,
         1010205,
-        1010207,
         1010218,
+        1010207,
+        1010202,
+        1010210,
         1010221,
         1010223
       ]
