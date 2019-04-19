@@ -10,15 +10,16 @@ $headings-font-weight: $font-weight-semibold;
 // card
 $card-deck-margin: 0.5rem;
 $card-spacer-x: 0.5rem;
+// enable responsive font sizes
+$enable-responsive-font-sizes: true;
 
 @import '~bootstrap/scss/bootstrap';
 @import '~bootstrap-vue/src/index';
 
 #app {
   font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
-  margin-top: 60px;
+  margin-top: 40px;
   text-align: center;
-  color: #2c3e50;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

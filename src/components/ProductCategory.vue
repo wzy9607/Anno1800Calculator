@@ -1,9 +1,8 @@
 <template>
   <div class="mx-4 my-4">
-    <!--FIXME collapser not working-->
     <h3>
       <b-button
-          :v-b-toggle="'collapse-' + id"
+          v-b-toggle="'collapse-' + id"
           variant="light"
       >
         <span class="when-opened"><i class="fas fa-chevron-right"></i></span>
