@@ -11,6 +11,9 @@
   },
   "main": "main.js",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.17",
+    "@fortawesome/free-solid-svg-icons": "^5.8.1",
+    "@fortawesome/vue-fontawesome": "^0.1.6",
     "bootstrap": "^4.3.1",
     "bootstrap-vue": "^2.0.0-rc.18",
     "core-js": "^2.6.5",

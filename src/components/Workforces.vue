@@ -5,8 +5,8 @@
           v-b-toggle="'collapse-workforces'"
           variant="light"
       >
-        <span class="when-opened"><i class="fas fa-chevron-right"></i></span>
-        <span class="when-closed"><i class="fas fa-chevron-down"></i></span>
+        <span class="when-opened"><font-awesome-icon icon="chevron-right" /></span>
+        <span class="when-closed"><font-awesome-icon icon="chevron-down" /></span>
       </b-button>
       {{ text }}
     </h3>
