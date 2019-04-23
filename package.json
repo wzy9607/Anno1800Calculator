@@ -17,10 +17,12 @@
     "bootstrap": "^4.3.1",
     "bootstrap-vue": "^2.0.0-rc.18",
     "core-js": "^2.6.5",
+    "es6-promise": "^4.2.6",
     "lodash": "^4.17.11",
     "source-sans-pro": "^2.45.0",
     "vue": "^2.6.10",
-    "vue-numeral-filter": "^1.1.1"
+    "vue-numeral-filter": "^1.1.1",
+    "vuex": "^3.1.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.6.0",
@@ -29,7 +31,7 @@
     "babel-eslint": "^10.0.1",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
-    "sass": "^1.18.0",
+    "sass": "^1.19.0",
     "sass-loader": "^7.1.0",
     "stylelint": "^10.0.1",
     "stylelint-config-sass-guidelines": "^5.4.0",
