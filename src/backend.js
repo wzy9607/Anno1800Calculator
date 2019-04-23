@@ -15,6 +15,7 @@ class Population {
     this.text = config.text;
     this.icon = config.icon || "";
     this.amount = 0;
+    this.pop_per_house = config.max_pop_per_house;
     this.needs = [];
     this.needsCache = config.needs;
   }
@@ -30,6 +31,7 @@ class Population {
       if (n.amount > 0) {
         let tmp = n;
         tmp.consumer = this;
+        tmp.amount_per_minute = tmp.amount * 60 / this.pop_per_house;
         this.needs.push(new ConsumerProductTuple(tmp));
       }
     });
@@ -206,11 +208,7 @@ class ConsumerProductTuple {
   constructor(config) {
     this.id = config.id;
     this.amount = 0;
-    if (config.amount_per_minute) {
-      this.amountPerConsumer = config.amount_per_minute;
-    } else {
-      this.amountPerConsumer = config.amount;
-    }
+    this.amountPerConsumer = config.amount_per_minute;
     this.consumer = config.consumer;
     // link to product
     this.product = gameAssetsMap.get(this.id);

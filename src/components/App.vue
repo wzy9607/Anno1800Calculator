@@ -99,60 +99,6 @@
           product_categories: productCategories
         };
         Backend.init(data);
-        // FIXME The parsed game date of population aren't correct, manually correct them here.
-        Backend.gameData.populations.forEach(population => {
-          switch (population.id) {
-            case 15000000:
-              population.needs.forEach(need => {
-                if (need.amount !== undefined) {
-                  need.amountPerConsumer *= 6.0;
-                }
-              });
-              break;
-            case 15000001:
-              population.needs.forEach(need => {
-                if (need.amountPerConsumer !== undefined) {
-                  need.amountPerConsumer *= 3.0;
-                }
-              });
-              break;
-            case 15000002:
-              population.needs.forEach(need => {
-                if (need.amountPerConsumer !== undefined) {
-                  need.amountPerConsumer *= 2.0;
-                }
-              });
-              break;
-            case 15000003:
-              population.needs.forEach(need => {
-                if (need.amountPerConsumer !== undefined) {
-                  need.amountPerConsumer *= 1.5;
-                }
-              });
-              break;
-            case 15000004:
-              population.needs.forEach(need => {
-                if (need.amountPerConsumer !== undefined) {
-                  need.amountPerConsumer *= 1.2;
-                }
-              });
-              break;
-            case 15000005:
-              population.needs.forEach(need => {
-                if (need.amountPerConsumer !== undefined) {
-                  need.amountPerConsumer *= 6.0;
-                }
-              });
-              break;
-            case 15000006:
-              population.needs.forEach(need => {
-                if (need.amountPerConsumer !== undefined) {
-                  need.amountPerConsumer *= 3.0;
-                }
-              });
-              break;
-          }
-        });
         /*
         Backend.gameData.populations.forEach(population => {
           console.log(population);
