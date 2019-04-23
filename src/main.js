@@ -7,7 +7,7 @@ import BootstrapVue from "bootstrap-vue";
 
 import "./styles/custom.scss";
 
-import App from "./App.vue";
+import App from "./components/App.vue";
 
 library.add(faChevronRight, faChevronDown);
 
@@ -19,5 +19,6 @@ Vue.config.productionTip = false;
 
 // noinspection JSUnusedGlobalSymbols
 new Vue({
+          el: "#app",
           render: h => h(App)
-        }).$mount("#app");
+        });

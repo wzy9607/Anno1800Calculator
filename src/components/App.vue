@@ -11,11 +11,11 @@
     <div>
       <Populations
           text="Residents"
-          :populations="gameDataView.populations"
+          :populations="gameData.populations"
       ></Populations>
       <Workforces
           text="Workforces"
-          :workforces="gameDataView.workforces"
+          :workforces="gameData.workforces"
       ></Workforces>
       <div
           v-for="category in productCategoriesOrdered"
@@ -44,18 +44,18 @@
 <script>
   import Lodash from "lodash";
   //components
-  import Populations from "./components/Populations.vue";
-  import Workforces from "./components/Workforces.vue";
-  import ProductCategory from "./components/ProductCategory.vue";
+  import Populations from "./Populations.vue";
+  import Workforces from "./Workforces.vue";
+  import ProductCategory from "./ProductCategory.vue";
   // import ProductCategoryStrategic from "./components/ProductCategoryStrategic.vue";
   // data
-  import PopulationLevelsData from "./json/population_levels.json";
-  import ProductionBuildingsData from "./json/production_buildings.json";
-  import ProductsData from "./json/products.json";
-  import WorkforcesData from "./json/workforces.json";
-  import ProductCategoriesData from "./json/product_categories.json";
+  import PopulationLevelsData from "../json/population_levels.json";
+  import ProductionBuildingsData from "../json/production_buildings.json";
+  import ProductsData from "../json/products.json";
+  import WorkforcesData from "../json/workforces.json";
+  import ProductCategoriesData from "../json/product_categories.json";
   // calculator core
-  import * as Core from "./core.js";
+  import Backend from "../backend.js";
   // Load typeface
   require("source-sans-pro/source-sans-pro.css");
   
@@ -69,13 +69,13 @@
     },
     data: function () {
       return {
-        gameDataView: Core.view,
-        gameAssetsMap: Core.gameAssetsMap
+        gameData: Backend.gameData,
+        gameAssetsMap: Backend.gameAssetsMap
       };
     },
     computed: {
       productCategoriesOrdered: function () {
-        return Lodash.orderBy(this.gameDataView.categories, ["order"]);
+        return Lodash.orderBy(this.gameData.categories, ["order"]);
       }
     },
     created() {
@@ -83,7 +83,7 @@
     },
     methods: {
       getImage(path) {
-        return require("./assets/img/" + path);
+        return require("../assets/img/" + path);
       },
       init: function () {
         let populationLevels = JSON.parse(JSON.stringify(PopulationLevelsData.PopulationLevels));
@@ -98,9 +98,9 @@
           workforces: workforces,
           product_categories: productCategories
         };
-        Core.init(data);
+        Backend.init(data);
         // FIXME The parsed game date of population aren't correct, manually correct them here.
-        Core.view.populations.forEach(population => {
+        Backend.gameData.populations.forEach(population => {
           switch (population.id) {
             case 15000000:
               population.needs.forEach(need => {
@@ -154,21 +154,21 @@
           }
         });
         /*
-        Core.view.populations.forEach(population => {
+        Backend.gameData.populations.forEach(population => {
           console.log(population);
           console.log(population.id);
           console.log(population.needs);
         });
-        Core.products.forEach(product => {
+        Backend.products.forEach(product => {
           console.log(product);
           console.log(product.id);
           console.log(product.producers);
         });
-        Core.view.buildings.forEach(buildings => {
+        Backend.gameData.buildings.forEach(buildings => {
           console.log(buildings);
           console.log(buildings.id);
         });
-        Core.view.categories.forEach(category => {
+        Backend.gameData.categories.forEach(category => {
           console.log(category);
           console.log(category.id);
           console.log(category.order);

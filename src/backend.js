@@ -1,6 +1,6 @@
 let products = new Map();
 let gameAssetsMap = new Map();
-let view = {
+let gameData = {
   populations: [],
   workforces: [],
   buildings: [],
@@ -299,13 +299,13 @@ function init(data) {
   data.population_levels.forEach(population => {
     let p = new Population(population);
     gameAssetsMap.set(p.id, p);
-    view.populations.push(p);
+    gameData.populations.push(p);
   });
   
   data.production_buildings.forEach(building => {
     let b = new ProductionBuilding(building);
     gameAssetsMap.set(b.id, b);
-    view.buildings.push(b);
+    gameData.buildings.push(b);
   });
   
   data.products.forEach(product => {
@@ -317,13 +317,13 @@ function init(data) {
   data.workforces.forEach(workforce => {
     let w = new Workforce(workforce);
     gameAssetsMap.set(w.id, w);
-    view.workforces.push(w);
+    gameData.workforces.push(w);
   });
   
-  view.populations.forEach(p => {
+  gameData.populations.forEach(p => {
     p.initNeeds();
   });
-  view.buildings.forEach(b => {
+  gameData.buildings.forEach(b => {
     b.initInputs();
     b.initOutputs();
     b.initWorkforceDemand();
@@ -332,12 +332,12 @@ function init(data) {
   data.product_categories.forEach(category => {
     let c = new ProductCategory(category);
     gameAssetsMap.set(c.id, c);
-    view.categories.push(c);
+    gameData.categories.push(c);
   });
 }
 
-export {
-  products, gameAssetsMap, view,
+export default {
+  products, gameAssetsMap, gameData,
   //Population, ProductionBuilding,
   //Product, Workforce,
   //ConsumerProductTuple, WorkforceDemand, ProducerProductTuple,
