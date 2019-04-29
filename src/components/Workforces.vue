@@ -46,10 +46,11 @@
       text: {
         type: String,
         required: true
-      },
-      workforces: {
-        type: Array,
-        required: true
+      }
+    },
+    computed: {
+      workforces: function () {
+        return this.$store.state.workforces;
       }
     },
     created: function () {

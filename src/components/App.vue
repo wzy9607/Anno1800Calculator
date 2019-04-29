@@ -9,14 +9,8 @@
       Anno 1800 Calculator
     </h1>
     <div>
-      <Populations
-          text="Residents"
-          :populations="this.$store.state.populations"
-      ></Populations>
-      <Workforces
-          text="Workforces"
-          :workforces="this.$store.state.workforces"
-      ></Workforces>
+      <Populations text="Residents"></Populations>
+      <Workforces text="Workforces"></Workforces>
       <div
           v-for="category in productCategoriesOrdered"
           :key="category.id"

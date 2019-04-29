@@ -33,7 +33,7 @@
         <div class="input-group">
           <input
               v-model.number="displayedAmount"
-              type="text"
+              type="number"
               class="form-control text-right font-weight-semibold"
           />
           <!--TODO Add +-1 button-->

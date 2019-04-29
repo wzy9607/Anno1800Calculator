@@ -21,7 +21,7 @@
         <div class="input-group">
           <input
               v-model.number="displayedAmount"
-              type="text"
+              type="number"
               class="form-control text-right font-weight-semibold"
           />
           <div class="input-group-append">
@@ -31,14 +31,14 @@
               <button
                   class="btn btn-secondary"
                   type="button"
-                  @click="increasePopulationAmount(population)"
+                  @click="increaseAmount()"
               >
                 <i class="fas fa-caret-up"></i>
               </button>
               <button
                   class="btn btn-secondary"
                   type="button"
-                  @click="decreasePopulationAmount(population)"
+                  @click="decreaseAmount()"
               >
                 <i class="fas fa-caret-down"></i>
               </button>
@@ -97,10 +97,10 @@
           this.population.updateAmount(newAmount);
         }
       },
-      increasePopulationAmount: function () {
+      increaseAmount: function () {
         this.displayedAmount = this.displayedAmount + 1;
       },
-      decreasePopulationAmount: function () {
+      decreaseAmount: function () {
         this.displayedAmount = this.displayedAmount - 1;
       },
     }
