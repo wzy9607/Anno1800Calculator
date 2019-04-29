@@ -7,6 +7,7 @@ let gameData = {
   categories: []
 };
 
+let defaultPercentEfficiency = 100.00;
 
 class Population {
   constructor(config) {
@@ -16,7 +17,7 @@ class Population {
     this.icon = config.icon || "";
     this.amount = 0;
     this.pop_per_house = config.max_pop_per_house;
-    this.needs = [];
+    this.needTuples = [];
     this.needsCache = config.needs;
   }
   
@@ -32,14 +33,14 @@ class Population {
         let tmp = n;
         tmp.consumer = this;
         tmp.amount_per_minute = tmp.amount * 60 / this.pop_per_house;
-        this.needs.push(new ConsumerProductTuple(tmp));
+        this.needTuples.push(new ConsumerProductTuple(tmp));
       }
     });
     delete this.needsCache;
   }
   
   updateNeeds() {
-    this.needs.forEach(n => {
+    this.needTuples.forEach(n => {
       n.updateAmount(this.amount);
     });
   }
@@ -52,11 +53,10 @@ class ProductionBuilding {
     this.text = config.text;
     this.icon = config.icon || "";
     this.amount = 0;
-    // noinspection MagicNumberJS
-    this.percentEfficiency = 100;
-    this.inputs = [];
+    this.percentEfficiency = defaultPercentEfficiency;
+    this.inputTuples = [];
     this.inputsCache = config.inputs || [];
-    this.outputs = [];
+    this.outputTuples = [];
     this.outputsCache = config.outputs || [];
     this.maintenances = [];
     this.workforceDemands = [];
@@ -69,14 +69,14 @@ class ProductionBuilding {
       if (i.amount > 0) {
         let tmp = i;
         tmp.consumer = this;
-        this.inputs.push(new ConsumerProductTuple(tmp));
+        this.inputTuples.push(new ConsumerProductTuple(tmp));
       }
     });
     delete this.inputsCache;
   }
   
   updateInputs() {
-    this.inputs.forEach(i => {
+    this.inputTuples.forEach(i => {
       i.updateAmount(this.amount);
     });
   }
@@ -87,15 +87,15 @@ class ProductionBuilding {
       if (o.amount > 0) {
         let tmp = o;
         tmp.producer = this;
-        this.outputs.push(new ProducerProductTuple(tmp));
+        this.outputTuples.push(new ProducerProductTuple(tmp));
       }
     });
     delete this.outputsCache;
   }
   
   updateOutputs() {
-    this.outputs.forEach(o => {
-      o.updateAmount(this.amount);
+    this.outputTuples.forEach(o => {
+      o.updateAmount(this.amount, this.percentEfficiency / defaultPercentEfficiency);
     });
   }
   
@@ -119,9 +119,11 @@ class ProductionBuilding {
   
   setPercentEfficiency(newPercentEfficiency) {
     this.percentEfficiency = newPercentEfficiency;
-    this.outputs.forEach(o => {
-      o.recalculateProduceAtLeast();
-    });
+    if (this.isChainEnd() === false) { // FIXME 1010302's output 1010224 used by both other buildings and ships
+      this.outputTuples.forEach(o => {
+        o.recalculateProduceAtLeast();
+      });
+    }
   }
   
   setAmount(newAmount) {
@@ -133,11 +135,20 @@ class ProductionBuilding {
   
   updateAmountAtLeast(amount) {
     // TODO handle multiple outputs
-    // noinspection MagicNumberJS
-    this.amount = Math.ceil(amount / (this.percentEfficiency / 100));
+    this.amount = Math.ceil(amount / (this.percentEfficiency / defaultPercentEfficiency));
     this.updateOutputs();
     this.updateInputs();
     this.updateWorkforceDemand();
+  }
+  
+  isChainEnd() {
+    let flag = true;
+    for (const outputTuple of this.outputTuples) {
+      if (outputTuple.product.consumers.length !== 0) {
+        flag = false;
+      }
+    }
+    return flag;
   }
 }
 
@@ -265,8 +276,8 @@ class ProducerProductTuple {
     }
   }
   
-  updateAmount(producerAmount) {
-    this.amount = this.amountPerProducer * producerAmount;
+  updateAmount(producerAmount, producerEfficiency) {
+    this.amount = this.amountPerProducer * producerAmount * producerEfficiency;
     this.product.updateAmountProduced();
   }
   
