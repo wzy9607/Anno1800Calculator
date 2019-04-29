@@ -23,7 +23,6 @@
               v-model.number="displayedAmount"
               type="text"
               class="form-control text-right font-weight-semibold"
-              @input="updateAmount(displayedAmount, population)"
           />
           <div class="input-group-append">
             <!--TODO Add +-1 button-->
@@ -75,9 +74,17 @@
       }
     },
     data() {
-      return {
-        displayedAmount: 0
-      };
+      return {};
+    },
+    computed: {
+      displayedAmount: {
+        get() {
+          return this.population.amount;
+        },
+        set(newValue) {
+          this.updateAmount(newValue);
+        }
+      }
     },
     created: function () {
     },
@@ -85,20 +92,16 @@
       getImage(path) {
         return require("../assets/img/" + path);
       },
-      updateAmount: function (displayedAmount, population) {
-        if (displayedAmount >= 0) {
-          population.updateAmount(displayedAmount);
-        } else {
-          //TODO reject negative value
+      updateAmount: function (newAmount) {
+        if (newAmount >= 0) {
+          this.population.updateAmount(newAmount);
         }
       },
-      increasePopulationAmount: function (population) {
-        population.displayAmount = population.amount + 1;
-        population.updateAmount(population.amount + 1);
+      increasePopulationAmount: function () {
+        this.displayedAmount = this.displayedAmount + 1;
       },
-      decreasePopulationAmount: function (population) {
-        population.displayAmount = population.amount - 1;
-        population.updateAmount(population.amount - 1);
+      decreasePopulationAmount: function () {
+        this.displayedAmount = this.displayedAmount - 1;
       },
     }
   };

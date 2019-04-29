@@ -119,6 +119,7 @@ class ProductionBuilding {
   
   setPercentEfficiency(newPercentEfficiency) {
     this.percentEfficiency = newPercentEfficiency;
+    // FIXME products at the end of chain have no needs
     this.outputs.forEach(o => {
       o.recalculateProduceAtLeast();
     });

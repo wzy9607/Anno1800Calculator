@@ -23,7 +23,6 @@
               v-model.number="displayedEfficiency"
               type="text"
               class="form-control text-right"
-              @input="updateEfficiency(displayedEfficiency, producer)"
           />
           <div class="input-group-append">
             <span class="input-group-text">%</span>
@@ -36,7 +35,6 @@
               v-model.number="displayedAmount"
               type="text"
               class="form-control text-right font-weight-semibold"
-              @input="updateAmount(displayedAmount, producer)"
           />
           <!--TODO Add +-1 button-->
         </div>
@@ -69,9 +67,25 @@
     },
     data() {
       return {
-        displayedEfficiency: 100,
-        displayedAmount: 0,
       };
+    },
+    computed: {
+      displayedAmount: {
+        get() {
+          return this.producer.amount;
+        },
+        set(newValue) {
+          this.updateAmount(newValue);
+        }
+      },
+      displayedEfficiency: {
+        get() {
+          return this.producer.percentEfficiency;
+        },
+        set(newValue) {
+          this.updateEfficiency(newValue);
+        }
+      }
     },
     created: function () {
     },
@@ -79,14 +93,14 @@
       getImage(path) {
         return require("../assets/img/" + path);
       },
-      updateEfficiency: function (displayedEfficiency, producer) {
-        producer.setPercentEfficiency(displayedEfficiency);
+      updateEfficiency: function (newEfficiency) {
+        if (newEfficiency > 0) {
+          this.producer.setPercentEfficiency(newEfficiency);
+        }
       },
-      updateAmount: function (displayedAmount, producer) {
-        if (displayedAmount >= 0) {
-          producer.setAmount(displayedAmount);
-        } else {
-          //TODO reject negative value
+      updateAmount: function (newAmount) {
+        if (newAmount >= 0) {
+          this.producer.setAmount(newAmount);
         }
       },
     }
