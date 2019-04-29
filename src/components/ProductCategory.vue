@@ -1,5 +1,11 @@
 <template>
-  <div class="mx-4 my-4">
+  <!--Strategic products-->
+  <div v-if="id===11797"></div>
+  <!--TODO -->
+  <div
+      v-else
+      class="mx-4 my-4"
+  >
     <h3>
       <b-button
           v-b-toggle="'collapse-' + id"
@@ -28,9 +34,6 @@
                 :amount-consumed="product.amountConsumed"
                 :producer="product.producers[0].producer"
             ></ProductConstruction>
-            <!--Strategic products-->
-            <div v-else-if="id===11797"></div>
-            <!--TODO -->
             <Product
                 v-else
                 :amount-produced="product.amountProduced"

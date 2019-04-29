@@ -5,11 +5,13 @@ $font-weight-normal: 400;
 $font-weight-semibold: 600;
 $font-weight-bold: 700;
 $font-weight-bolder: 900;
+$line-height-base: 1.2;
 // headers
 $headings-font-weight: $font-weight-semibold;
 // card
 $card-deck-margin: 0.5rem;
 $card-spacer-x: 0.5rem;
+$card-spacer-y: 0.5rem;
 // enable responsive font sizes
 $enable-responsive-font-sizes: true;
 
@@ -26,11 +28,6 @@ $enable-responsive-font-sizes: true;
 
 .font-weight-semibold {
   font-weight: $font-weight-semibold !important;
-}
-
-p {
-  margin-top: 0;
-  margin-bottom: 0.5rem;
 }
 
 .in-text-image {
@@ -78,6 +75,10 @@ $cards-per-line: (
       flex: 0 0 calc(#{100 / map-get($cards-per-line, $name)}% - #{$grid-gutter-width});
     }
   }
+}
+
+.min-h-2 {
+  min-height: $line-height-base * 2rem;
 }
 
 .card-image {
