@@ -44,16 +44,18 @@ function init() {
   Backend.gameData.populations.forEach(population => {
     console.log(population);
     console.log(population.id);
-    console.log(population.needs);
+    console.log(population.needTuples);
   });
   Backend.products.forEach(product => {
     console.log(product);
     console.log(product.id);
     console.log(product.producers);
   });
-  Backend.gameData.buildings.forEach(buildings => {
-    console.log(buildings);
-    console.log(buildings.id);
+  Backend.gameData.buildings.forEach(building => {
+    console.log(building);
+    console.log(building.id);
+    console.log(building.text);
+    console.log(building.isChainEnd());
   });
   Backend.gameData.categories.forEach(category => {
     console.log(category);
