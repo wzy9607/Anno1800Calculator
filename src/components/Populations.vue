@@ -34,10 +34,11 @@
       text: {
         type: String,
         required: true
-      },
-      populations: {
-        type: Array,
-        required: true
+      }
+    },
+    computed: {
+      populations: function () {
+        return this.$store.state.populations;
       }
     },
     created: function () {
