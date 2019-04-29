@@ -2,7 +2,7 @@
   <b-card
       no-body
       class="h-100"
-      style="width: 10rem;"
+      style="width: 8rem;"
   >
     <b-card-body class="text-center">
       <!--TODO handle multiple producer-->
@@ -14,6 +14,7 @@
       </div>
       <b-card-title
           title-tag="h6"
+          class="min-h-2"
       >
         {{ producer.text }}
       </b-card-title>
@@ -41,7 +42,7 @@
       </b-card-text>
       <b-card-text class="text-left">
         <small>
-          Produce {{ amountProduced | numeral("0,0[.][0000]") }} t/min
+          Produce {{ amountProduced | numeral("0,0[.][00]") }} t/min
         </small>
       </b-card-text>
     </b-card-body>
