@@ -11,11 +11,11 @@
     <div>
       <Populations
           text="Residents"
-          :populations="gameData.populations"
+          :populations="this.$store.state.populations"
       ></Populations>
       <Workforces
           text="Workforces"
-          :workforces="gameData.workforces"
+          :workforces="this.$store.state.workforces"
       ></Workforces>
       <div
           v-for="category in productCategoriesOrdered"
@@ -48,14 +48,6 @@
   import Workforces from "./Workforces.vue";
   import ProductCategory from "./ProductCategory.vue";
   // import ProductCategoryStrategic from "./components/ProductCategoryStrategic.vue";
-  // data
-  import PopulationLevelsData from "../json/population_levels.json";
-  import ProductionBuildingsData from "../json/production_buildings.json";
-  import ProductsData from "../json/products.json";
-  import WorkforcesData from "../json/workforces.json";
-  import ProductCategoriesData from "../json/product_categories.json";
-  // calculator core
-  import Backend from "../backend.js";
   // Load typeface
   require("source-sans-pro/source-sans-pro.css");
   
@@ -68,58 +60,16 @@
       // ProductCategoryStrategic
     },
     data: function () {
-      return {
-        gameData: Backend.gameData,
-        gameAssetsMap: Backend.gameAssetsMap
-      };
+      return {};
     },
     computed: {
       productCategoriesOrdered: function () {
-        return Lodash.orderBy(this.gameData.categories, ["order"]);
+        return Lodash.orderBy(this.$store.state.categories, ["order"]);
       }
-    },
-    created() {
-      this.init();
     },
     methods: {
       getImage(path) {
         return require("../assets/img/" + path);
-      },
-      init: function () {
-        let populationLevels = JSON.parse(JSON.stringify(PopulationLevelsData.PopulationLevels));
-        let productionBuildings = JSON.parse(JSON.stringify(ProductionBuildingsData.ProductionBuildings));
-        let products = JSON.parse(JSON.stringify(ProductsData.Products));
-        let workforces = JSON.parse(JSON.stringify(WorkforcesData.Workforces));
-        let productCategories = JSON.parse(JSON.stringify(ProductCategoriesData.ProductCategories));
-        let data = {
-          population_levels: populationLevels,
-          production_buildings: productionBuildings,
-          products: products,
-          workforces: workforces,
-          product_categories: productCategories
-        };
-        Backend.init(data);
-        /*
-        Backend.gameData.populations.forEach(population => {
-          console.log(population);
-          console.log(population.id);
-          console.log(population.needs);
-        });
-        Backend.products.forEach(product => {
-          console.log(product);
-          console.log(product.id);
-          console.log(product.producers);
-        });
-        Backend.gameData.buildings.forEach(buildings => {
-          console.log(buildings);
-          console.log(buildings.id);
-        });
-        Backend.gameData.categories.forEach(category => {
-          console.log(category);
-          console.log(category.id);
-          console.log(category.order);
-          console.log(category.products);
-        });*/
       },
     }
   }
