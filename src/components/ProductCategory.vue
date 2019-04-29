@@ -28,6 +28,9 @@
                 :amount-consumed="product.amountConsumed"
                 :producer="product.producers[0].producer"
             ></ProductConstruction>
+            <!--Strategic products-->
+            <div v-else-if="id===11797"></div>
+            <!--TODO -->
             <Product
                 v-else
                 :amount-produced="product.amountProduced"

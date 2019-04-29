@@ -15,17 +15,7 @@
           v-for="category in productCategoriesOrdered"
           :key="category.id"
       >
-        <!--Strategic products-->
-        <div v-if="category.id===11797"></div>
-        <!--TODO
-        <ProductCategoryStrategic
-            v-else-if="category.id===11797"
-            :id="category.id"
-            :text="category.text"
-            :products="category.products"
-        ></ProductCategoryStrategic>-->
         <ProductCategory
-            v-else
             :id="category.id"
             :text="category.text"
             :products="category.products"
@@ -41,7 +31,6 @@
   import Populations from "./Populations.vue";
   import Workforces from "./Workforces.vue";
   import ProductCategory from "./ProductCategory.vue";
-  // import ProductCategoryStrategic from "./components/ProductCategoryStrategic.vue";
   // Load typeface
   require("source-sans-pro/source-sans-pro.css");
   
