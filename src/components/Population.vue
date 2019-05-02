@@ -21,29 +21,10 @@
         <div class="input-group">
           <input
               v-model.number="displayedAmount"
-              type="number"
+              type="text"
               class="form-control text-right font-weight-semibold"
           />
           <div class="input-group-append">
-            <!--TODO Add +-1 button-->
-            <!--
-            <div class="btn-group-vertical">
-              <button
-                  class="btn btn-secondary"
-                  type="button"
-                  @click="increaseAmount()"
-              >
-                <i class="fas fa-caret-up"></i>
-              </button>
-              <button
-                  class="btn btn-secondary"
-                  type="button"
-                  @click="decreaseAmount()"
-              >
-                <i class="fas fa-caret-down"></i>
-              </button>
-            </div>
-            -->
             <img
                 class="in-text-image"
                 :src="getImage('resources/population.png')"

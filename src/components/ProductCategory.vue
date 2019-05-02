@@ -4,7 +4,7 @@
   <!--TODO -->
   <div
       v-else
-      class="mx-4 my-4"
+      class="mx-4 my-2"
   >
     <h3>
       <b-button
