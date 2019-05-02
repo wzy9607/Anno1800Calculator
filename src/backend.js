@@ -124,6 +124,10 @@ class ProductionBuilding {
         o.recalculateProduceAtLeast();
       });
     }
+    else{
+      this.updateOutputs();
+      this.updateInputs();
+    }
   }
   
   setAmount(newAmount) {
