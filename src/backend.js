@@ -41,7 +41,7 @@ class Population {
   
   updateNeeds() {
     this.needTuples.forEach(n => {
-      n.updateAmount(this.amount);
+      n.updateAmount(this.amount, 1);
     });
   }
 }
