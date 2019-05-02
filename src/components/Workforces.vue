@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-4 my-4">
+  <div class="mx-4 my-2">
     <h3>
       <b-button
           v-b-toggle="'collapse-workforces'"
