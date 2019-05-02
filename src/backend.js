@@ -77,7 +77,7 @@ class ProductionBuilding {
   
   updateInputs() {
     this.inputTuples.forEach(i => {
-      i.updateAmount(this.amount);
+      i.updateAmount(this.amount, this.percentEfficiency / defaultPercentEfficiency);
     });
   }
   
@@ -123,6 +123,10 @@ class ProductionBuilding {
       this.outputTuples.forEach(o => {
         o.recalculateProduceAtLeast();
       });
+    }
+    else{
+      this.updateOutputs();
+      this.updateInputs();
     }
   }
   
@@ -230,8 +234,8 @@ class ConsumerProductTuple {
     }
   }
   
-  updateAmount(consumerAmount) {
-    this.amount = this.amountPerConsumer * consumerAmount;
+  updateAmount(consumerAmount, consumerEfficiency) {
+    this.amount = this.amountPerConsumer * consumerAmount * consumerEfficiency;
     this.product.updateAmountConsumed();
   }
 }
