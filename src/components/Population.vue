@@ -79,10 +79,10 @@
         }
       },
       increaseAmount: function () {
-        this.displayedAmount = this.displayedAmount + 1;
+        this.displayedAmount += 1;
       },
       decreaseAmount: function () {
-        this.displayedAmount = this.displayedAmount - 1;
+        this.displayedAmount -= 1;
       },
     }
   };

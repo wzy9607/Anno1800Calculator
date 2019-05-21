@@ -1,9 +1,9 @@
 <template>
-  <div class="mx-4 my-2">
+  <div class="mx-4 mb-2">
     <h3>
       {{ text }}
     </h3>
-    <div class="border rounded p-3">
+    <div class="border rounded">
       <b-card-group deck>
         <div
             v-for="population in populations"

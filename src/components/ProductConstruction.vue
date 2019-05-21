@@ -35,6 +35,7 @@
           <input
               v-model.number="displayedAmount"
               type="number"
+              min="0"
               class="form-control text-right font-weight-semibold"
           />
           <!--TODO Add +-1 button-->

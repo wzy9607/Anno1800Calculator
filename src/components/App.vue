@@ -4,6 +4,7 @@
     <img
         alt="Anno 1800 banner"
         :src="getImage('resources/balance.png')"
+        class="banner-image"
     >
     <h1>
       Anno 1800 Calculator
