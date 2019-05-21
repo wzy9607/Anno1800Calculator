@@ -4,7 +4,7 @@
   <!--TODO -->
   <div
       v-else
-      class="mx-4 my-2"
+      class="mx-4 mb-2"
   >
     <h3>
       <b-button
@@ -20,7 +20,7 @@
         :id="'collapse-' + id"
         visible
     >
-      <div class="border rounded p-3">
+      <div class="border rounded">
         <b-card-group deck>
           <div
               v-for="product in products"
