@@ -26,7 +26,7 @@ Vue.use(BootstrapVue);
 
 Vue.config.productionTip = false;
 
-function init() {
+function loadGameData() {
   let populationLevels = JSON.parse(JSON.stringify(PopulationLevelsData.PopulationLevels));
   let productionBuildings = JSON.parse(JSON.stringify(ProductionBuildingsData.ProductionBuildings));
   let products = JSON.parse(JSON.stringify(ProductsData.Products));
@@ -63,7 +63,6 @@ function init() {
     console.log(category.order);
     console.log(category.products);
   });*/
-  return {data: Backend.gameData, dataMap: Backend.gameAssetsMap};
 }
 
 // noinspection ObjectAllocationIgnored,JSUnusedGlobalSymbols
@@ -71,8 +70,8 @@ new Vue({
           el: "#app",
           store,
           created() {
-            let data = init();
-            store.commit("init", {data: data.data, dataMap: data.dataMap});
+            loadGameData();
+            store.commit("init", Backend);
           },
           render: h => h(App)
         });

@@ -1,10 +1,22 @@
-let products = new Map();
+// Game assets are objects that contain data load from jsons and the whole calculation program.
+// Should be constant.
 let gameAssetsMap = new Map();
-let gameData = {
+let gameAssets = {
   populations: [],
   workforces: [],
   buildings: [],
-  categories: []
+  categories: [],
+  products: new Map()
+};
+
+// User data contain all data that can be changed by user or as results of user input.
+// Should be stored locally.
+let userDataMap = new Map();
+let userData = {
+  populations: [], // id, amount
+  workforces: [], // id, amountConsumed
+  buildings: [], // id, amount, percentEfficiency
+  products: [] // id, amountConsumed, amountProduced
 };
 
 let defaultPercentEfficiency = 100.00;
@@ -15,13 +27,14 @@ class Population {
     this.name = config.name;
     this.text = config.text;
     this.icon = config.icon || "";
-    this.amount = 0;
     this.pop_per_house = config.max_pop_per_house;
     this.needTuples = [];
     this.needsCache = config.needs;
+    this.userData = {};
   }
   
   updateAmount(newAmount) {
+    this.userData.amount = newAmount;
     this.amount = newAmount;
     this.updateNeeds();
   }
@@ -41,7 +54,7 @@ class Population {
   
   updateNeeds() {
     this.needTuples.forEach(n => {
-      n.updateAmount(this.amount, 1);
+      n.updateAmount(this.userData.amount, 1);
     });
   }
 }
@@ -52,8 +65,6 @@ class ProductionBuilding {
     this.name = config.name;
     this.text = config.text;
     this.icon = config.icon || "";
-    this.amount = 0;
-    this.percentEfficiency = defaultPercentEfficiency;
     this.inputTuples = [];
     this.inputsCache = config.inputs || [];
     this.outputTuples = [];
@@ -61,6 +72,7 @@ class ProductionBuilding {
     this.maintenances = [];
     this.workforceDemands = [];
     this.maintenances_cache = config.maintenances;
+    this.userData = {};
   }
   
   initInputs() {
@@ -77,7 +89,7 @@ class ProductionBuilding {
   
   updateInputs() {
     this.inputTuples.forEach(i => {
-      i.updateAmount(this.amount, this.percentEfficiency / defaultPercentEfficiency);
+      i.updateAmount(this.userData.amount, this.userData.percentEfficiency / defaultPercentEfficiency);
     });
   }
   
@@ -95,7 +107,7 @@ class ProductionBuilding {
   
   updateOutputs() {
     this.outputTuples.forEach(o => {
-      o.updateAmount(this.amount, this.percentEfficiency / defaultPercentEfficiency);
+      o.updateAmount(this.userData.amount, this.userData.percentEfficiency / defaultPercentEfficiency);
     });
   }
   
@@ -113,33 +125,32 @@ class ProductionBuilding {
   
   updateWorkforceDemand() {
     this.workforceDemands.forEach(w => {
-      w.updateAmount(this.amount);
+      w.updateAmount(this.userData.amount);
     });
   }
   
   setPercentEfficiency(newPercentEfficiency) {
-    this.percentEfficiency = newPercentEfficiency;
+    this.userData.percentEfficiency = newPercentEfficiency;
     if (this.isChainEnd() === false) { // FIXME 1010302's output 1010224 used by both other buildings and ships
       this.outputTuples.forEach(o => {
         o.recalculateProduceAtLeast();
       });
-    }
-    else{
+    } else {
       this.updateOutputs();
       this.updateInputs();
     }
   }
   
-  setAmount(newAmount) {
-    this.amount = newAmount;
+  updateAmount(newAmount) {
+    this.userData.set("amount", newAmount);
     this.updateOutputs();
     this.updateInputs();
     this.updateWorkforceDemand();
   }
   
-  updateAmountAtLeast(amount) {
+  updateAmountAtLeast(newAmount) {
     // TODO handle multiple outputs
-    this.amount = Math.ceil(amount / (this.percentEfficiency / defaultPercentEfficiency));
+    this.userData.amount = Math.ceil(newAmount / (this.userData.percentEfficiency / defaultPercentEfficiency));
     this.updateOutputs();
     this.updateInputs();
     this.updateWorkforceDemand();
@@ -163,10 +174,9 @@ class Product {
     this.text = config.text;
     this.icon = config.icon || "";
     this.category = config.category;
-    this.amountConsumed = 0;
-    this.amountProduced = 0;
     this.producers = [];
     this.consumers = [];
+    this.userData = {};
   }
   
   addProducer(production) {
@@ -182,9 +192,9 @@ class Product {
     this.consumers.forEach(c => {
       sum += c.amount;
     });
-    this.amountConsumed = sum;
+    this.userData.amountConsumed = sum;
     // TODO handle multiple producer
-    this.producers[0].produceAtLeast(this.amountConsumed);
+    this.producers[0].produceAtLeast(sum);
   }
   
   updateAmountProduced() {
@@ -192,7 +202,7 @@ class Product {
     this.producers.forEach(p => {
       sum += p.amount;
     });
-    this.amountProduced = sum;
+    this.userData.amountProduced = sum;
   }
 }
 
@@ -202,8 +212,8 @@ class Workforce {
     this.name = config.name;
     this.text = config.text;
     this.icon = config.icon || "";
-    this.amountConsumed = 0;
     this.consumers = [];
+    this.userData = {};
   }
   
   addConsumer(demand) {
@@ -215,14 +225,14 @@ class Workforce {
     this.consumers.forEach(c => {
       sum += c.amount;
     });
-    this.amountConsumed = sum;
+    this.userData.amountConsumed = sum;
   }
 }
 
 class ConsumerProductTuple {
   constructor(config) {
     this.id = config.id;
-    this.amount = 0;
+    this.amount = 0; // TODO
     this.amountPerConsumer = config.amount_per_minute;
     this.consumer = config.consumer;
     // link to product
@@ -243,7 +253,7 @@ class ConsumerProductTuple {
 class WorkforceDemand {
   constructor(config) {
     this.id = config.id;
-    this.amount = 0;
+    this.amount = 0; // TODO
     this.amountPerConsumer = config.amount;
     // link to workforce
     this.workforce = gameAssetsMap.get(this.id);
@@ -263,8 +273,8 @@ class WorkforceDemand {
 class ProducerProductTuple {
   constructor(config) {
     this.id = config.id;
-    this.amount = 0;
-    this.amountDemanded = 0;
+    this.amount = 0; // TODO
+    this.amountDemanded = 0; // TODO
     if (config.amount_per_minute) {
       this.amountPerProducer = config.amount_per_minute;
     } else {
@@ -308,35 +318,64 @@ class ProductCategory {
 }
 
 function init(data) {
-  
   data.population_levels.forEach(population => {
-    let p = new Population(population);
-    gameAssetsMap.set(p.id, p);
-    gameData.populations.push(p);
+    let asset = new Population(population);
+    gameAssetsMap.set(asset.id, asset);
+    gameAssets.populations.push(asset);
+    let datum = {
+      id: asset.id,
+      amount: 0
+    };
+    userDataMap.set(asset.id, datum);
+    userData.populations.push(datum);
+    asset.userData = datum;
   });
   
   data.production_buildings.forEach(building => {
-    let b = new ProductionBuilding(building);
-    gameAssetsMap.set(b.id, b);
-    gameData.buildings.push(b);
+    let asset = new ProductionBuilding(building);
+    gameAssetsMap.set(asset.id, asset);
+    gameAssets.buildings.push(asset);
+    let datum = {
+      id: asset.id,
+      amount: 0,
+      percentEfficiency: defaultPercentEfficiency
+    };
+    userDataMap.set(asset.id, datum);
+    userData.buildings.push(datum);
+    asset.userData = datum;
   });
   
   data.products.forEach(product => {
-    let p = new Product(product);
-    products.set(p.id, p);
-    gameAssetsMap.set(p.id, p);
+    let asset = new Product(product);
+    gameAssets.products.set(asset.id, asset);
+    gameAssetsMap.set(asset.id, asset);
+    let datum = {
+      id: asset.id,
+      amountConsumed: 0,
+      amountProduced: 0
+    };
+    userDataMap.set(asset.id, datum);
+    userData.products.push(datum);
+    asset.userData = datum;
   });
   
   data.workforces.forEach(workforce => {
-    let w = new Workforce(workforce);
-    gameAssetsMap.set(w.id, w);
-    gameData.workforces.push(w);
+    let asset = new Workforce(workforce);
+    gameAssetsMap.set(asset.id, asset);
+    gameAssets.workforces.push(asset);
+    let datum = {
+      id: asset.id,
+      amountConsumed: 0
+    };
+    userDataMap.set(asset.id, datum);
+    userData.workforces.push(datum);
+    asset.userData = datum;
   });
   
-  gameData.populations.forEach(p => {
+  gameAssets.populations.forEach(p => {
     p.initNeeds();
   });
-  gameData.buildings.forEach(b => {
+  gameAssets.buildings.forEach(b => {
     b.initInputs();
     b.initOutputs();
     b.initWorkforceDemand();
@@ -345,15 +384,40 @@ function init(data) {
   data.product_categories.forEach(category => {
     let c = new ProductCategory(category);
     gameAssetsMap.set(c.id, c);
-    gameData.categories.push(c);
+    gameAssets.categories.push(c);
   });
 }
 
+function setDefaultUserData() {
+  gameAssets.populations.forEach(population => {
+    let datum = userDataMap.get(population.id);
+    datum.amount = 0;
+  });
+  
+  gameAssets.buildings.forEach(building => {
+    let datum = userDataMap.get(building.id);
+    datum.amount = 0;
+    datum.percentEfficiency = defaultPercentEfficiency;
+  });
+  
+  gameAssets.products.forEach(product => {
+    let datum = userDataMap.get(product.id);
+    datum.amountConsumed = 0;
+    datum.amountProduced = 0;
+  });
+  
+  gameAssets.workforces.forEach(workforce => {
+    let datum = userDataMap.get(workforce.id);
+    datum.amountConsumed = 0;
+  });
+}
+
+
 export default {
-  products, gameAssetsMap, gameData,
+  gameAssetsMap, gameAssets, userDataMap, userData,
   //Population, ProductionBuilding,
   //Product, Workforce,
   //ConsumerProductTuple, WorkforceDemand, ProducerProductTuple,
   //ProductCategory,
-  init
+  init, setDefaultUserData
 };
