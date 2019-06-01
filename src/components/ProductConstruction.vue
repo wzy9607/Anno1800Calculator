@@ -8,20 +8,20 @@
       <!--TODO handle multiple producer-->
       <div class="card-image">
         <img
-            :src="getImage(producer.icon)"
-            :alt="producer.text"
+            :src="getImage(icon)"
+            :alt="buildingName"
         >
       </div>
       <b-card-title
           title-tag="h6"
           class="min-h-2"
       >
-        {{ producer.text }}
+        {{ buildingName }}
       </b-card-title>
       <b-card-text class="card-input-efficiency mx-auto mb-2">
         <div class="input-group">
           <input
-              v-model.number="displayedEfficiency"
+              v-model.number="buildingEfficiency"
               type="text"
               class="form-control text-right"
           />
@@ -33,7 +33,7 @@
       <b-card-text class="card-input-amount mx-auto mb-2">
         <div class="input-group">
           <input
-              v-model.number="displayedAmount"
+              v-model.number="buildingAmount"
               type="number"
               min="0"
               class="form-control text-right font-weight-semibold"
@@ -54,12 +54,20 @@
   export default {
     name: "ProductConstruction",
     props: {
-      amountProduced: {
+      text: { // TODO Reserved for i18n
+        type: String,
+        required: true
+      },
+      id: {
         type: Number,
         required: true
       },
-      amountConsumed: {
+      producerId: {
         type: Number,
+        required: true
+      },
+      product: {
+        type: Object,
         required: true
       },
       producer: {
@@ -72,39 +80,41 @@
       };
     },
     computed: {
-      displayedAmount: {
+      icon: function () {
+        return this.product.icon;
+      },
+      amountProduced: function () {
+        return this.product.userData.amountProduced;
+      },
+      amountConsumed: function () {
+        return this.product.userData.amountConsumed;
+      },
+      buildingName: function () {
+        return this.producer.text;
+      },
+      buildingAmount: {
         get() {
-          return this.producer.amount;
+          return this.producer.userData.amount;
         },
         set(newValue) {
-          this.updateAmount(newValue);
+          this.$store.commit("updateAmount", {id: this.producerId, newAmount: newValue});
         }
       },
-      displayedEfficiency: {
+      buildingEfficiency: {
         get() {
-          return this.producer.percentEfficiency;
+          return this.producer.userData.percentEfficiency;
         },
         set(newValue) {
-          this.updateEfficiency(newValue);
+          this.$store.commit('updateEfficiency', {id: this.producerId, newEfficiency: newValue});
         }
       }
     },
     created: function () {
     },
     methods: {
-      getImage(path) {
+      getImage: function(path) {
         return require("../assets/img/" + path);
-      },
-      updateEfficiency: function (newEfficiency) {
-        if (newEfficiency > 0) {
-          this.producer.setPercentEfficiency(newEfficiency);
-        }
-      },
-      updateAmount: function (newAmount) {
-        if (newAmount >= 0) {
-          this.producer.setAmount(newAmount);
-        }
-      },
+      }
     }
   };
 </script>

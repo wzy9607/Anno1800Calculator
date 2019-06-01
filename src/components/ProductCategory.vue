@@ -30,14 +30,18 @@
             <!--TODO handle multiple producer-->
             <ProductConstruction
                 v-if="id===11707"
-                :amount-produced="product.amountProduced"
-                :amount-consumed="product.amountConsumed"
+                :id="product.id"
+                :text="product.text"
+                :product="product"
+                :producer-id="product.producers[0].producer.id"
                 :producer="product.producers[0].producer"
             ></ProductConstruction>
             <Product
                 v-else
-                :amount-produced="product.amountProduced"
-                :amount-consumed="product.amountConsumed"
+                :id="product.id"
+                :text="product.text"
+                :product="product"
+                :producer-id="product.producers[0].producer.id"
                 :producer="product.producers[0].producer"
             ></Product>
           </div>

@@ -11,7 +11,7 @@
             class="card-margin-fix"
         >
           <Population
-              :icon="population.icon"
+              :id="population.id"
               :text="population.text"
               :population="population"
           >

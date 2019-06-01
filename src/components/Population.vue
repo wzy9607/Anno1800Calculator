@@ -5,22 +5,21 @@
       style="width: 8rem;"
   >
     <b-card-body class="text-center">
-      <!--TODO b-card-img set width to 100%, customize it-->
       <div class="card-image">
         <img
             :src="getImage(icon)"
-            :alt="text"
+            :alt="name"
         >
       </div>
       <b-card-title
           title-tag="h6"
       >
-        {{ text }}
+        {{ name }}
       </b-card-title>
       <b-card-text class="card-input-amount mx-auto">
         <div class="input-group">
           <input
-              v-model.number="displayedAmount"
+              v-model.number="amount"
               type="text"
               class="form-control text-right font-weight-semibold"
           />
@@ -41,12 +40,12 @@
   export default {
     name: "Population",
     props: {
-      icon: {
+      text: { // TODO Reserved for i18n
         type: String,
         required: true
       },
-      text: {
-        type: String,
+      id: {
+        type: Number,
         required: true
       },
       population: {
@@ -58,32 +57,33 @@
       return {};
     },
     computed: {
-      displayedAmount: {
-        get() {
-          return this.population.amount;
+      icon: function () {
+        return this.population.icon;
+      },
+      name: function () {
+        return this.population.text;
+      },
+      amount: {
+        get: function() {
+          return this.population.userData.amount;
         },
-        set(newValue) {
-          this.updateAmount(newValue);
+        set: function(newValue) {
+          this.$store.commit("updateAmount", {id: this.id, newAmount: newValue});
         }
       }
     },
-    created: function () {
+    created: function() {
     },
     methods: {
-      getImage(path) {
+      getImage: function(path) {
         return require("../assets/img/" + path);
       },
-      updateAmount: function (newAmount) {
-        if (newAmount >= 0) {
-          this.population.updateAmount(newAmount);
-        }
+      increaseAmount: function() {
+        this.amount += 1;
       },
-      increaseAmount: function () {
-        this.displayedAmount += 1;
-      },
-      decreaseAmount: function () {
-        this.displayedAmount -= 1;
-      },
+      decreaseAmount: function() {
+        this.amount -= 1;
+      }
     }
   };
 </script>

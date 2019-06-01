@@ -8,13 +8,13 @@
       <div class="card-image">
         <img
             :src="getImage(icon)"
-            :alt="text"
+            :alt="name"
         >
       </div>
       <b-card-title
           title-tag="h6"
       >
-        {{ text }}
+        {{ name }}
       </b-card-title>
       <b-card-text class="font-weight-semibold">
         {{ amount }}
@@ -27,21 +27,34 @@
   export default {
     name: "Workforce",
     props: {
-      icon: {
+      text: { // TODO Reserved for i18n
         type: String,
         required: true
       },
-      text: {
-        type: String,
-        required: true
-      },
-      amount: {
+      id: {
         type: Number,
         required: true
       },
+      workforce: {
+        type: Object,
+        required: true
+      }
+    },
+    computed: {
+      icon: function () {
+        return this.workforce.icon;
+      },
+      name: function () {
+        return this.workforce.text;
+      },
+      amount: function () {
+        return this.workforce.userData.amountConsumed;
+      },
+    },
+    created: function () {
     },
     methods: {
-      getImage(path) {
+      getImage: function(path) {
         return require("../assets/img/" + path);
       },
     },

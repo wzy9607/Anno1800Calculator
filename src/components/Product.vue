@@ -1,6 +1,6 @@
 <template>
   <b-card
-      v-if="amountConsumed>0"
+      v-if="amountConsumed>0" <!--Do not show product that has no need-->
       no-body
       class="h-100"
       style="width: 8rem;"
@@ -9,20 +9,20 @@
       <!--TODO handle multiple producer-->
       <div class="card-image">
         <img
-            :src="getImage(producer.icon)"
-            :alt="producer.text"
+            :src="getImage(icon)"
+            :alt="buildingName"
         >
       </div>
       <b-card-title
           title-tag="h6"
           class="min-h-2"
       >
-        {{ producer.text }}
+        {{ buildingName }}
       </b-card-title>
       <b-card-text class="card-input-efficiency mx-auto mb-2">
         <div class="input-group">
           <input
-              v-model.number="displayedEfficiency"
+              v-model.number="buildingEfficiency"
               type="text"
               class="form-control text-right"
           />
@@ -32,7 +32,7 @@
         </div>
       </b-card-text>
       <b-card-text class="font-weight-semibold mb-0">
-        {{ producer.amount }}
+        {{ buildingAmount }}
       </b-card-text>
       <b-card-text class="text-left">
         <small>
@@ -48,12 +48,20 @@
   export default {
     name: "Product",
     props: {
-      amountProduced: {
+      text: { // TODO Reserved for i18n
+        type: String,
+        required: true
+      },
+      id: {
         type: Number,
         required: true
       },
-      amountConsumed: {
+      producerId: {
         type: Number,
+        required: true
+      },
+      product: {
+        type: Object,
         required: true
       },
       producer: {
@@ -62,30 +70,39 @@
       }
     },
     data() {
-      return {
-      };
+      return {};
     },
     computed: {
-      displayedEfficiency: {
+      icon: function () {
+        return this.product.icon;
+      },
+      amountProduced: function () {
+        return this.product.userData.amountProduced;
+      },
+      amountConsumed: function () {
+        return this.product.userData.amountConsumed;
+      },
+      buildingName: function () {
+        return this.producer.text;
+      },
+      buildingAmount: function () {
+        return this.producer.userData.amount;
+      },
+      buildingEfficiency: {
         get() {
-          return this.producer.percentEfficiency;
+          return this.producer.userData.percentEfficiency;
         },
         set(newValue) {
-          this.updateEfficiency(newValue);
+          this.$store.commit("updateEfficiency", {id: this.producerId, newEfficiency: newValue});
         }
       }
     },
     created: function () {
     },
     methods: {
-      getImage(path) {
+      getImage: function(path) {
         return require("../assets/img/" + path);
-      },
-      updateEfficiency: function (newEfficiency) {
-        if (newEfficiency > 0) {
-          this.producer.setPercentEfficiency(newEfficiency);
-        }
-      },
+      }
     }
   };
 </script>

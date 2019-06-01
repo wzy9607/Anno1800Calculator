@@ -10,19 +10,48 @@ const store = new Vuex.Store({
                                  workforces: [],
                                  buildings: [],
                                  categories: [],
-                                 dataMap: {}
+                                 gameAssetsMap: {},
+                                 userDataPopulations: [],
+                                 userDataWorkforces: [],
+                                 userDataBuildings: [],
+                                 userDataProducts: [],
+                                 userDataMap: {},
+                                 // FIXME https://github.com/vuejs/vue/issues/2410#issuecomment-318487855
+                                 userDataChangeTracker: 1,
                                },
-                               getters: {},
-                               mutations: {
-                                 init(state, payload) {
-                                   state.populations = payload.data.populations;
-                                   state.workforces = payload.data.workforces;
-                                   state.buildings = payload.data.buildings;
-                                   state.products = payload.data.populations;
-                                   state.categories = payload.data.categories;
-                                   state.dataMap = payload.dataMap;
+                               getters: {
+                                 userDataList: state => {
+                                   return this.store.userDataChangeTracker && Array.from(state.userDataMap);
                                  }
                                },
-                               actions: {}
+                               mutations: {
+                                 init(state, payload) {
+                                   state.populations = payload.gameAssets.populations;
+                                   state.workforces = payload.gameAssets.workforces;
+                                   state.buildings = payload.gameAssets.buildings;
+                                   state.categories = payload.gameAssets.categories;
+                                   state.gameAssetsMap = payload.gameAssetsMap;
+                                   state.userDataPopulations = payload.userData.populations;
+                                   state.userDataWorkforces = payload.userData.workforces;
+                                   state.userDataBuildings = payload.userData.buildings;
+                                   state.userDataProducts = payload.userData.products;
+                                   state.userDataMap = payload.userDataMap;
+                                 },
+                                 updateAmount(state, payload) {
+                                   if (payload.newAmount >= 0) {
+                                     let asset = state.gameAssetsMap.get(payload.id);
+                                     asset.updateAmount(payload.newAmount);
+                                     this.store.userDataChangeTracker += 1;
+                                   }
+                                 },
+                                 updateEfficiency(state, payload) {
+                                   if (payload.newEfficiency > 0) {
+                                     let asset = state.gameAssetsMap.get(payload.id);
+                                     asset.setPercentEfficiency(payload.newEfficiency);
+                                     this.store.userDataChangeTracker += 1;
+                                   }
+                                 },
+                               },
+                               actions: {},
                              });
 export default store;

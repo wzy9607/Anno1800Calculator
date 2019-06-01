@@ -22,9 +22,9 @@
               class="card-margin-fix"
           >
             <Workforce
-                :icon="workforce.icon"
+                :id="workforce.id"
                 :text="workforce.text"
-                :amount="workforce.amountConsumed"
+                :workforce="workforce"
             >
             </Workforce>
           </div>
