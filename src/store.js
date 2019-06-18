@@ -1,8 +1,20 @@
 import Vue from "vue";
 import "es6-promise/auto";
 import Vuex from "vuex";
+import VuexPersistence from "vuex-persist";
+import Backend from "./backend";
 
 Vue.use(Vuex);
+
+const storeLocal = new VuexPersistence({
+                                         storage: window.localStorage,
+                                         reducer: (state) => ({
+                                           userDataPopulations: state.userDataPopulations,
+                                           userDataWorkforces: state.userDataWorkforces,
+                                           userDataBuildings: state.userDataBuildings,
+                                           userDataProducts: state.userDataProducts
+                                         }),
+                                       });
 
 const store = new Vuex.Store({
                                state: {
@@ -37,6 +49,10 @@ const store = new Vuex.Store({
                                    state.userDataProducts = payload.userData.products;
                                    state.userDataMap = payload.userDataMap;
                                  },
+                                 setDefaultUserData(state) {
+                                   Backend.setDefaultUserData();
+                                   this.store.userDataChangeTracker += 1;
+                                 },
                                  updateAmount(state, payload) {
                                    if (payload.newAmount >= 0) {
                                      let asset = state.gameAssetsMap.get(payload.id);
@@ -53,5 +69,6 @@ const store = new Vuex.Store({
                                  },
                                },
                                actions: {},
+                               plugins: [storeLocal.plugin],
                              });
 export default store;
