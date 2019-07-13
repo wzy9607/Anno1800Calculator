@@ -18,7 +18,7 @@
     "bootstrap-vue": "^2.0.0-rc.20",
     "core-js": "^2.6.5",
     "es6-promise": "^4.2.6",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.13",
     "source-sans-pro": "^2.45.0",
     "vue": "^2.6.10",
     "vue-numeral-filter": "^1.1.1",
